@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>offlyn.ai</title>
+  <meta name="description" content="AI connectivity offline. On-device AI solutions for agriculture, mining, disaster response, energy, navigation, conservation research.">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="antialiased bg-gray-50 text-gray-800">
+  <header class="bg-white shadow">
+    <nav class="container mx-auto flex items-center justify-between py-4 px-6">
+      <a href="#hero" class="flex items-center">
+        <img src="/assets/offlyn-logo-3d.png" alt="offlyn.ai logo" class="h-10 w-auto">
+        <span class="ml-2 text-xl font-bold text-gray-800">offlyn.ai</span>
+      </a>
+      <ul class="hidden md:flex space-x-8">
+        <li><a href="#hero" class="hover:text-indigo-600">Home</a></li>
+        <li><a href="#solutions" class="hover:text-indigo-600">Solutions</a></li>
+        <li><a href="#industries" class="hover:text-indigo-600">Industries</a></li>
+        <li><a href="#features" class="hover:text-indigo-600">Features</a></li>
+        <li><a href="#gallery" class="hover:text-indigo-600">Gallery</a></li>
+        <li><a href="#feature-pitch" class="hover:text-indigo-600">Offline Automation</a></li>
+        <li><a href="#contact" class="hover:text-indigo-600">Contact</a></li>
+      </ul>
+      <div class="flex items-center">
+        <button id="mobile-menu-button" class="md:hidden focus:outline-none mr-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+        <a href="#contact" class="hidden md:inline-block px-5 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700">Get in Touch</a>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="hidden bg-white shadow-md">
+      <a href="#hero" class="block px-6 py-3 border-b hover:bg-gray-100">Home</a>
+      <a href="#solutions" class="block px-6 py-3 border-b hover:bg-gray-100">Solutions</a>
+      <a href="#industries" class="block px-6 py-3 border-b hover:bg-gray-100">Industries</a>
+      <a href="#features" class="block px-6 py-3 border-b hover:bg-gray-100">Features</a>
+      <a href="#gallery" class="block px-6 py-3 border-b hover:bg-gray-100">Gallery</a>
+      <a href="#feature-pitch" class="block px-6 py-3 border-b hover:bg-gray-100">n8n Pitch</a>
+      <a href="#contact" class="block px-6 py-3 hover:bg-gray-100">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="hero" class="container mx-auto text-center py-20 px-6">
+      <h1 class="text-5xl font-extrabold mb-4">AI Connectivity<br/>with No Network</h1>
+      <p class="text-xl text-gray-600 mb-8">
+        85% of the world’s surface area lacks cell coverage; we build on-device AI solutions for the industries on the edge
+      </p>
+      <div class="space-x-4">
+        <a href="#contact" class="px-8 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">Request Demo</a>
+        <a href="#features" class="px-8 py-3 border border-indigo-600 text-indigo-600 rounded-lg hover:bg-indigo-50">Learn More</a>
+      </div>
+    </section>
+
+    <!-- Industries -->
+    <section id="industries" class="py-16">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-semibold text-center mb-12">Industries</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="space-y-3">
+            <h3 class="text-xl font-bold">Disaster Response</h3>
+            <p>TerraGuide™ coordinates rescue operations with On-device AI, Bluetooth chat and Maps with zero connectivity.</p>
+          </div>
+          <div class="space-y-3">
+            <h3 class="text-xl font-bold">Mining</h3>
+            <p>Mipilot™ for shift automation workflows, equipment checks, and safety audits.</p>
+          </div>
+          <div class="space-y-3">
+            <h3 class="text-xl font-bold">Energy</h3>
+            <p>Microgrid analytics, billing, and peer-to-peer power sharing offline.</p>
+          </div>
+          <div class="space-y-3">
+            <h3 class="text-xl font-bold">Equipment Maintenance</h3>
+            <p>FieldFixer™ delivers step-by-step maintenance guidance with on-device AI trained on equipment manuals, safety protocols, and ticket data for technicians in remote sites</p>
+          </div>
+          <div class="space-y-3">
+            <h3 class="text-xl font-bold">Conservation Research</h3>
+            <p>EcoDex App: catalog and identify species with AI-powered tagging.</p>
+          </div>
+          <div class="space-y-3">
+            <h3 class="text-xl font-bold">Agriculture</h3>
+            <p>Offline soil analysis, prescriptions, and workflow automation</p>
+          </div>
+          <div class="space-y-3">
+            <h3 class="text-xl font-bold">Aviation</h3>
+            <p>Offline ground crew workflow automation and resilience</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+<!-- Solutions -->
+<section id="solutions" class="bg-white py-16">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-semibold text-center mb-12">Solutions</h2>
+    <div class="grid md:grid-cols-4 gap-8">
+      <div class="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-bold mb-3">On-Device AI</h3>
+        <p>Run compact small-language models locally for instant, private insights.</p>
+      </div>
+      <div class="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-bold mb-3">P2P Mesh Networking</h3>
+        <p>Seamlessly share data peer-to-peer via Bluetooth and mesh without internet.</p>
+      </div>
+      <div class="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-bold mb-3">Offline Maps</h3>
+        <p>Pre-loaded GIS and celestial navigation data for reliable wayfinding.</p>
+      </div>
+      <div class="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-bold mb-3">Workflow Automation</h3>
+        <p>Use n8n’s event-driven orchestration with offline AI assistants.</p>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- Key Features -->
+    <section id="features" class="bg-white py-16">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-semibold text-center mb-12">Key Features</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+          <div>
+            <h4 class="font-bold mb-2">Secure & Private</h4>
+            <p>All processing happens on-device; no data leaves your environment.</p>
+          </div>
+          <div>
+            <h4 class="font-bold mb-2">Offline Resilience</h4>
+            <p>Maintain full functionality despite connectivity drops.</p>
+          </div>
+          <div>
+            <h4 class="font-bold mb-2">Optimized SLMs</h4>
+            <p>Compact models designed for low compute and fast inference.</p>
+          </div>
+          <div>
+            <h4 class="font-bold mb-2">Easy Integration</h4>
+            <p>SDKs for iOS, Android, and edge devices—embed in minutes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="py-16 bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-semibold text-center mb-8">Product Pitch Gallery</h2>
+        <div class="relative max-w-4xl mx-auto">
+          <div id="carousel" class="overflow-hidden rounded-xl">
+            <div class="carousel-inner flex transition-transform duration-500" style="width:600%;">
+              <div class="w-full flex-shrink-0">
+                <figure class="h-64 md:h-96 overflow-hidden">
+                  <img src="/assets/pitch1.png" alt="Pitch 1" class="w-full h-full object-cover" loading="lazy">
+                  <figcaption class="text-center text-sm mt-2">Pitch 1 Overview</figcaption>
+                </figure>
+              </div>
+              <div class="w-full flex-shrink-0">
+                <figure class="h-64 md:h-96 overflow-hidden">
+                  <video class="w-full h-full object-cover" controls muted loop playsinline poster="/assets/video1-poster.png">
+                    <source src="/assets/pitch-demo1.mp4" type="video/mp4">
+                  </video>
+                  <figcaption class="text-center text-sm mt-2">Demo Video 1</figcaption>
+                </figure>
+              </div>
+              <div class="w-full flex-shrink-0">
+                <figure class="h-64 md:h-96 overflow-hidden">
+                  <img src="/assets/pitch2.png" alt="Pitch 2" class="w-full h-full object-cover" loading="lazy">
+                  <figcaption class="text-center text-sm mt-2">Pitch 2 Highlights</figcaption>
+                </figure>
+              </div>
+              <div class="w-full flex-shrink-0">
+                <figure class="h-64 md:h-96 overflow-hidden">
+                  <video class="w-full h-full object-cover" controls muted loop playsinline poster="/assets/video2-poster.png">
+                    <source src="/assets/pitch-demo2.mp4" type="video/mp4">
+                  </video>
+                  <figcaption class="text-center text-sm mt-2">Demo Video 2</figcaption>
+                </figure>
+              </div>
+              <div class="w-full flex-shrink-0">
+                <figure class="h-64 md:h-96 overflow-hidden">
+                  <img src="/assets/pitch3.png" alt="Pitch 3" class="w-full h-full object-cover" loading="lazy">
+                  <figcaption class="text-center text-sm mt-2">Pitch 3 Insights</figcaption>
+                </figure>
+              </div>
+              <div class="w-full flex-shrink-0">
+                <figure class="h-64 md:h-96 overflow-hidden">
+                  <img src="/assets/pitch4.png" alt="Pitch 4" class="w-full h-full object-cover" loading="lazy">
+                  <figcaption class="text-center text-sm mt-2">Pitch 4 Roadmap</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <button id="prev" class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow">‹</button>
+          <button id="next" class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow">›</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- n8n Feature Pitch -->
+    <section id="feature-pitch" class="py-16 bg-white">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-semibold mb-8">Event-Driven Orchestration</h2>
+        <img src="/assets/feature-pitch-n8n-mining.png" alt="n8n event-driven orchestration" class="mx-auto max-w-full rounded shadow-lg">
+        <p class="mt-6 text-lg text-gray-600">
+          Seamlessly integrate offline AI assistants with real-time n8n workflows to drive efficiency in mining operations, even where networks fail.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="bg-gray-100 py-16">
+      <div class="container mx-auto px-6 max-w-lg">
+        <h2 class="text-3xl font-semibold text-center mb-6">Contact Us</h2>
+        <form action="/submit" method="post" class="space-y-4">
+          <div>
+            <label class="block text-sm font-medium">Name</label>
+            <input type="text" name="name" required class="w-full mt-1 p-2 border rounded">
+          </div>
+          <div>
+            <label class="block text-sm font-medium">Email</label>
+            <input type="email" name="email" required class="w-full mt-1 p-2 border rounded">
+          </div>
+          <div>
+            <label class="block text-sm font-medium">Message</label>
+            <textarea name="message" rows="4" class="w-full mt-1 p-2 border rounded"></textarea>
+          </div>
+          <button type="submit" class="w-full py-3 bg-indigo-600 text-white rounded hover:bg-indigo-700">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-100 py-6">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
+      <p class="text-gray-600">© 2025 offlyn.ai. All rights reserved.</p>
+      <div class="space-x-4 mt-4 md:mt-0">
+        <a href="#" class="text-gray-600 hover:text-indigo-600">Privacy</a>
+        <a href="#" class="text-gray-600 hover:text-indigo-600">Terms</a>
+        <a href="#" class="text-gray-600 hover:text-indigo-600">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('mobile-menu-button')
+      .addEventListener('click', () => document.getElementById('mobile-menu').classList.toggle('hidden'));
+
+    const inner = document.querySelector('.carousel-inner');
+    const total = inner.children.length;
+    let idx = 0;
+    document.getElementById('prev')
+      .addEventListener('click', () => {
+        idx = (idx - 1 + total) % total;
+        inner.style.transform = `translateX(-${idx * 100}%)`;
+      });
+    document.getElementById('next')
+      .addEventListener('click', () => {
+        idx = (idx + 1) % total;
+        inner.style.transform = `translateX(-${idx * 100}%)`;
+      });
+  </script>
+</body>
+</html>
