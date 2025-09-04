@@ -6,6 +6,7 @@
   <title>offlyn.ai</title>
   <meta name="description" content="AI connectivity offline. On-device AI solutions for agriculture, mining, disaster response, energy, navigation, conservation research.">
   <script src="https://cdn.tailwindcss.com"></script>
+  
 </head>
 <body class="antialiased bg-gray-50 text-gray-800">
   <header class="bg-white shadow">
@@ -19,8 +20,8 @@
         <li><a href="#solutions" class="hover:text-indigo-600">Solutions</a></li>
         <li><a href="#industries" class="hover:text-indigo-600">Industries</a></li>
         <li><a href="#features" class="hover:text-indigo-600">Features</a></li>
-        <li><a href="#gallery" class="hover:text-indigo-600">Gallery</a></li>
-        <li><a href="#feature-pitch" class="hover:text-indigo-600">Offline Automation</a></li>
+        <li><a href="#terraguide-gallery" class="hover:text-indigo-600">TerraGuide App</a></li>
+        <li><a href="#automation" class="hover:text-indigo-600">Offline Automation</a></li>
         <li><a href="#terraguide" class="hover:text-indigo-600">TerraGuide Support</a></li>
         <li><a href="#terraguide-privacy" class="hover:text-indigo-600">TerraGuide Privacy</a></li>
       </ul>
@@ -30,8 +31,8 @@
       <a href="#solutions" class="block px-6 py-3 border-b hover:bg-gray-100">Solutions</a>
       <a href="#industries" class="block px-6 py-3 border-b hover:bg-gray-100">Industries</a>
       <a href="#features" class="block px-6 py-3 border-b hover:bg-gray-100">Features</a>
-      <a href="#gallery" class="block px-6 py-3 border-b hover:bg-gray-100">Gallery</a>
-      <a href="#feature-pitch" class="block px-6 py-3 border-b hover:bg-gray-100">n8n Pitch</a>
+      <a href="#terraguide-gallery" class="block px-6 py-3 border-b hover:bg-gray-100">TerraGuide App</a>
+      <a href="#automation" class="block px-6 py-3 border-b hover:bg-gray-100">Offline Automation</a>
       <a href="#terraguide" class="block px-6 py-3 border-b hover:bg-gray-100">TerraGuide Support</a>
       <a href="#terraguide-privacy" class="block px-6 py-3 border-b hover:bg-gray-100">TerraGuide Privacy</a>
     </div>
@@ -53,35 +54,361 @@
     <!-- Industries -->
     <section id="industries" class="py-16">
       <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-semibold text-center mb-12">Industries</h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <h2 class="text-3xl font-semibold text-center mb-12">Industry Solutions</h2>
+
+        <!-- Industry Tabs -->
+        <div class="flex flex-wrap justify-center mb-8 gap-2">
+          <button class="tab-button px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 bg-indigo-600 text-white shadow-lg" data-tab="disaster">
+            Disaster Response
+          </button>
+          <button class="tab-button px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 bg-gray-200 text-gray-700 hover:bg-gray-300" data-tab="mining">
+            Mining
+          </button>
+          <button class="tab-button px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 bg-gray-200 text-gray-700 hover:bg-gray-300" data-tab="energy">
+            Energy
+          </button>
+          <button class="tab-button px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 bg-gray-200 text-gray-700 hover:bg-gray-300" data-tab="maintenance">
+            Site Maintenance
+          </button>
+          <button class="tab-button px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 bg-gray-200 text-gray-700 hover:bg-gray-300" data-tab="conservation">
+            Conservation
+          </button>
+          <button class="tab-button px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 bg-gray-200 text-gray-700 hover:bg-gray-300" data-tab="agriculture">
+            Agriculture
+          </button>
+          <button class="tab-button px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 bg-gray-200 text-gray-700 hover:bg-gray-300" data-tab="aviation">
+            Aviation
+          </button>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="tab-content">
+          <!-- Disaster Response Tab -->
+          <div id="disaster" class="tab-pane active">
+            <div class="max-w-6xl mx-auto">
+              <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold mb-4 text-indigo-600">Disaster Response & Emergency Management</h3>
+                <p class="text-xl text-gray-600 mb-8">
+                  TerraGuide™ provides comprehensive disaster response capabilities with on-device AI assistance, mesh networking, offline navigation, and FEMA integration for emergency situations when traditional communication networks fail.
+                </p>
+              </div>
+              
+              <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <div class="p-8 bg-gradient-to-br from-red-50 to-pink-50 rounded-2xl border border-red-100">
+                  <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                    </svg>
+                  </div>
+                  <h4 class="text-2xl font-bold mb-4 text-gray-800">AI Emergency Assistant</h4>
+                  <p class="text-gray-600 leading-relaxed">
+                    On-device AI provides instant emergency guidance, survival tips, and disaster-specific advice without internet connectivity.
+                  </p>
+                </div>
+
+                <div class="p-8 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl border border-blue-100">
+                  <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                    </svg>
+                  </div>
+                  <h4 class="text-2xl font-bold mb-4 text-gray-800">Mesh Communication</h4>
+                  <p class="text-gray-600 leading-relaxed">
+                    Dual-transport mesh networking enables reliable communication up to 10 miles without cell towers or internet.
+                  </p>
+                </div>
+
+                <div class="p-8 bg-gradient-to-br from-yellow-50 to-amber-50 rounded-2xl border border-yellow-100">
+                  <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path>
+                    </svg>
+                  </div>
+                  <h4 class="text-2xl font-bold mb-4 text-gray-800">Offline Navigation</h4>
+                  <p class="text-gray-600 leading-relaxed">
+                    Full offline maps with emergency waypoints, GPS navigation, and location sharing for complete navigation without internet.
+                  </p>
+                </div>
+
+                <div class="p-8 bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl border border-orange-100">
+                  <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
+                    </svg>
+                  </div>
+                  <h4 class="text-2xl font-bold mb-4 text-gray-800">Emergency Features</h4>
+                  <p class="text-gray-600 leading-relaxed">
+                    Emergency beacon broadcasting, SOS flashlight patterns, and automated distress signals for critical situations.
+                  </p>
+                </div>
+
+                <div class="p-8 bg-gradient-to-br from-purple-50 to-violet-50 rounded-2xl border border-purple-100">
+                  <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                  </div>
+                  <h4 class="text-2xl font-bold mb-4 text-gray-800">FEMA Integration</h4>
+                  <p class="text-gray-600 leading-relaxed">
+                    Local access to official FEMA emergency guides, disaster-specific guidance, and emergency kit checklists.
+                  </p>
+                </div>
+
+                <div class="p-8 bg-gradient-to-br from-gray-50 to-slate-50 rounded-2xl border border-gray-100">
+                  <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                    </svg>
+                  </div>
+                  <h4 class="text-2xl font-bold mb-4 text-gray-800">Privacy & Security</h4>
+                  <p class="text-gray-600 leading-relaxed">
+                    Zero-knowledge architecture ensures AI conversations never leave your device, with end-to-end encryption for all communications.
+                  </p>
+                </div>
+              </div>
+
+              <div class="bg-gradient-to-r from-red-50 to-orange-50 p-8 rounded-2xl border border-red-200">
+                <h4 class="text-xl font-bold mb-6 text-gray-800 text-center">Key Emergency Response Features</h4>
+                <div class="grid md:grid-cols-2 gap-6">
+                  <div class="space-y-3">
+                    <div class="flex items-center space-x-3">
+                      <div class="w-2 h-2 bg-red-600 rounded-full"></div>
+                      <span class="text-gray-700">Real-time emergency coordination without internet dependency</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                      <div class="w-2 h-2 bg-red-600 rounded-full"></div>
+                      <span class="text-gray-700">FEMA-compliant emergency protocols and procedures</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                      <div class="w-2 h-2 bg-red-600 rounded-full"></div>
+                      <span class="text-gray-700">Automated emergency beacon and distress signal broadcasting</span>
+                    </div>
+                  </div>
           <div class="space-y-3">
-            <h3 class="text-xl font-bold">Disaster Response</h3>
-            <p>TerraGuide™ coordinates rescue operations with On-device AI, Bluetooth chat and Maps with zero connectivity.</p>
+                    <div class="flex items-center space-x-3">
+                      <div class="w-2 h-2 bg-red-600 rounded-full"></div>
+                      <span class="text-gray-700">Offline navigation to emergency shelters and resources</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                      <div class="w-2 h-2 bg-red-600 rounded-full"></div>
+                      <span class="text-gray-700">AI-powered disaster-specific guidance and recommendations</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                      <div class="w-2 h-2 bg-red-600 rounded-full"></div>
+                      <span class="text-gray-700">Secure mesh communication for multi-agency coordination</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="space-y-3">
-            <h3 class="text-xl font-bold">Mining</h3>
-            <p>Mipilot™ for shift automation workflows, equipment checks, and safety audits.</p>
+
+          <!-- Mining Tab -->
+          <div id="mining" class="tab-pane hidden">
+            <div class="max-w-6xl mx-auto">
+              <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold mb-4 text-indigo-600">Mining Operations</h3>
+                <p class="text-xl text-gray-600 mb-8">
+                  Mipilot™ for shift automation workflows, equipment checks, and safety audits in remote mining environments.
+                </p>
+              </div>
+              
+              <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <div class="p-6 bg-yellow-50 rounded-xl border-l-4 border-yellow-500">
+                  <h4 class="font-bold text-yellow-700 mb-3 text-lg">Safety Compliance</h4>
+                  <p class="text-gray-600 mb-4">Automated safety checks and compliance monitoring in remote mining sites.</p>
+                  <ul class="text-sm text-gray-600 space-y-1">
+                    <li>• Real-time safety protocol monitoring</li>
+                    <li>• Automated compliance reporting</li>
+                    <li>• Incident prevention algorithms</li>
+                  </ul>
+                </div>
+                <div class="p-6 bg-green-50 rounded-xl border-l-4 border-green-500">
+                  <h4 class="font-bold text-green-700 mb-3 text-lg">Equipment Monitoring</h4>
+                  <p class="text-gray-600 mb-4">Real-time equipment diagnostics and predictive maintenance alerts.</p>
+                  <ul class="text-sm text-gray-600 space-y-1">
+                    <li>• Predictive maintenance scheduling</li>
+                    <li>• Equipment performance analytics</li>
+                    <li>• Automated fault detection</li>
+                  </ul>
+                </div>
+                <div class="p-6 bg-blue-50 rounded-xl border-l-4 border-blue-500">
+                  <h4 class="font-bold text-blue-700 mb-3 text-lg">Shift Management</h4>
+                  <p class="text-gray-600 mb-4">Intelligent workforce coordination and task automation for mining operations.</p>
+                  <ul class="text-sm text-gray-600 space-y-1">
+                    <li>• Automated shift handovers</li>
+                    <li>• Task prioritization algorithms</li>
+                    <li>• Resource allocation optimization</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="bg-gray-50 rounded-xl p-8">
+                <h4 class="text-xl font-bold mb-4 text-center">Key Features for Mining Operations</h4>
+                <div class="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h5 class="font-semibold text-gray-800 mb-2">Offline Equipment Diagnostics</h5>
+                    <p class="text-gray-600 text-sm">AI-powered equipment analysis that works without connectivity, providing instant diagnostics and maintenance recommendations.</p>
+                  </div>
+                  <div>
+                    <h5 class="font-semibold text-gray-800 mb-2">Automated Safety Protocols</h5>
+                    <p class="text-gray-600 text-sm">Continuous monitoring of safety conditions with automated alerts and emergency response procedures.</p>
+                  </div>
+                  <div>
+                    <h5 class="font-semibold text-gray-800 mb-2">Production Optimization</h5>
+                    <p class="text-gray-600 text-sm">AI-driven insights for optimizing mining operations, reducing downtime, and maximizing resource extraction efficiency.</p>
+                  </div>
+                  <div>
+                    <h5 class="font-semibold text-gray-800 mb-2">Environmental Monitoring</h5>
+                    <p class="text-gray-600 text-sm">Real-time environmental condition tracking with automated compliance reporting and alert systems.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="space-y-3">
-            <h3 class="text-xl font-bold">Energy</h3>
-            <p>Microgrid analytics, billing, and peer-to-peer power sharing offline.</p>
+
+          <!-- Energy Tab -->
+          <div id="energy" class="tab-pane hidden">
+            <div class="max-w-6xl mx-auto">
+              <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold mb-4 text-indigo-600">Energy Infrastructure</h3>
+                <p class="text-xl text-gray-600 mb-8">
+                  Microgrid analytics, billing, and peer-to-peer power sharing offline for remote energy systems.
+                </p>
+              </div>
+              
+              <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <div class="p-6 bg-purple-50 rounded-xl border-l-4 border-purple-500">
+                  <h4 class="font-bold text-purple-700 mb-3 text-lg">Smart Grid Management</h4>
+                  <p class="text-gray-600 mb-4">Intelligent power distribution and load balancing in isolated microgrids.</p>
+                  <ul class="text-sm text-gray-600 space-y-1">
+                    <li>• Real-time load balancing</li>
+                    <li>• Automated grid optimization</li>
+                    <li>• Fault detection and isolation</li>
+                  </ul>
+                </div>
+                <div class="p-6 bg-orange-50 rounded-xl border-l-4 border-orange-500">
+                  <h4 class="font-bold text-orange-700 mb-3 text-lg">Energy Trading</h4>
+                  <p class="text-gray-600 mb-4">Peer-to-peer energy sharing and automated billing systems.</p>
+                  <ul class="text-sm text-gray-600 space-y-1">
+                    <li>• Automated P2P transactions</li>
+                    <li>• Smart contract execution</li>
+                    <li>• Real-time pricing algorithms</li>
+                  </ul>
+                </div>
+                <div class="p-6 bg-green-50 rounded-xl border-l-4 border-green-500">
+                  <h4 class="font-bold text-green-700 mb-3 text-lg">Renewable Integration</h4>
+                  <p class="text-gray-600 mb-4">Seamless integration of renewable energy sources with offline monitoring and control.</p>
+                  <ul class="text-sm text-gray-600 space-y-1">
+                    <li>• Solar/wind optimization</li>
+                    <li>• Battery management systems</li>
+                    <li>• Weather prediction integration</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="bg-gray-50 rounded-xl p-8">
+                <h4 class="text-xl font-bold mb-4 text-center">Key Features for Energy Infrastructure</h4>
+                <div class="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h5 class="font-semibold text-gray-800 mb-2">Offline Microgrid Control</h5>
+                    <p class="text-gray-600 text-sm">Complete microgrid management without internet connectivity, ensuring reliable power distribution in remote locations.</p>
+                  </div>
+                  <div>
+                    <h5 class="font-semibold text-gray-800 mb-2">Automated Energy Trading</h5>
+                    <p class="text-gray-600 text-sm">AI-driven peer-to-peer energy trading with automated billing and settlement, enabling local energy markets.</p>
+                  </div>
+                  <div>
+                    <h5 class="font-semibold text-gray-800 mb-2">Predictive Maintenance</h5>
+                    <p class="text-gray-600 text-sm">Advanced analytics for predicting equipment failures and optimizing maintenance schedules for energy infrastructure.</p>
+                  </div>
+                  <div>
+                    <h5 class="font-semibold text-gray-800 mb-2">Grid Resilience</h5>
+                    <p class="text-gray-600 text-sm">Enhanced grid stability through intelligent load management and automated response to power quality issues.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="space-y-3">
-            <h3 class="text-xl font-bold">Site Maintenance</h3>
-            <p>FieldFixer™ delivers step-by-step maintenance guidance with on-device AI trained on equipment manuals, safety protocols, and ticket data for technicians in remote sites</p>
+
+          <!-- Site Maintenance Tab -->
+          <div id="maintenance" class="tab-pane hidden">
+            <div class="max-w-4xl mx-auto text-center">
+              <h3 class="text-2xl font-bold mb-6 text-indigo-600">Site Maintenance</h3>
+              <p class="text-lg text-gray-600 mb-8">
+                FieldFixer™ delivers step-by-step maintenance guidance with on-device AI trained on equipment manuals, safety protocols, and ticket data for technicians in remote sites.
+              </p>
+              <div class="grid md:grid-cols-2 gap-8">
+                <div class="p-6 bg-teal-50 rounded-xl border-l-4 border-teal-500">
+                  <h4 class="font-bold text-teal-700 mb-2">AI-Powered Diagnostics</h4>
+                  <p class="text-gray-600">Intelligent troubleshooting and repair guidance for complex equipment.</p>
+                </div>
+                <div class="p-6 bg-cyan-50 rounded-xl border-l-4 border-cyan-500">
+                  <h4 class="font-bold text-cyan-700 mb-2">Safety Protocols</h4>
+                  <p class="text-gray-600">Automated safety checks and compliance verification during maintenance procedures.</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="space-y-3">
-            <h3 class="text-xl font-bold">Conservation Research</h3>
-            <p>EcoDex App: catalog and identify species with AI-powered tagging.</p>
+
+          <!-- Conservation Tab -->
+          <div id="conservation" class="tab-pane hidden">
+            <div class="max-w-4xl mx-auto text-center">
+              <h3 class="text-2xl font-bold mb-6 text-indigo-600">Conservation Research</h3>
+              <p class="text-lg text-gray-600 mb-8">
+                EcoDex App: catalog and identify species with AI-powered tagging.
+              </p>
+              <div class="grid md:grid-cols-2 gap-8">
+                <div class="p-6 bg-green-50 rounded-xl border-l-4 border-green-500">
+                  <h4 class="font-bold text-green-700 mb-2">Species Identification</h4>
+                  <p class="text-gray-600">AI-powered species recognition and automated cataloging in remote field conditions.</p>
+                </div>
+                <div class="p-6 bg-emerald-50 rounded-xl border-l-4 border-emerald-500">
+                  <h4 class="font-bold text-emerald-700 mb-2">Environmental Monitoring</h4>
+                  <p class="text-gray-600">Continuous environmental data collection and analysis without connectivity.</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="space-y-3">
-            <h3 class="text-xl font-bold">Agriculture</h3>
-            <p>Offline soil analysis, prescriptions, and workflow automation</p>
+
+          <!-- Agriculture Tab -->
+          <div id="agriculture" class="tab-pane hidden">
+            <div class="max-w-4xl mx-auto text-center">
+              <h3 class="text-2xl font-bold mb-6 text-indigo-600">Agricultural Operations</h3>
+              <p class="text-lg text-gray-600 mb-8">
+                Offline soil analysis, prescriptions, and workflow automation.
+              </p>
+              <div class="grid md:grid-cols-2 gap-8">
+                <div class="p-6 bg-lime-50 rounded-xl border-l-4 border-lime-500">
+                  <h4 class="font-bold text-lime-700 mb-2">Soil Analysis</h4>
+                  <p class="text-gray-600">Real-time soil testing and nutrient analysis for optimal crop management.</p>
+                </div>
+                <div class="p-6 bg-amber-50 rounded-xl border-l-4 border-amber-500">
+                  <h4 class="font-bold text-amber-700 mb-2">Precision Farming</h4>
+                  <p class="text-gray-600">Data-driven farming decisions and automated irrigation systems.</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="space-y-3">
-            <h3 class="text-xl font-bold">Aviation</h3>
-            <p>Offline ground crew workflow automation and resilience</p>
+
+          <!-- Aviation Tab -->
+          <div id="aviation" class="tab-pane hidden">
+            <div class="max-w-4xl mx-auto text-center">
+              <h3 class="text-2xl font-bold mb-6 text-indigo-600">Aviation Operations</h3>
+              <p class="text-lg text-gray-600 mb-8">
+                Offline ground crew workflow automation and resilience.
+              </p>
+              <div class="grid md:grid-cols-2 gap-8">
+                <div class="p-6 bg-sky-50 rounded-xl border-l-4 border-sky-500">
+                  <h4 class="font-bold text-sky-700 mb-2">Ground Operations</h4>
+                  <p class="text-gray-600">Automated aircraft servicing and maintenance procedures with safety protocols.</p>
+                </div>
+                <div class="p-6 bg-indigo-50 rounded-xl border-l-4 border-indigo-500">
+                  <h4 class="font-bold text-indigo-700 mb-2">Flight Operations</h4>
+                  <p class="text-gray-600">Offline flight planning and emergency response coordination systems.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -136,82 +463,141 @@
       </div>
     </section>
 
-    <!-- Gallery -->
-    <section id="gallery" class="py-16 bg-white">
+
+    <!-- TerraGuide Product Gallery -->
+    <section id="terraguide-gallery" class="py-16 bg-gray-50">
       <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-semibold text-center mb-8">Product Pitch Gallery</h2>
-        <div class="relative max-w-4xl mx-auto">
-          <div id="carousel" class="overflow-hidden rounded-xl">
-            <div class="carousel-inner flex transition-transform duration-500" style="width:600%;">
-              <div class="w-full flex-shrink-0">
-                <figure class="h-64 md:h-96 overflow-hidden">
-                  <img src="assets/pitch1.png" alt="Pitch 1" class="w-full h-full object-cover" loading="lazy">
-                  <figcaption class="text-center text-sm mt-2">Pitch 1 Overview</figcaption>
-                </figure>
+        <h2 class="text-3xl font-semibold text-center mb-8">TerraGuide Product Showcase</h2>
+        <p class="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+          Experience TerraGuide's powerful offline AI capabilities through our comprehensive mobile interface. 
+          From emergency coordination to offline mapping, see how our app keeps teams connected when networks fail.
+        </p>
+        
+        <!-- Auto-scrolling Gallery -->
+        <div class="flex justify-center">
+          <div class="relative bg-white rounded-2xl shadow-2xl overflow-hidden w-80">
+            <div id="terraguide-carousel" class="flex transition-transform duration-500 ease-in-out">
+              <!-- Images will be dynamically inserted here -->
               </div>
-              <div class="w-full flex-shrink-0">
-                <figure class="h-64 md:h-96 overflow-hidden">
-                  <video class="w-full h-full object-cover" controls muted loop playsinline poster="assets/video1-poster.png">
-                    <source src="assets/pitch-demo1.mp4" type="video/mp4">
-                  </video>
-                  <figcaption class="text-center text-sm mt-2">Demo Video 1</figcaption>
-                </figure>
+            
+            <!-- Navigation Dots -->
+            <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+              <div class="w-2 h-2 bg-white rounded-full opacity-50 cursor-pointer dot active" data-index="0"></div>
+              <div class="w-2 h-2 bg-white rounded-full opacity-50 cursor-pointer dot" data-index="1"></div>
+              <div class="w-2 h-2 bg-white rounded-full opacity-50 cursor-pointer dot" data-index="2"></div>
+              <div class="w-2 h-2 bg-white rounded-full opacity-50 cursor-pointer dot" data-index="3"></div>
+              <div class="w-2 h-2 bg-white rounded-full opacity-50 cursor-pointer dot" data-index="4"></div>
+              <div class="w-2 h-2 bg-white rounded-full opacity-50 cursor-pointer dot" data-index="5"></div>
               </div>
-              <div class="w-full flex-shrink-0">
-                <figure class="h-64 md:h-96 overflow-hidden">
-                  <img src="assets/pitch2.png" alt="Pitch 2" class="w-full h-full object-cover" loading="lazy">
-                  <figcaption class="text-center text-sm mt-2">Pitch 2 Highlights</figcaption>
-                </figure>
-              </div>
-              <div class="w-full flex-shrink-0">
-                <figure class="h-64 md:h-96 overflow-hidden">
-                  <video class="w-full h-full object-cover" controls muted loop playsinline poster="assets/video2-poster.png">
-                    <source src="assets/pitch-demo2.mp4" type="video/mp4">
-                  </video>
-                  <figcaption class="text-center text-sm mt-2">Demo Video 2</figcaption>
-                </figure>
-              </div>
-              <div class="w-full flex-shrink-0">
-                <figure class="h-64 md:h-96 overflow-hidden">
-                  <img src="assets/pitch3.png" alt="Pitch 3" class="w-full h-full object-cover" loading="lazy">
-                  <figcaption class="text-center text-sm mt-2">Pitch 3 Insights</figcaption>
-                </figure>
-              </div>
-              <div class="w-full flex-shrink-0">
-                <figure class="h-64 md:h-96 overflow-hidden">
-                  <img src="assets/pitch4.png" alt="Pitch 4" class="w-full h-full object-cover" loading="lazy">
-                  <figcaption class="text-center text-sm mt-2">Pitch 4 Roadmap</figcaption>
-                </figure>
-              </div>
+            
+            <!-- Click to view larger -->
+            <div class="absolute top-4 right-4 bg-black bg-opacity-50 text-white px-3 py-1 rounded-full text-sm">
+              Click to view larger
             </div>
           </div>
-          <button id="prev" class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow">‹</button>
-          <button id="next" class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow">›</button>
         </div>
       </div>
     </section>
 
-    <!-- n8n Feature Pitch -->
-    <section id="feature-pitch" class="py-16 bg-white">
+
+    <!-- TerraGuide Features -->
+    <section id="terraguide" class="py-16 bg-white">
       <div class="container mx-auto px-6 text-center">
-        <h2 class="text-3xl font-semibold mb-8">Event-Driven Orchestration</h2>
-        <img src="assets/feature-pitch-n8n-mining.png" alt="n8n event-driven orchestration" class="mx-auto max-w-full rounded shadow-lg">
-        <p class="mt-6 text-lg text-gray-600">
-          Seamlessly integrate offline AI assistants with real-time n8n workflows to drive efficiency in mining operations, even where networks fail.
+        <h2 class="text-3xl font-semibold mb-8">TerraGuide Features</h2>
+        <p class="text-lg text-gray-600 mb-12 max-w-4xl mx-auto">
+          TerraGuide™ is a comprehensive outdoor safety and communication platform that combines on-device AI assistance, mesh networking, offline navigation, and emergency preparedness into a single, privacy-focused iOS application designed for outdoor enthusiasts and emergency situations.
+        </p>
+        
+        <div class="max-w-6xl mx-auto">
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            <div class="p-8 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl border border-blue-100">
+              <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold mb-4 text-gray-800">On-Device AI Assistant</h3>
+              <p class="text-gray-600 leading-relaxed">
+                Meta Llama 3.2 model provides instant emergency guidance, survival tips, and medical assistance without requiring internet connectivity.
+              </p>
+            </div>
+
+            <div class="p-8 bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl border border-green-100">
+              <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold mb-4 text-gray-800">Mesh Networking</h3>
+              <p class="text-gray-600 leading-relaxed">
+                Dual-transport mesh networking combines Bluetooth and WiFi for reliable communication up to 10 miles without cell towers.
+              </p>
+            </div>
+
+            <div class="p-8 bg-gradient-to-br from-yellow-50 to-amber-50 rounded-2xl border border-yellow-100">
+              <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold mb-4 text-gray-800">Offline Navigation</h3>
+              <p class="text-gray-600 leading-relaxed">
+                Full offline maps with terrain data, GPS navigation, and emergency waypoint management for complete navigation without internet.
+              </p>
+            </div>
+
+            <div class="p-8 bg-gradient-to-br from-red-50 to-pink-50 rounded-2xl border border-red-100">
+              <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold mb-4 text-gray-800">Emergency Features</h3>
+              <p class="text-gray-600 leading-relaxed">
+                Emergency beacon broadcasting, SOS flashlight patterns, and automated distress signals for critical situations.
+              </p>
+            </div>
+
+            <div class="p-8 bg-gradient-to-br from-purple-50 to-violet-50 rounded-2xl border border-purple-100">
+              <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold mb-4 text-gray-800">FEMA Integration</h3>
+              <p class="text-gray-600 leading-relaxed">
+                Local access to official FEMA emergency guides, disaster-specific guidance, and emergency kit checklists.
         </p>
       </div>
-    </section>
 
-    <!-- TerraGuide Support -->
-    <section id="terraguide" class="py-16 bg-white">
-      <div class="container mx-auto px-6 max-w-3xl text-center">
-        <h2 class="text-3xl font-semibold mb-6">TerraGuide Support</h2>
-        <p class="text-lg text-gray-600 mb-4">
-          TerraGuide™ coordinates rescue operations with on-device AI, offline maps, and mesh networking to keep teams connected without cell coverage.
-        </p>
-        <p class="text-lg text-gray-600">
-          Need help? Email us at <a href="mailto:hi@offlyn.ai" class="text-indigo-600 hover:underline">hi@offlyn.ai</a>.
-        </p>
+            <div class="p-8 bg-gradient-to-br from-gray-50 to-slate-50 rounded-2xl border border-gray-100">
+              <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg class="w-8 h-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold mb-4 text-gray-800">Privacy & Security</h3>
+              <p class="text-gray-600 leading-relaxed">
+                Zero-knowledge architecture ensures AI conversations never leave your device, with end-to-end encryption for all communications.
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-r from-indigo-50 to-blue-50 p-8 rounded-2xl border border-indigo-100">
+            <h3 class="text-2xl font-bold mb-6 text-gray-800">Get Support</h3>
+            <p class="text-gray-600 mb-6 max-w-2xl mx-auto">
+              Need help with TerraGuide? Our support team is here to assist you with any questions or issues.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="mailto:hi@offlyn.ai" class="inline-block bg-indigo-600 text-white px-8 py-3 rounded-lg hover:bg-indigo-700 transition-colors font-medium">
+                Email Support
+              </a>
+              <a href="#" class="inline-block bg-gray-600 text-white px-8 py-3 rounded-lg hover:bg-gray-700 transition-colors font-medium">
+                View Documentation
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -240,22 +626,200 @@
   </footer>
 
   <script>
-    document.getElementById('mobile-menu-button')
-      .addEventListener('click', () => document.getElementById('mobile-menu').classList.toggle('hidden'));
 
-    const inner = document.querySelector('.carousel-inner');
-    const total = inner.children.length;
-    let idx = 0;
-    document.getElementById('prev')
-      .addEventListener('click', () => {
-        idx = (idx - 1 + total) % total;
-        inner.style.transform = `translateX(-${idx * 100}%)`;
+    // Industry Tabs Functionality
+    const tabButtons = document.querySelectorAll('.tab-button');
+    const tabPanes = document.querySelectorAll('.tab-pane');
+
+    tabButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const targetTab = button.getAttribute('data-tab');
+
+        // Remove active class from all buttons and panes
+        tabButtons.forEach(btn => {
+          btn.classList.remove('bg-indigo-600', 'text-white', 'shadow-lg');
+          btn.classList.add('bg-gray-200', 'text-gray-700', 'hover:bg-gray-300');
+        });
+
+        tabPanes.forEach(pane => {
+          pane.classList.add('hidden');
+          pane.classList.remove('active');
+        });
+
+        // Add active class to clicked button
+        button.classList.remove('bg-gray-200', 'text-gray-700', 'hover:bg-gray-300');
+        button.classList.add('bg-indigo-600', 'text-white', 'shadow-lg');
+
+        // Show the target tab pane
+        const targetPane = document.getElementById(targetTab);
+        if (targetPane) {
+          targetPane.classList.remove('hidden');
+          targetPane.classList.add('active');
+        }
       });
-    document.getElementById('next')
-      .addEventListener('click', () => {
-        idx = (idx + 1) % total;
-        inner.style.transform = `translateX(-${idx * 100}%)`;
+    });
+
+    // TerraGuide Auto-scrolling Carousel
+    const allScreenshots = [
+      "terraguide-product-images/Simulator Screenshot - iPhone 16 Pro Max - 2025-09-04 at 08.49.35.png",
+      "terraguide-product-images/Simulator Screenshot - iPhone 16 Pro Max - 2025-09-04 at 08.52.42.png",
+      "terraguide-product-images/Simulator Screenshot - iPhone 16 Pro Max - 2025-09-04 at 08.53.08.png",
+      "terraguide-product-images/Simulator Screenshot - iPhone 16 Pro Max - 2025-09-04 at 08.53.15.png",
+      "terraguide-product-images/Simulator Screenshot - iPhone 16 Pro Max - 2025-09-04 at 08.53.19.png",
+      "terraguide-product-images/Simulator Screenshot - iPhone 16 Pro Max - 2025-09-04 at 08.58.49.png",
+      "terraguide-product-images/Simulator Screenshot - iPhone 16 Pro Max - 2025-09-04 at 08.59.07.png",
+      "terraguide-product-images/Simulator Screenshot - iPhone 16 Pro Max - 2025-09-04 at 09.00.52.png",
+      "terraguide-product-images/Simulator Screenshot - iPhone 16 Pro Max - 2025-09-04 at 09.01.27.png",
+      "terraguide-product-images/Simulator Screenshot - iPhone 16 Pro Max - 2025-09-04 at 09.01.32.png",
+      "terraguide-product-images/Simulator Screenshot - iPhone 16 Pro Max - 2025-09-04 at 09.03.01.png",
+      "terraguide-product-images/Simulator Screenshot - iPhone 16 Pro Max - 2025-09-04 at 09.03.12.png",
+      "terraguide-product-images/Simulator Screenshot - iPhone 16 Pro Max - 2025-09-04 at 09.15.06.png",
+      "terraguide-product-images/Simulator Screenshot - iPhone 16 Pro Max - 2025-09-04 at 09.15.45.png",
+      "terraguide-product-images/Simulator Screenshot - iPhone 16 Pro Max - 2025-09-04 at 09.21.18.png",
+      "terraguide-product-images/Simulator Screenshot - iPhone 16 Pro Max - 2025-09-04 at 09.43.10.png",
+      "terraguide-product-images/Simulator Screenshot - iPhone 16 Pro Max - 2025-09-04 at 09.44.14.png",
+      "terraguide-product-images/Simulator Screenshot - iPhone 16 Pro Max - 2025-09-04 at 10.57.28.png"
+    ];
+
+    let currentImageIndex = 0;
+    let isModalOpen = false;
+    let autoScrollInterval;
+
+    // Initialize carousel
+    function initCarousel() {
+      const carousel = document.getElementById('terraguide-carousel');
+      const dots = document.querySelectorAll('.dot');
+      
+      // Create carousel items
+      allScreenshots.forEach((src, index) => {
+        const carouselItem = document.createElement('div');
+        carouselItem.className = 'w-full flex-shrink-0 cursor-pointer';
+        carouselItem.innerHTML = `
+          <div class="aspect-[9/19] bg-white rounded-2xl shadow-lg overflow-hidden mx-auto max-w-xs">
+            <img src="${src}" alt="TerraGuide App Screenshot" class="w-full h-full object-cover">
+          </div>
+        `;
+        carouselItem.addEventListener('click', () => {
+          currentImageIndex = index;
+          showModal();
+        });
+        carousel.appendChild(carouselItem);
       });
+
+      // Update dots
+      function updateDots() {
+        dots.forEach((dot, index) => {
+          dot.classList.toggle('active', index === currentImageIndex);
+          dot.classList.toggle('opacity-50', index !== currentImageIndex);
+        });
+      }
+
+      // Update carousel position
+      function updateCarousel() {
+        carousel.style.transform = `translateX(-${currentImageIndex * 100}%)`;
+        updateDots();
+      }
+
+      // Auto-scroll functionality
+      function startAutoScroll() {
+        autoScrollInterval = setInterval(() => {
+          currentImageIndex = (currentImageIndex + 1) % allScreenshots.length;
+          updateCarousel();
+        }, 3000); // Change image every 3 seconds
+      }
+
+      function stopAutoScroll() {
+        clearInterval(autoScrollInterval);
+      }
+
+      // Dot click handlers
+      dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+          currentImageIndex = index;
+          updateCarousel();
+          stopAutoScroll();
+          startAutoScroll(); // Restart auto-scroll
+        });
+      });
+
+      // Pause auto-scroll on hover
+      carousel.addEventListener('mouseenter', stopAutoScroll);
+      carousel.addEventListener('mouseleave', startAutoScroll);
+
+      // Initialize
+      updateCarousel();
+      startAutoScroll();
+    }
+
+    // Create modal
+    const modal = document.createElement('div');
+    modal.id = 'image-modal';
+    modal.className = 'fixed inset-0 bg-black bg-opacity-75 z-50 hidden flex items-center justify-center p-8';
+    modal.innerHTML = `
+      <div class="relative">
+        <button id="close-modal" class="absolute -top-12 right-0 text-white text-3xl hover:text-gray-300 z-10 bg-black bg-opacity-50 rounded-full w-10 h-10 flex items-center justify-center">&times;</button>
+        <button id="prev-image" class="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-12 text-white text-3xl hover:text-gray-300 z-10 bg-black bg-opacity-50 rounded-full w-10 h-10 flex items-center justify-center">‹</button>
+        <button id="next-image" class="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-12 text-white text-3xl hover:text-gray-300 z-10 bg-black bg-opacity-50 rounded-full w-10 h-10 flex items-center justify-center">›</button>
+        <img id="modal-image" src="" alt="TerraGuide Screenshot" class="w-80 h-auto object-contain rounded-2xl shadow-2xl">
+        <div class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-white text-sm bg-black bg-opacity-50 px-3 py-1 rounded-full">
+          <span id="image-counter">1 / ${allScreenshots.length}</span>
+        </div>
+      </div>
+    `;
+    document.body.appendChild(modal);
+
+    function showModal() {
+      isModalOpen = true;
+      modal.classList.remove('hidden');
+      updateModalImage();
+      document.body.style.overflow = 'hidden';
+    }
+
+    function hideModal() {
+      isModalOpen = false;
+      modal.classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+
+    function updateModalImage() {
+      const modalImage = document.getElementById('modal-image');
+      const imageCounter = document.getElementById('image-counter');
+      modalImage.src = allScreenshots[currentImageIndex];
+      imageCounter.textContent = `${currentImageIndex + 1} / ${allScreenshots.length}`;
+    }
+
+    // Modal controls
+    document.getElementById('close-modal').addEventListener('click', hideModal);
+    document.getElementById('prev-image').addEventListener('click', () => {
+      currentImageIndex = (currentImageIndex - 1 + allScreenshots.length) % allScreenshots.length;
+      updateModalImage();
+    });
+    document.getElementById('next-image').addEventListener('click', () => {
+      currentImageIndex = (currentImageIndex + 1) % allScreenshots.length;
+      updateModalImage();
+    });
+
+    // Close modal on background click
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) hideModal();
+    });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (!isModalOpen) return;
+      if (e.key === 'Escape') hideModal();
+      if (e.key === 'ArrowLeft') {
+        currentImageIndex = (currentImageIndex - 1 + allScreenshots.length) % allScreenshots.length;
+        updateModalImage();
+      }
+      if (e.key === 'ArrowRight') {
+        currentImageIndex = (currentImageIndex + 1) % allScreenshots.length;
+        updateModalImage();
+      }
+    });
+
+    // Initialize carousel when page loads
+    document.addEventListener('DOMContentLoaded', initCarousel);
   </script>
 </body>
 </html>
