@@ -21,7 +21,7 @@
         <li><a href="#industries" class="hover:text-indigo-600">Industries</a></li>
         <li><a href="#features" class="hover:text-indigo-600">Features</a></li>
         <li><a href="#terraguide-gallery" class="hover:text-indigo-600">TerraGuide App</a></li>
-        <li><a href="#automation" class="hover:text-indigo-600">Offline Automation</a></li>
+        <li><a href="#ravin" class="hover:text-indigo-600">RAVIN</a></li>
         <li><a href="#terraguide" class="hover:text-indigo-600">TerraGuide Support</a></li>
         <li><a href="#terraguide-privacy" class="hover:text-indigo-600">TerraGuide Privacy</a></li>
       </ul>
@@ -32,7 +32,7 @@
       <a href="#industries" class="block px-6 py-3 border-b hover:bg-gray-100">Industries</a>
       <a href="#features" class="block px-6 py-3 border-b hover:bg-gray-100">Features</a>
       <a href="#terraguide-gallery" class="block px-6 py-3 border-b hover:bg-gray-100">TerraGuide App</a>
-      <a href="#automation" class="block px-6 py-3 border-b hover:bg-gray-100">Offline Automation</a>
+      <a href="#ravin" class="block px-6 py-3 border-b hover:bg-gray-100">RAVIN</a>
       <a href="#terraguide" class="block px-6 py-3 border-b hover:bg-gray-100">TerraGuide Support</a>
       <a href="#terraguide-privacy" class="block px-6 py-3 border-b hover:bg-gray-100">TerraGuide Privacy</a>
     </div>
@@ -60,6 +60,9 @@
         <div class="flex flex-wrap justify-center mb-8 gap-2">
           <button class="tab-button px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 bg-indigo-600 text-white shadow-lg" data-tab="disaster">
             Disaster Response
+          </button>
+          <button class="tab-button px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 bg-gray-200 text-gray-700 hover:bg-gray-300" data-tab="healthcare">
+            Healthcare
           </button>
           <button class="tab-button px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 bg-gray-200 text-gray-700 hover:bg-gray-300" data-tab="mining">
             Mining
@@ -197,6 +200,183 @@
                       <div class="w-2 h-2 bg-red-600 rounded-full"></div>
                       <span class="text-gray-700">Secure mesh communication for multi-agency coordination</span>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Healthcare Tab -->
+          <div id="healthcare" class="tab-pane hidden">
+            <div class="max-w-6xl mx-auto">
+              <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold mb-4 text-indigo-600">Healthcare & Medical</h3>
+                <p class="text-xl text-gray-600 mb-8">
+                  RAVIN™ provides comprehensive medical AI assistance with on-device processing, offline lab result analysis, and private health data understanding for healthcare professionals and patients in remote or privacy-sensitive environments.
+                </p>
+              </div>
+              
+              <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <div class="p-8 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl border border-blue-100">
+                  <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                  </div>
+                  <h4 class="text-2xl font-bold mb-4 text-gray-800">Lab Result Analysis</h4>
+                  <p class="text-gray-600 leading-relaxed">
+                    Instant analysis of blood tests, cholesterol panels, and lab results with clear explanations of normal vs. abnormal values.
+                  </p>
+                </div>
+
+                <div class="p-8 bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl border border-green-100">
+                  <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                    </svg>
+                  </div>
+                  <h4 class="text-2xl font-bold mb-4 text-gray-800">Complete Privacy</h4>
+                  <p class="text-gray-600 leading-relaxed">
+                    All medical data processing happens on-device. No patient information ever leaves the local environment.
+                  </p>
+                </div>
+
+                <div class="p-8 bg-gradient-to-br from-purple-50 to-violet-50 rounded-2xl border border-purple-100">
+                  <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                    </svg>
+                  </div>
+                  <h4 class="text-2xl font-bold mb-4 text-gray-800">Offline Medical AI</h4>
+                  <p class="text-gray-600 leading-relaxed">
+                    Works without internet connection, ensuring medical data analysis in remote clinics and field hospitals.
+                  </p>
+                </div>
+
+                <div class="p-8 bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl border border-orange-100">
+                  <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                  </div>
+                  <h4 class="text-2xl font-bold mb-4 text-gray-800">Medical Accuracy</h4>
+                  <p class="text-gray-600 leading-relaxed">
+                    Trained on medical literature and evidence-based guidelines for accurate, reliable health information.
+                  </p>
+                </div>
+
+                <div class="p-8 bg-gradient-to-br from-red-50 to-pink-50 rounded-2xl border border-red-100">
+                  <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                  </div>
+                  <h4 class="text-2xl font-bold mb-4 text-gray-800">Smart Alerts</h4>
+                  <p class="text-gray-600 leading-relaxed">
+                    Intelligent recommendations for when to consult healthcare providers based on specific lab values and trends.
+                  </p>
+                </div>
+
+                <div class="p-8 bg-gradient-to-br from-indigo-50 to-blue-50 rounded-2xl border border-indigo-100">
+                  <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                    </svg>
+                  </div>
+                  <h4 class="text-2xl font-bold mb-4 text-gray-800">Plain Language</h4>
+                  <p class="text-gray-600 leading-relaxed">
+                    Translates complex medical terminology into clear, understandable explanations for patients and families.
+                  </p>
+                </div>
+              </div>
+
+              <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-8 rounded-2xl border border-blue-200">
+                <h4 class="text-xl font-bold mb-6 text-gray-800 text-center">Key Healthcare Applications</h4>
+                <div class="grid md:grid-cols-2 gap-6">
+                  <div class="space-y-3">
+                    <div class="flex items-center space-x-3">
+                      <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+                      <span class="text-gray-700">Remote clinic lab result interpretation</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                      <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+                      <span class="text-gray-700">Patient education and health literacy</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                      <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+                      <span class="text-gray-700">Medication interaction analysis</span>
+                    </div>
+                  </div>
+                  <div class="space-y-3">
+                    <div class="flex items-center space-x-3">
+                      <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+                      <span class="text-gray-700">Health trend monitoring and tracking</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                      <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+                      <span class="text-gray-700">Medical report summarization</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                      <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+                      <span class="text-gray-700">Emergency medical information access</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Medical Disclaimer for Industry Tab -->
+              <div class="bg-yellow-50 border-l-4 border-yellow-400 p-6 mt-8">
+                <div class="flex">
+                  <div class="flex-shrink-0">
+                    <svg class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                  <div class="ml-3">
+                    <h3 class="text-sm font-medium text-yellow-800">Important Medical Disclaimer</h3>
+                    <div class="mt-2 text-sm text-yellow-700">
+                      <p><strong>RAVIN does not provide medical advice, diagnosis, or treatment.</strong> It is designed to help interpret and understand medical information for educational purposes only. Always consult with qualified healthcare professionals for medical advice, diagnosis, or treatment decisions. RAVIN should be used as a supplementary tool to enhance understanding, not as a replacement for professional medical care.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Language Support for Industry Tab -->
+              <div class="bg-blue-50 rounded-xl p-6 mt-6">
+                <h3 class="text-lg font-semibold text-blue-800 mb-4">Multi-Language Support</h3>
+                <p class="text-blue-700 mb-4">RAVIN provides medical information interpretation in multiple languages to serve diverse communities:</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                  <div class="flex items-center space-x-2">
+                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                    <span class="text-blue-800 font-medium">English</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                    <span class="text-blue-800 font-medium">हिन्दी (Hindi)</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                    <span class="text-blue-800 font-medium">Español (Spanish)</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                    <span class="text-blue-800 font-medium">中文 (Chinese)</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                    <span class="text-blue-800 font-medium">العربية (Arabic)</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                    <span class="text-blue-800 font-medium">Português (Portuguese)</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                    <span class="text-blue-800 font-medium">Français (French)</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                    <span class="text-blue-800 font-medium">Русский (Russian)</span>
                   </div>
                 </div>
               </div>
@@ -499,6 +679,232 @@
       </div>
     </section>
 
+    <!-- RAVIN Medical AI Section -->
+    <section id="ravin" class="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
+      <div class="container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <!-- Header -->
+          <div class="text-center mb-16">
+            <div class="inline-flex items-center justify-center w-20 h-20 bg-blue-600 rounded-full mb-6">
+              <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+              </svg>
+            </div>
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">RAVIN</h2>
+            <p class="text-xl text-blue-600 font-semibold mb-6">Reliable AI for Vital INformation</p>
+            <p class="text-2xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
+              "Understand your health, privately."
+            </p>
+          </div>
+
+          <!-- Main Description -->
+          <div class="bg-white rounded-2xl shadow-xl p-8 mb-12">
+            <div class="max-w-4xl mx-auto text-center">
+              <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                RAVIN helps you understand your lab results and doctor's notes — privately, clearly, and instantly.
+                It runs entirely offline on your device, using local AI to translate complex medical data into plain, human language.
+              </p>
+              <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                No accounts. No uploads. Just clarity and peace of mind.
+              </p>
+              
+              <div class="bg-blue-50 rounded-xl p-6 mb-8">
+                <p class="text-gray-700 leading-relaxed">
+                  Whether it's your blood test, cholesterol check, or kidney panel, RAVIN explains what your numbers mean, 
+                  what's normal, and when it might be time to talk to your doctor — without ever replacing one.
+                </p>
+              </div>
+              
+              <p class="text-lg text-gray-600 leading-relaxed">
+                Built on a foundation of privacy, transparency, and trust, RAVIN makes medical information 
+                understandable and accessible for everyone, everywhere.
+              </p>
+              
+              <!-- Medical Disclaimer -->
+              <div class="bg-yellow-50 border-l-4 border-yellow-400 p-6 mt-8">
+                <div class="flex">
+                  <div class="flex-shrink-0">
+                    <svg class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                  <div class="ml-3">
+                    <h3 class="text-sm font-medium text-yellow-800">Important Medical Disclaimer</h3>
+                    <div class="mt-2 text-sm text-yellow-700">
+                      <p><strong>RAVIN does not provide medical advice, diagnosis, or treatment.</strong> It is designed to help interpret and understand medical information for educational purposes only. Always consult with qualified healthcare professionals for medical advice, diagnosis, or treatment decisions. RAVIN should be used as a supplementary tool to enhance understanding, not as a replacement for professional medical care.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Language Support -->
+              <div class="bg-blue-50 rounded-xl p-6 mt-6">
+                <h3 class="text-lg font-semibold text-blue-800 mb-4">Multi-Language Support</h3>
+                <p class="text-blue-700 mb-4">RAVIN provides medical information interpretation in multiple languages to serve diverse communities:</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                  <div class="flex items-center space-x-2">
+                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                    <span class="text-blue-800 font-medium">English</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                    <span class="text-blue-800 font-medium">हिन्दी (Hindi)</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                    <span class="text-blue-800 font-medium">Español (Spanish)</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                    <span class="text-blue-800 font-medium">中文 (Chinese)</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                    <span class="text-blue-800 font-medium">العربية (Arabic)</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                    <span class="text-blue-800 font-medium">Português (Portuguese)</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                    <span class="text-blue-800 font-medium">Français (French)</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                    <span class="text-blue-800 font-medium">Русский (Russian)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Key Features -->
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+              <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800 mb-3">Complete Privacy</h3>
+              <p class="text-gray-600">All processing happens on your device. No data ever leaves your phone or tablet.</p>
+            </div>
+
+            <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+              <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800 mb-3">Instant Analysis</h3>
+              <p class="text-gray-600">Get clear explanations of your lab results in seconds, not days.</p>
+            </div>
+
+            <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+              <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800 mb-3">Offline AI</h3>
+              <p class="text-gray-600">Works without internet connection. Your health data stays completely private.</p>
+            </div>
+
+            <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+              <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800 mb-3">Medical Accuracy</h3>
+              <p class="text-gray-600">Trained on medical literature to provide accurate, evidence-based explanations.</p>
+            </div>
+
+            <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+              <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800 mb-3">Smart Alerts</h3>
+              <p class="text-gray-600">Know when to follow up with your doctor based on your specific results.</p>
+            </div>
+
+            <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+              <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800 mb-3">Plain Language</h3>
+              <p class="text-gray-600">Translates complex medical jargon into clear, understandable explanations.</p>
+            </div>
+          </div>
+
+          <!-- Use Cases -->
+          <div class="bg-white rounded-2xl shadow-xl p-8 mb-12">
+            <h3 class="text-2xl font-bold text-center text-gray-800 mb-8">Perfect For</h3>
+            <div class="grid md:grid-cols-2 gap-8">
+              <div class="space-y-4">
+                <div class="flex items-start space-x-3">
+                  <div class="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
+                  <span class="text-gray-700">Understanding blood test results and lab panels</span>
+                </div>
+                <div class="flex items-start space-x-3">
+                  <div class="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
+                  <span class="text-gray-700">Deciphering doctor's notes and medical reports</span>
+                </div>
+                <div class="flex items-start space-x-3">
+                  <div class="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
+                  <span class="text-gray-700">Tracking health trends over time</span>
+                </div>
+                <div class="flex items-start space-x-3">
+                  <div class="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
+                  <span class="text-gray-700">Preparing questions for your next doctor visit</span>
+                </div>
+              </div>
+              <div class="space-y-4">
+                <div class="flex items-start space-x-3">
+                  <div class="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
+                  <span class="text-gray-700">Understanding medication side effects and interactions</span>
+                </div>
+                <div class="flex items-start space-x-3">
+                  <div class="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
+                  <span class="text-gray-700">Learning about normal vs. abnormal values</span>
+                </div>
+                <div class="flex items-start space-x-3">
+                  <div class="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
+                  <span class="text-gray-700">Getting peace of mind about your health status</span>
+                </div>
+                <div class="flex items-start space-x-3">
+                  <div class="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
+                  <span class="text-gray-700">Sharing clear explanations with family members</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA Section -->
+          <div class="text-center">
+            <div class="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl p-8 text-white">
+              <h3 class="text-2xl font-bold mb-4">Ready to understand your health better?</h3>
+              <p class="text-lg mb-6 opacity-90">
+                Get early access to RAVIN and experience the future of private, offline medical AI.
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="mailto:hi@offlyn.ai?subject=RAVIN Early Access" class="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors font-medium">
+                  Request Early Access
+                </a>
+                <a href="mailto:hi@offlyn.ai?subject=RAVIN Information" class="inline-block border-2 border-white text-white px-8 py-3 rounded-lg hover:bg-white hover:text-blue-600 transition-colors font-medium">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- TerraGuide Features -->
     <section id="terraguide" class="py-16 bg-white">
