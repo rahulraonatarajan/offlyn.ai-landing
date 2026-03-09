@@ -4,9 +4,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>offlyn.ai</title>
-  <meta name="description" content="AI connectivity offline. On-device AI solutions for agriculture, mining, disaster response, energy, navigation, conservation research.">
+  <meta name="description" content="offlyn.ai — On-device AI solutions for industries on the edge. Featuring Offlyn Apply, a privacy-first browser extension for automating job applications with local AI.">
+  <meta property="og:title" content="offlyn.ai — AI Connectivity with No Network">
+  <meta property="og:description" content="On-device AI solutions for agriculture, mining, disaster response, energy, navigation, conservation — plus Offlyn Apply, the privacy-first job application assistant.">
+  <meta property="og:image" content="assets/offlyn-apply-hero.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="offlyn.ai — AI Connectivity with No Network">
+  <meta name="twitter:image" content="assets/offlyn-apply-hero.png">
   <script src="https://cdn.tailwindcss.com"></script>
-  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'offlyn-green': '#27E38D',
+            'offlyn-navy': '#0F172A',
+            'offlyn-light': '#F5F7FA',
+          }
+        }
+      }
+    }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Offlyn Apply",
+    "applicationCategory": "BrowserApplication",
+    "operatingSystem": "Chrome 88+, Firefox 109+",
+    "description": "Privacy-first browser extension for automating job applications. Smart auto-fill, AI-powered cover letters via local Ollama, Kanban tracking, and ATS compatibility — all running locally with zero cloud uploads.",
+    "url": "https://joelnishanth.github.io/offlyn-apply",
+    "downloadUrl": "https://github.com/joelnishanth/offlyn-apply",
+    "author": {
+      "@type": "Organization",
+      "name": "offlyn.ai",
+      "url": "https://offlyn.ai"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
 </head>
 <body class="antialiased bg-gray-50 text-gray-800">
   <header class="bg-white shadow">
@@ -17,51 +58,732 @@
       </a>
       <ul class="hidden md:flex space-x-8">
         <li><a href="#hero" class="hover:text-indigo-600">Home</a></li>
-        <li><a href="#solutions" class="hover:text-indigo-600">Solutions</a></li>
+        <li><a href="#product-suite" class="hover:text-indigo-600">Products</a></li>
+        <li><a href="#offlyn-apply" class="hover:text-indigo-600">Offlyn Apply</a></li>
         <li><a href="#industries" class="hover:text-indigo-600">Industries</a></li>
-        <li><a href="#features" class="hover:text-indigo-600">Features</a></li>
-        <li><a href="#terraguide-gallery" class="hover:text-indigo-600">TerraGuide App</a></li>
+        <li><a href="#terraguide-gallery" class="hover:text-indigo-600">TerraGuide</a></li>
         <li><a href="#ravin" class="hover:text-indigo-600">RAVIN</a></li>
-        <li><a href="#terraguide" class="hover:text-indigo-600">TerraGuide Support</a></li>
-        <li><a href="#terraguide-privacy" class="hover:text-indigo-600">TerraGuide Privacy</a></li>
       </ul>
     </nav>
     <div id="mobile-menu" class="hidden bg-white shadow-md">
       <a href="#hero" class="block px-6 py-3 border-b hover:bg-gray-100">Home</a>
-      <a href="#solutions" class="block px-6 py-3 border-b hover:bg-gray-100">Solutions</a>
+      <a href="#product-suite" class="block px-6 py-3 border-b hover:bg-gray-100">Products</a>
+      <a href="#offlyn-apply" class="block px-6 py-3 border-b hover:bg-gray-100">Offlyn Apply</a>
       <a href="#industries" class="block px-6 py-3 border-b hover:bg-gray-100">Industries</a>
-      <a href="#features" class="block px-6 py-3 border-b hover:bg-gray-100">Features</a>
-      <a href="#terraguide-gallery" class="block px-6 py-3 border-b hover:bg-gray-100">TerraGuide App</a>
+      <a href="#terraguide-gallery" class="block px-6 py-3 border-b hover:bg-gray-100">TerraGuide</a>
       <a href="#ravin" class="block px-6 py-3 border-b hover:bg-gray-100">RAVIN</a>
-      <a href="#terraguide" class="block px-6 py-3 border-b hover:bg-gray-100">TerraGuide Support</a>
-      <a href="#terraguide-privacy" class="block px-6 py-3 border-b hover:bg-gray-100">TerraGuide Privacy</a>
     </div>
   </header>
 
   <main>
-    <!-- Hero -->
-    <section id="hero" class="container mx-auto text-center py-20 px-6">
-      <h1 class="text-5xl font-extrabold mb-4">AI Connectivity<br/>with No Network</h1>
-      <p class="text-xl text-gray-600 mb-8">
-        85% of the world’s surface area lacks cell coverage; we build on-device AI solutions for industries on the edge
-      </p>
-      <div class="space-x-4">
-        <a href="#terraguide" class="px-8 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">Request Demo</a>
-        <a href="#features" class="px-8 py-3 border border-indigo-600 text-indigo-600 rounded-lg hover:bg-indigo-50">Learn More</a>
+    <!-- Hero with Cursor Burst -->
+    <section id="hero" class="relative bg-gray-50 overflow-hidden">
+      <div class="relative w-full" style="height: 560px;">
+        <iframe
+          id="hero-iframe"
+          src="ascii-viewer/index.html"
+          class="absolute inset-0 w-full h-full border-0"
+          title="offlyn.ai Interactive Hero"
+          scrolling="no"
+          allow="accelerometer; gyroscope"
+        ></iframe>
+      </div>
+      <div class="relative -mt-20 pb-20 text-center z-10 bg-gradient-to-t from-gray-50 via-gray-50/95 to-transparent pt-24 pointer-events-none">
+        <h1 class="text-5xl font-extrabold mb-4 text-gray-800">AI Connectivity<br/>with No Network</h1>
+        <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto px-6">
+          85% of the world’s surface area lacks cell coverage; we build on-device AI solutions for industries on the edge
+        </p>
+        <div class="space-x-4 pointer-events-auto">
+          <a href="#features" class="px-8 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition">Learn More</a>
+        </div>
       </div>
     </section>
 
-    <!-- Industries -->
+    <!-- Product Suite with Pill Switcher -->
+    <section id="product-suite" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-10">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Product Suite</h2>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">On-device AI tools designed for privacy, resilience, and real-world impact.</p>
+
+          <!-- Pill Switcher -->
+          <div style="display:inline-flex;align-items:center;gap:4px;background:#F3F4F6;border-radius:9999px;padding:5px;">
+            <button onclick="switchProduct('apply')" id="prod-apply" style="padding:10px 24px;border-radius:9999px;font-size:15px;font-weight:600;border:none;cursor:pointer;transition:all 0.25s;background:#4F46E5;color:white;box-shadow:0 2px 8px rgba(79,70,229,0.3);">Offlyn Apply</button>
+            <button onclick="switchProduct('terraguide')" id="prod-terraguide" style="padding:10px 24px;border-radius:9999px;font-size:15px;font-weight:600;border:none;cursor:pointer;transition:all 0.25s;background:transparent;color:#6B7280;">TerraGuide</button>
+            <button onclick="switchProduct('ravin')" id="prod-ravin" style="padding:10px 24px;border-radius:9999px;font-size:15px;font-weight:600;border:none;cursor:pointer;transition:all 0.25s;background:transparent;color:#6B7280;">RAVIN</button>
+          </div>
+        </div>
+
+        <!-- Offlyn Apply Panel -->
+        <div id="panel-apply" class="max-w-4xl mx-auto">
+          <div class="bg-gray-50 rounded-3xl p-8 md:p-12 border border-gray-100">
+            <div class="flex flex-col md:flex-row items-start gap-8">
+              <div class="flex-shrink-0">
+                <img src="assets/offlyn-monogram.png" alt="Offlyn Apply icon" width="80" height="80" class="rounded-2xl shadow-md" loading="lazy">
+              </div>
+              <div class="flex-1">
+                <div class="flex items-center gap-3 mb-3">
+                  <h3 class="text-2xl font-bold text-gray-800">Offlyn Apply</h3>
+                  <span class="px-3 py-0.5 bg-indigo-600 text-white text-xs font-bold rounded-full">NEW</span>
+                </div>
+                <p class="text-lg text-gray-600 mb-6">Privacy-first browser extension that automates job applications with local AI — no cloud, no tracking, no API keys.</p>
+                <div class="flex flex-wrap gap-4 mb-6">
+                  <span class="flex items-center gap-2 text-sm font-semibold text-gray-700"><span class="w-2 h-2 rounded-full bg-indigo-600 inline-block"></span>0 Bytes Uploaded</span>
+                  <span class="flex items-center gap-2 text-sm font-semibold text-gray-700"><span class="w-2 h-2 rounded-full bg-indigo-600 inline-block"></span>100% Local AI</span>
+                  <span class="flex items-center gap-2 text-sm font-semibold text-gray-700"><span class="w-2 h-2 rounded-full bg-indigo-600 inline-block"></span>Works Offline</span>
+                </div>
+                <ul class="space-y-2.5 text-gray-600 text-sm mb-8">
+                  <li class="flex items-start gap-2.5"><svg class="w-5 h-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Smart auto-fill for job application forms</li>
+                  <li class="flex items-start gap-2.5"><svg class="w-5 h-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>AI-powered cover letters using local Ollama</li>
+                  <li class="flex items-start gap-2.5"><svg class="w-5 h-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Application tracking dashboard (Kanban board)</li>
+                  <li class="flex items-start gap-2.5"><svg class="w-5 h-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>ATS compatibility checker (Workday, Greenhouse, Lever, etc.)</li>
+                </ul>
+                <div class="flex flex-wrap gap-3">
+                  <a href="https://github.com/joelnishanth/offlyn-apply" target="_blank" rel="noopener" class="px-6 py-2.5 bg-indigo-600 text-white font-bold rounded-lg hover:bg-indigo-700 transition text-sm">Download Extension</a>
+                  <a href="https://joelnishanth.github.io/offlyn-apply" target="_blank" rel="noopener" class="px-6 py-2.5 border border-indigo-600 text-indigo-600 rounded-lg hover:bg-indigo-600 hover:text-white transition text-sm font-medium">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TerraGuide Panel -->
+        <div id="panel-terraguide" class="max-w-4xl mx-auto" style="display:none;">
+          <div class="bg-gray-50 rounded-3xl p-8 md:p-12 border border-gray-100">
+            <div class="flex flex-col md:flex-row items-start gap-8">
+              <div class="flex-shrink-0">
+                <img src="assets/terraguide-icon.png" alt="TerraGuide icon" width="80" height="80" class="rounded-2xl shadow-md" loading="lazy">
+              </div>
+              <div class="flex-1">
+                <h3 class="text-2xl font-bold text-gray-800 mb-3">TerraGuide</h3>
+                <p class="text-sm text-indigo-600 font-medium mb-4">Offline AI for Outdoor Safety</p>
+                <p class="text-lg text-gray-600 mb-6">On-device AI assistant with mesh networking, offline navigation, emergency beacons, and FEMA integration for when networks fail.</p>
+                <ul class="space-y-2.5 text-gray-600 text-sm mb-8">
+                  <li class="flex items-start gap-2.5"><svg class="w-5 h-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Offline maps with AI-powered trail recommendations</li>
+                  <li class="flex items-start gap-2.5"><svg class="w-5 h-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Mesh networking for group coordination without signal</li>
+                  <li class="flex items-start gap-2.5"><svg class="w-5 h-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Emergency SOS beacon with GPS coordinates</li>
+                  <li class="flex items-start gap-2.5"><svg class="w-5 h-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>FEMA integration for disaster response</li>
+                </ul>
+                <div class="flex flex-wrap gap-3">
+                  <a href="https://apps.apple.com/us/app/terraguide/id6749492441" target="_blank" rel="noopener" class="px-6 py-2.5 bg-indigo-600 text-white font-bold rounded-lg hover:bg-indigo-700 transition text-sm inline-block">Download on App Store</a>
+                  <a href="#terraguide-gallery" class="px-6 py-2.5 border border-indigo-600 text-indigo-600 rounded-lg hover:bg-indigo-600 hover:text-white transition text-sm font-medium inline-block">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RAVIN Panel -->
+        <div id="panel-ravin" class="max-w-4xl mx-auto" style="display:none;">
+          <div class="bg-gray-50 rounded-3xl p-8 md:p-12 border border-gray-100">
+            <div class="flex flex-col md:flex-row items-start gap-8">
+              <div class="flex-shrink-0">
+                <div class="w-20 h-20 bg-blue-100 rounded-2xl flex items-center justify-center shadow-md">
+                  <svg class="w-10 h-10 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                </div>
+              </div>
+              <div class="flex-1">
+                <div class="flex items-center gap-3 mb-3">
+                  <h3 class="text-2xl font-bold text-gray-800">RAVIN</h3>
+                  <span class="px-3 py-0.5 bg-blue-100 text-blue-600 text-xs font-bold rounded-full">COMING FALL 2026</span>
+                </div>
+                <p class="text-sm text-blue-600 font-medium mb-4">Private Medical AI Assistant</p>
+                <p class="text-lg text-gray-600 mb-6">Understand lab results and doctor’s notes privately with on-device AI. No accounts, no uploads — just clarity and peace of mind.</p>
+                <ul class="space-y-2.5 text-gray-600 text-sm mb-8">
+                  <li class="flex items-start gap-2.5"><svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Interpret lab results in plain language</li>
+                  <li class="flex items-start gap-2.5"><svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Summarize doctor’s notes and prescriptions</li>
+                  <li class="flex items-start gap-2.5"><svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>100% private — runs entirely on your device</li>
+                  <li class="flex items-start gap-2.5"><svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>No accounts, no sign-ups, no cloud uploads</li>
+                </ul>
+                <span class="px-6 py-2.5 bg-gray-200 text-gray-500 rounded-lg text-sm font-medium inline-block cursor-default">Coming Fall 2026</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function switchProduct(product) {
+        var products = ['apply', 'terraguide', 'ravin'];
+        products.forEach(function(p) {
+          var panel = document.getElementById('panel-' + p);
+          var btn = document.getElementById('prod-' + p);
+          if (p === product) {
+            panel.style.display = 'block';
+            btn.style.background = '#4F46E5';
+            btn.style.color = 'white';
+            btn.style.boxShadow = '0 2px 8px rgba(79,70,229,0.3)';
+          } else {
+            panel.style.display = 'none';
+            btn.style.background = 'transparent';
+            btn.style.color = '#6B7280';
+            btn.style.boxShadow = 'none';
+          }
+        });
+      }
+    </script>
+
+    <!-- Offlyn Apply Features Showcase -->
+    <section id="offlyn-apply-features" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-14">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">How Offlyn Apply Works</h2>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto">Five powerful features that keep your job search private and efficient.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <!-- Feature 1: Smart Auto-Fill -->
+          <div class="group rounded-2xl border border-gray-100 bg-white overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="aspect-video overflow-hidden">
+              <img src="assets/offlyn-apply/screenshot-1-autofill.png" alt="Offlyn Apply smart auto-fill detecting a job application form" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+            </div>
+            <div class="p-6">
+              <h3 class="text-lg font-bold text-gray-800 mb-2">Smart Auto-Fill</h3>
+              <p class="text-gray-600 text-sm leading-relaxed">Detects job application forms and fills them instantly from your profile.</p>
+            </div>
+          </div>
+
+          <!-- Feature 2: Application Dashboard -->
+          <div class="group rounded-2xl border border-gray-100 bg-white overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="aspect-video overflow-hidden">
+              <img src="assets/offlyn-apply/screenshot-2-dashboard.png" alt="Offlyn Apply Kanban application tracking dashboard" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+            </div>
+            <div class="p-6">
+              <h3 class="text-lg font-bold text-gray-800 mb-2">Application Dashboard</h3>
+              <p class="text-gray-600 text-sm leading-relaxed">Track all applications in a visual Kanban board with status columns.</p>
+            </div>
+          </div>
+
+          <!-- Feature 3: AI Cover Letters -->
+          <div class="group rounded-2xl border border-gray-100 bg-white overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="aspect-video overflow-hidden">
+              <img src="assets/offlyn-apply/screenshot-3-cover-letter.png" alt="Offlyn Apply AI-generated cover letter using local Ollama" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+            </div>
+            <div class="p-6">
+              <h3 class="text-lg font-bold text-gray-800 mb-2">AI Cover Letters</h3>
+              <p class="text-gray-600 text-sm leading-relaxed">Generate tailored cover letters using local AI — no cloud, no API keys.</p>
+            </div>
+          </div>
+
+          <!-- Feature 4: ATS Compatibility -->
+          <div class="group rounded-2xl border border-gray-100 bg-white overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="aspect-video overflow-hidden">
+              <img src="assets/offlyn-apply/screenshot-4-compatibility.png" alt="Offlyn Apply ATS compatibility checker for Workday, Greenhouse, and Lever" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+            </div>
+            <div class="p-6">
+              <h3 class="text-lg font-bold text-gray-800 mb-2">ATS Compatibility</h3>
+              <p class="text-gray-600 text-sm leading-relaxed">Works with 50+ ATS systems including Workday, Greenhouse, and Lever.</p>
+            </div>
+          </div>
+
+          <!-- Feature 5: Privacy First -->
+          <div class="group rounded-2xl border border-gray-100 bg-white overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="aspect-video overflow-hidden">
+              <img src="assets/offlyn-apply/screenshot-5-privacy.png" alt="Offlyn Apply privacy architecture — all data stored locally" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+            </div>
+            <div class="p-6">
+              <h3 class="text-lg font-bold text-gray-800 mb-2">Privacy First</h3>
+              <p class="text-gray-600 text-sm leading-relaxed">All data stored in browser.storage.local — zero tracking, zero uploads.</p>
+            </div>
+          </div>
+
+          <!-- Browser Compatibility -->
+          <div class="rounded-2xl border-2 border-dashed border-gray-300 bg-gray-100 flex flex-col items-center justify-center p-8 text-center">
+            <div class="flex gap-4 mb-5">
+              <div class="flex items-center gap-2 text-sm font-medium text-gray-800 bg-white px-3 py-1.5 rounded-full shadow-sm">
+                <svg class="w-5 h-5 text-indigo-600" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Chrome 88+
+              </div>
+              <div class="flex items-center gap-2 text-sm font-medium text-gray-800 bg-white px-3 py-1.5 rounded-full shadow-sm">
+                <svg class="w-5 h-5 text-indigo-600" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Firefox 109+
+              </div>
+            </div>
+            <h3 class="text-lg font-bold text-gray-800 mb-2">Free &amp; Open Source</h3>
+            <p class="text-gray-600 text-sm mb-5">MIT licensed. Inspect every line of code yourself.</p>
+            <a href="https://github.com/joelnishanth/offlyn-apply" target="_blank" rel="noopener" class="px-6 py-2.5 bg-indigo-600 text-white font-bold rounded-lg hover:bg-indigo-700 transition text-sm">Get Offlyn Apply</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Competitor Comparison -->
+    <section id="comparison" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">How Offlyn Apply Compares</h2>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto">The only job application assistant that keeps your data 100% on your device.</p>
+        </div>
+
+        <div class="max-w-5xl mx-auto overflow-x-auto">
+          <table class="w-full text-left border-collapse">
+            <thead>
+              <tr>
+                <th class="py-4 px-5 text-sm font-semibold text-gray-500 uppercase tracking-wider border-b-2 border-gray-100 w-1/4">Feature</th>
+                <th class="py-4 px-5 text-sm font-bold text-white uppercase tracking-wider border-b-2 border-indigo-600 bg-indigo-600 rounded-tl-lg rounded-tr-lg text-center">Offlyn Apply</th>
+                <th class="py-4 px-5 text-sm font-semibold text-gray-500 uppercase tracking-wider border-b-2 border-gray-100 text-center">Simplify</th>
+                <th class="py-4 px-5 text-sm font-semibold text-gray-500 uppercase tracking-wider border-b-2 border-gray-100 text-center">JobFill</th>
+                <th class="py-4 px-5 text-sm font-semibold text-gray-500 uppercase tracking-wider border-b-2 border-gray-100 text-center">LazyApply</th>
+              </tr>
+            </thead>
+            <tbody class="text-sm">
+              <tr class="bg-gray-50">
+                <td class="py-4 px-5 font-medium text-gray-800">100% Local / Offline</td>
+                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-green-100 text-green-600"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span></td>
+                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-red-100 text-red-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></span></td>
+                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-red-100 text-red-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></span></td>
+                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-red-100 text-red-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></span></td>
+              </tr>
+              <tr>
+                <td class="py-4 px-5 font-medium text-gray-800">Zero Data Uploaded</td>
+                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-green-100 text-green-600"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span></td>
+                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-red-100 text-red-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></span></td>
+                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-red-100 text-red-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></span></td>
+                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-red-100 text-red-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></span></td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="py-4 px-5 font-medium text-gray-800">Auto-Fill Applications</td>
+                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-green-100 text-green-600"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span></td>
+                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-green-100 text-green-600"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span></td>
+                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-green-100 text-green-600"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span></td>
+                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-green-100 text-green-600"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span></td>
+              </tr>
+              <tr>
+                <td class="py-4 px-5 font-medium text-gray-800">AI Cover Letters</td>
+                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-green-100 text-green-600"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span></td>
+                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-green-100 text-green-600"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span></td>
+                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-red-100 text-red-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></span></td>
+                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-green-100 text-green-600"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span></td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="py-4 px-5 font-medium text-gray-800">No API Key Required</td>
+                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-green-100 text-green-600"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span></td>
+                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-red-100 text-red-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></span></td>
+                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-red-100 text-red-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></span></td>
+                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-red-100 text-red-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></span></td>
+              </tr>
+              <tr>
+                <td class="py-4 px-5 font-medium text-gray-800">Application Tracker</td>
+                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-green-100 text-green-600"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span></td>
+                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-green-100 text-green-600"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span></td>
+                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-red-100 text-red-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></span></td>
+                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-red-100 text-red-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></span></td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="py-4 px-5 font-medium text-gray-800">ATS Compatibility Check</td>
+                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-green-100 text-green-600"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span></td>
+                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-red-100 text-red-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></span></td>
+                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-red-100 text-red-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></span></td>
+                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-red-100 text-red-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></span></td>
+              </tr>
+              <tr>
+                <td class="py-4 px-5 font-medium text-gray-800">Open Source</td>
+                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-green-100 text-green-600"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span></td>
+                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-red-100 text-red-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></span></td>
+                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-red-100 text-red-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></span></td>
+                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-red-100 text-red-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></span></td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="py-4 px-5 font-medium text-gray-800">Free</td>
+                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-green-100 text-green-600"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span></td>
+                <td class="py-4 px-5 text-center text-gray-500 text-xs font-medium">Freemium</td>
+                <td class="py-4 px-5 text-center text-gray-500 text-xs font-medium">Paid</td>
+                <td class="py-4 px-5 text-center text-gray-500 text-xs font-medium">Paid</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="text-center mt-10">
+          <a href="https://github.com/joelnishanth/offlyn-apply" target="_blank" rel="noopener" class="px-8 py-3.5 bg-indigo-600 text-white font-bold rounded-lg hover:bg-indigo-700 transition">Get Offlyn Apply — Free & Private</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="terraguide-gallery" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-semibold text-center mb-8">TerraGuide Product Showcase</h2>
+        <p class="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+          Experience TerraGuide's powerful offline AI capabilities through our comprehensive mobile interface. 
+          From emergency coordination to offline mapping, see how our app keeps teams connected when networks fail.
+        </p>
+        
+        <!-- Auto-scrolling Gallery -->
+        <div class="flex justify-center">
+          <div class="relative bg-white rounded-2xl shadow-2xl overflow-hidden w-80">
+            <div id="terraguide-carousel" class="flex transition-transform duration-500 ease-in-out">
+              <!-- Images will be dynamically inserted here -->
+              </div>
+            
+            <!-- Navigation Dots -->
+            <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+              <div class="w-2 h-2 bg-white rounded-full opacity-50 cursor-pointer dot active" data-index="0"></div>
+              <div class="w-2 h-2 bg-white rounded-full opacity-50 cursor-pointer dot" data-index="1"></div>
+              <div class="w-2 h-2 bg-white rounded-full opacity-50 cursor-pointer dot" data-index="2"></div>
+              <div class="w-2 h-2 bg-white rounded-full opacity-50 cursor-pointer dot" data-index="3"></div>
+              <div class="w-2 h-2 bg-white rounded-full opacity-50 cursor-pointer dot" data-index="4"></div>
+              <div class="w-2 h-2 bg-white rounded-full opacity-50 cursor-pointer dot" data-index="5"></div>
+              </div>
+            
+            <!-- Click to view larger -->
+            <div class="absolute top-4 right-4 bg-black bg-opacity-50 text-white px-3 py-1 rounded-full text-sm">
+              Click to view larger
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="terraguide" class="py-16 bg-white">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-semibold mb-8">TerraGuide Features</h2>
+        <p class="text-lg text-gray-600 mb-12 max-w-4xl mx-auto">
+          TerraGuide™ is a comprehensive outdoor safety and communication platform that combines on-device AI assistance, mesh networking, offline navigation, and emergency preparedness into a single, privacy-focused iOS application designed for outdoor enthusiasts and emergency situations.
+        </p>
+        
+        <div class="max-w-6xl mx-auto">
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            <div class="p-8 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl border border-blue-100">
+              <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold mb-4 text-gray-800">On-Device AI Assistant</h3>
+              <p class="text-gray-600 leading-relaxed">
+                Meta Llama 3.2 model provides instant emergency guidance, survival tips, and medical assistance without requiring internet connectivity.
+              </p>
+            </div>
+
+            <div class="p-8 bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl border border-green-100">
+              <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold mb-4 text-gray-800">Mesh Networking</h3>
+              <p class="text-gray-600 leading-relaxed">
+                Dual-transport mesh networking combines Bluetooth and WiFi for reliable communication up to 10 miles without cell towers.
+              </p>
+            </div>
+
+            <div class="p-8 bg-gradient-to-br from-yellow-50 to-amber-50 rounded-2xl border border-yellow-100">
+              <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold mb-4 text-gray-800">Offline Navigation</h3>
+              <p class="text-gray-600 leading-relaxed">
+                Full offline maps with terrain data, GPS navigation, and emergency waypoint management for complete navigation without internet.
+              </p>
+            </div>
+
+            <div class="p-8 bg-gradient-to-br from-red-50 to-pink-50 rounded-2xl border border-red-100">
+              <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold mb-4 text-gray-800">Emergency Features</h3>
+              <p class="text-gray-600 leading-relaxed">
+                Emergency beacon broadcasting, SOS flashlight patterns, and automated distress signals for critical situations.
+              </p>
+            </div>
+
+            <div class="p-8 bg-gradient-to-br from-purple-50 to-violet-50 rounded-2xl border border-purple-100">
+              <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold mb-4 text-gray-800">FEMA Integration</h3>
+              <p class="text-gray-600 leading-relaxed">
+                Local access to official FEMA emergency guides, disaster-specific guidance, and emergency kit checklists.
+        </p>
+      </div>
+
+            <div class="p-8 bg-gradient-to-br from-gray-50 to-slate-50 rounded-2xl border border-gray-100">
+              <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg class="w-8 h-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold mb-4 text-gray-800">Privacy & Security</h3>
+              <p class="text-gray-600 leading-relaxed">
+                Zero-knowledge architecture ensures AI conversations never leave your device, with end-to-end encryption for all communications.
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-r from-indigo-50 to-blue-50 p-8 rounded-2xl border border-indigo-100">
+            <h3 class="text-2xl font-bold mb-6 text-gray-800">Get Support</h3>
+            <p class="text-gray-600 mb-6 max-w-2xl mx-auto">
+              Need help with TerraGuide? Our support team is here to assist you with any questions or issues.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="mailto:hi@offlyn.ai" class="inline-block bg-indigo-600 text-white px-8 py-3 rounded-lg hover:bg-indigo-700 transition-colors font-medium">
+                Email Support
+              </a>
+              <a href="#" class="inline-block bg-gray-600 text-white px-8 py-3 rounded-lg hover:bg-gray-700 transition-colors font-medium">
+                View Documentation
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="terraguide-privacy" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-6 max-w-3xl">
+        <h2 class="text-3xl font-semibold text-center mb-6">TerraGuide Privacy Policy</h2>
+        <p class="mb-4">TerraGuide operates completely offline and does not collect personal data. Any information you enter remains on your device to support app functionality.</p>
+        <p class="mb-4">We do not transmit or store your data on our servers. Diagnostic logs stay local and are deleted when you remove the app.</p>
+        <p class="mb-4">We never share your information with third parties. You may request deletion of any support communications by contacting us.</p>
+        <p class="mb-4">Contact: <a href="mailto:hi@offlyn.ai" class="text-indigo-600 hover:underline">hi@offlyn.ai</a></p>
+      </div>
+    </section>
+
+
+    <section id="ravin" class="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
+      <div class="container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <!-- Header -->
+          <div class="text-center mb-16">
+            <div class="inline-flex items-center justify-center w-20 h-20 bg-blue-600 rounded-full mb-6">
+              <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+              </svg>
+            </div>
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">RAVIN</h2>
+            <p class="text-xl text-blue-600 font-semibold mb-6">Reliable AI for Vital INformation</p>
+            <p class="text-2xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
+              "Understand your health, privately."
+            </p>
+          </div>
+
+          <!-- Main Description -->
+          <div class="bg-white rounded-2xl shadow-xl p-8 mb-12">
+            <div class="max-w-4xl mx-auto text-center">
+              <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                RAVIN helps you understand your lab results and doctor's notes — privately, clearly, and instantly.
+                It runs entirely offline on your device, using local AI to translate complex medical data into plain, human language.
+              </p>
+              <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                No accounts. No uploads. Just clarity and peace of mind.
+              </p>
+              
+              <div class="bg-blue-50 rounded-xl p-6 mb-8">
+                <p class="text-gray-700 leading-relaxed">
+                  Whether it's your blood test, cholesterol check, or kidney panel, RAVIN explains what your numbers mean, 
+                  what's normal, and when it might be time to talk to your doctor — without ever replacing one.
+                </p>
+              </div>
+              
+              <p class="text-lg text-gray-600 leading-relaxed">
+                Built on a foundation of privacy, transparency, and trust, RAVIN makes medical information 
+                understandable and accessible for everyone, everywhere.
+              </p>
+              
+              <!-- Medical Disclaimer -->
+              <div class="bg-yellow-50 border-l-4 border-yellow-400 p-6 mt-8">
+                <div class="flex">
+                  <div class="flex-shrink-0">
+                    <svg class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                  <div class="ml-3">
+                    <h3 class="text-sm font-medium text-yellow-800">Important Medical Disclaimer</h3>
+                    <div class="mt-2 text-sm text-yellow-700">
+                      <p><strong>RAVIN does not provide medical advice, diagnosis, or treatment.</strong> It is designed to help interpret and understand medical information for educational purposes only. Always consult with qualified healthcare professionals for medical advice, diagnosis, or treatment decisions. RAVIN should be used as a supplementary tool to enhance understanding, not as a replacement for professional medical care.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Language Support -->
+              <div class="bg-blue-50 rounded-xl p-6 mt-6">
+                <h3 class="text-lg font-semibold text-blue-800 mb-4">Multi-Language Support</h3>
+                <p class="text-blue-700 mb-4">RAVIN provides medical information interpretation in multiple languages to serve diverse communities:</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                  <div class="flex items-center space-x-2">
+                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                    <span class="text-blue-800 font-medium">English</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                    <span class="text-blue-800 font-medium">हिन्दी (Hindi)</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                    <span class="text-blue-800 font-medium">Español (Spanish)</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                    <span class="text-blue-800 font-medium">中文 (Chinese)</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                    <span class="text-blue-800 font-medium">العربية (Arabic)</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                    <span class="text-blue-800 font-medium">Português (Portuguese)</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                    <span class="text-blue-800 font-medium">Français (French)</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                    <span class="text-blue-800 font-medium">Русский (Russian)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Key Features -->
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+              <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800 mb-3">Complete Privacy</h3>
+              <p class="text-gray-600">All processing happens on your device. No data ever leaves your phone or tablet.</p>
+            </div>
+
+            <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+              <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800 mb-3">Instant Analysis</h3>
+              <p class="text-gray-600">Get clear explanations of your lab results in seconds, not days.</p>
+            </div>
+
+            <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+              <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800 mb-3">Offline AI</h3>
+              <p class="text-gray-600">Works without internet connection. Your health data stays completely private.</p>
+            </div>
+
+            <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+              <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800 mb-3">Medical Accuracy</h3>
+              <p class="text-gray-600">Trained on medical literature to provide accurate, evidence-based explanations.</p>
+            </div>
+
+            <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+              <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800 mb-3">Smart Alerts</h3>
+              <p class="text-gray-600">Know when to follow up with your doctor based on your specific results.</p>
+            </div>
+
+            <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+              <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800 mb-3">Plain Language</h3>
+              <p class="text-gray-600">Translates complex medical jargon into clear, understandable explanations.</p>
+            </div>
+          </div>
+
+          <!-- Use Cases -->
+          <div class="bg-white rounded-2xl shadow-xl p-8 mb-12">
+            <h3 class="text-2xl font-bold text-center text-gray-800 mb-8">Perfect For</h3>
+            <div class="grid md:grid-cols-2 gap-8">
+              <div class="space-y-4">
+                <div class="flex items-start space-x-3">
+                  <div class="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
+                  <span class="text-gray-700">Understanding blood test results and lab panels</span>
+                </div>
+                <div class="flex items-start space-x-3">
+                  <div class="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
+                  <span class="text-gray-700">Deciphering doctor's notes and medical reports</span>
+                </div>
+                <div class="flex items-start space-x-3">
+                  <div class="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
+                  <span class="text-gray-700">Tracking health trends over time</span>
+                </div>
+                <div class="flex items-start space-x-3">
+                  <div class="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
+                  <span class="text-gray-700">Preparing questions for your next doctor visit</span>
+                </div>
+              </div>
+              <div class="space-y-4">
+                <div class="flex items-start space-x-3">
+                  <div class="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
+                  <span class="text-gray-700">Understanding medication side effects and interactions</span>
+                </div>
+                <div class="flex items-start space-x-3">
+                  <div class="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
+                  <span class="text-gray-700">Learning about normal vs. abnormal values</span>
+                </div>
+                <div class="flex items-start space-x-3">
+                  <div class="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
+                  <span class="text-gray-700">Getting peace of mind about your health status</span>
+                </div>
+                <div class="flex items-start space-x-3">
+                  <div class="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
+                  <span class="text-gray-700">Sharing clear explanations with family members</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA Section -->
+          <div class="text-center">
+            <div class="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl p-8 text-white">
+              <h3 class="text-2xl font-bold mb-4">Ready to understand your health better?</h3>
+              <p class="text-lg mb-6 opacity-90">
+                Get early access to RAVIN and experience the future of private, offline medical AI.
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="mailto:hi@offlyn.ai?subject=RAVIN Early Access" class="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors font-medium">
+                  Request Early Access
+                </a>
+                <a href="mailto:hi@offlyn.ai?subject=RAVIN Information" class="inline-block border-2 border-white text-white px-8 py-3 rounded-lg hover:bg-white hover:text-blue-600 transition-colors font-medium">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
     <section id="industries" class="py-16">
       <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-semibold text-center mb-12">Industry Solutions</h2>
+        <span class="block text-center mb-4"><span class="inline-block px-4 py-1.5 bg-gray-200 text-gray-600 text-sm font-semibold rounded-full tracking-wide">COMING SOON</span></span>
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-3 text-gray-800">Future Industries</h2>
+        <p class="text-lg text-gray-500 text-center mb-12 max-w-2xl mx-auto">Where we're headed next — on-device AI for industries where connectivity isn't guaranteed.</p>
 
         <!-- Industry Tabs -->
         <div class="flex flex-wrap justify-center mb-8 gap-2">
-          <button class="tab-button px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 bg-indigo-600 text-white shadow-lg" data-tab="disaster">
-            Disaster Response
-          </button>
-          <button class="tab-button px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 bg-gray-200 text-gray-700 hover:bg-gray-300" data-tab="healthcare">
+          <button class="tab-button px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 bg-indigo-600 text-white shadow-lg" data-tab="healthcare">
             Healthcare
           </button>
           <button class="tab-button px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 bg-gray-200 text-gray-700 hover:bg-gray-300" data-tab="mining">
@@ -86,128 +808,8 @@
 
         <!-- Tab Content -->
         <div class="tab-content">
-          <!-- Disaster Response Tab -->
-          <div id="disaster" class="tab-pane active">
-            <div class="max-w-6xl mx-auto">
-              <div class="text-center mb-12">
-                <h3 class="text-3xl font-bold mb-4 text-indigo-600">Disaster Response & Emergency Management</h3>
-                <p class="text-xl text-gray-600 mb-8">
-                  TerraGuide™ provides comprehensive disaster response capabilities with on-device AI assistance, mesh networking, offline navigation, and FEMA integration for emergency situations when traditional communication networks fail.
-                </p>
-              </div>
-              
-              <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-                <div class="p-8 bg-gradient-to-br from-red-50 to-pink-50 rounded-2xl border border-red-100">
-                  <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
-                    </svg>
-                  </div>
-                  <h4 class="text-2xl font-bold mb-4 text-gray-800">AI Emergency Assistant</h4>
-                  <p class="text-gray-600 leading-relaxed">
-                    On-device AI provides instant emergency guidance, survival tips, and disaster-specific advice without internet connectivity.
-                  </p>
-                </div>
-
-                <div class="p-8 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl border border-blue-100">
-                  <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
-                    </svg>
-                  </div>
-                  <h4 class="text-2xl font-bold mb-4 text-gray-800">Mesh Communication</h4>
-                  <p class="text-gray-600 leading-relaxed">
-                    Dual-transport mesh networking enables reliable communication up to 10 miles without cell towers or internet.
-                  </p>
-                </div>
-
-                <div class="p-8 bg-gradient-to-br from-yellow-50 to-amber-50 rounded-2xl border border-yellow-100">
-                  <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path>
-                    </svg>
-                  </div>
-                  <h4 class="text-2xl font-bold mb-4 text-gray-800">Offline Navigation</h4>
-                  <p class="text-gray-600 leading-relaxed">
-                    Full offline maps with emergency waypoints, GPS navigation, and location sharing for complete navigation without internet.
-                  </p>
-                </div>
-
-                <div class="p-8 bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl border border-orange-100">
-                  <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
-                    </svg>
-                  </div>
-                  <h4 class="text-2xl font-bold mb-4 text-gray-800">Emergency Features</h4>
-                  <p class="text-gray-600 leading-relaxed">
-                    Emergency beacon broadcasting, SOS flashlight patterns, and automated distress signals for critical situations.
-                  </p>
-                </div>
-
-                <div class="p-8 bg-gradient-to-br from-purple-50 to-violet-50 rounded-2xl border border-purple-100">
-                  <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                    </svg>
-                  </div>
-                  <h4 class="text-2xl font-bold mb-4 text-gray-800">FEMA Integration</h4>
-                  <p class="text-gray-600 leading-relaxed">
-                    Local access to official FEMA emergency guides, disaster-specific guidance, and emergency kit checklists.
-                  </p>
-                </div>
-
-                <div class="p-8 bg-gradient-to-br from-gray-50 to-slate-50 rounded-2xl border border-gray-100">
-                  <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <svg class="w-8 h-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
-                    </svg>
-                  </div>
-                  <h4 class="text-2xl font-bold mb-4 text-gray-800">Privacy & Security</h4>
-                  <p class="text-gray-600 leading-relaxed">
-                    Zero-knowledge architecture ensures AI conversations never leave your device, with end-to-end encryption for all communications.
-                  </p>
-                </div>
-              </div>
-
-              <div class="bg-gradient-to-r from-red-50 to-orange-50 p-8 rounded-2xl border border-red-200">
-                <h4 class="text-xl font-bold mb-6 text-gray-800 text-center">Key Emergency Response Features</h4>
-                <div class="grid md:grid-cols-2 gap-6">
-                  <div class="space-y-3">
-                    <div class="flex items-center space-x-3">
-                      <div class="w-2 h-2 bg-red-600 rounded-full"></div>
-                      <span class="text-gray-700">Real-time emergency coordination without internet dependency</span>
-                    </div>
-                    <div class="flex items-center space-x-3">
-                      <div class="w-2 h-2 bg-red-600 rounded-full"></div>
-                      <span class="text-gray-700">FEMA-compliant emergency protocols and procedures</span>
-                    </div>
-                    <div class="flex items-center space-x-3">
-                      <div class="w-2 h-2 bg-red-600 rounded-full"></div>
-                      <span class="text-gray-700">Automated emergency beacon and distress signal broadcasting</span>
-                    </div>
-                  </div>
-          <div class="space-y-3">
-                    <div class="flex items-center space-x-3">
-                      <div class="w-2 h-2 bg-red-600 rounded-full"></div>
-                      <span class="text-gray-700">Offline navigation to emergency shelters and resources</span>
-                    </div>
-                    <div class="flex items-center space-x-3">
-                      <div class="w-2 h-2 bg-red-600 rounded-full"></div>
-                      <span class="text-gray-700">AI-powered disaster-specific guidance and recommendations</span>
-                    </div>
-                    <div class="flex items-center space-x-3">
-                      <div class="w-2 h-2 bg-red-600 rounded-full"></div>
-                      <span class="text-gray-700">Secure mesh communication for multi-agency coordination</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
           <!-- Healthcare Tab -->
-          <div id="healthcare" class="tab-pane hidden">
+          <div id="healthcare" class="tab-pane active">
             <div class="max-w-6xl mx-auto">
               <div class="text-center mb-12">
                 <h3 class="text-3xl font-bold mb-4 text-indigo-600">Healthcare & Medical</h3>
@@ -593,440 +1195,43 @@
         </div>
       </div>
     </section>
-    
-<!-- Solutions -->
-<section id="solutions" class="bg-white py-16">
-  <div class="container mx-auto px-6">
-    <h2 class="text-3xl font-semibold text-center mb-12">Capabilities</h2>
-    <div class="grid md:grid-cols-4 gap-8">
-      <div class="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-bold mb-3">On-Device AI</h3>
-        <p>Run compact small-language models locally for instant, private insights.</p>
-      </div>
-      <div class="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-bold mb-3">P2P Mesh Networking</h3>
-        <p>Seamlessly share data peer-to-peer via Bluetooth and mesh without internet.</p>
-      </div>
-      <div class="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-bold mb-3">Offline Maps</h3>
-        <p>Pre-loaded GIS and celestial navigation data for reliable wayfinding.</p>
-      </div>
-      <div class="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-bold mb-3">Workflow Automation</h3>
-        <p>Hybrid n8n event-driven orchestration powered by offline AI assistants.</p>
-      </div>
-    </div>
-  </div>
-</section>
-    <!-- Key Features -->
-    <section id="features" class="bg-white py-16">
-      <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-semibold text-center mb-12">Key Features</h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-          <div>
-            <h4 class="font-bold mb-2">Secure & Private</h4>
-            <p>All processing happens on-device; no data leaves your environment.</p>
-          </div>
-          <div>
-            <h4 class="font-bold mb-2">Offline Resilience</h4>
-            <p>Maintain full functionality despite connectivity drops.</p>
-          </div>
-          <div>
-            <h4 class="font-bold mb-2">Optimized SLMs</h4>
-            <p>Compact models designed for low compute and fast inference.</p>
-          </div>
-          <div>
-            <h4 class="font-bold mb-2">Offline Workflow Automation</h4>
-            <p>Event-driven orchestration powered by offline AI assistants..</p>
-          </div>
-        </div>
-      </div>
-    </section>
 
-
-    <!-- TerraGuide Product Gallery -->
-    <section id="terraguide-gallery" class="py-16 bg-gray-50">
-      <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-semibold text-center mb-8">TerraGuide Product Showcase</h2>
-        <p class="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
-          Experience TerraGuide's powerful offline AI capabilities through our comprehensive mobile interface. 
-          From emergency coordination to offline mapping, see how our app keeps teams connected when networks fail.
-        </p>
-        
-        <!-- Auto-scrolling Gallery -->
-        <div class="flex justify-center">
-          <div class="relative bg-white rounded-2xl shadow-2xl overflow-hidden w-80">
-            <div id="terraguide-carousel" class="flex transition-transform duration-500 ease-in-out">
-              <!-- Images will be dynamically inserted here -->
-              </div>
-            
-            <!-- Navigation Dots -->
-            <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-              <div class="w-2 h-2 bg-white rounded-full opacity-50 cursor-pointer dot active" data-index="0"></div>
-              <div class="w-2 h-2 bg-white rounded-full opacity-50 cursor-pointer dot" data-index="1"></div>
-              <div class="w-2 h-2 bg-white rounded-full opacity-50 cursor-pointer dot" data-index="2"></div>
-              <div class="w-2 h-2 bg-white rounded-full opacity-50 cursor-pointer dot" data-index="3"></div>
-              <div class="w-2 h-2 bg-white rounded-full opacity-50 cursor-pointer dot" data-index="4"></div>
-              <div class="w-2 h-2 bg-white rounded-full opacity-50 cursor-pointer dot" data-index="5"></div>
-              </div>
-            
-            <!-- Click to view larger -->
-            <div class="absolute top-4 right-4 bg-black bg-opacity-50 text-white px-3 py-1 rounded-full text-sm">
-              Click to view larger
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- RAVIN Medical AI Section -->
-    <section id="ravin" class="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
-      <div class="container mx-auto px-6">
-        <div class="max-w-6xl mx-auto">
-          <!-- Header -->
-          <div class="text-center mb-16">
-            <div class="inline-flex items-center justify-center w-20 h-20 bg-blue-600 rounded-full mb-6">
-              <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-              </svg>
-            </div>
-            <h2 class="text-4xl font-bold text-gray-800 mb-4">RAVIN</h2>
-            <p class="text-xl text-blue-600 font-semibold mb-6">Reliable AI for Vital INformation</p>
-            <p class="text-2xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
-              "Understand your health, privately."
-            </p>
-          </div>
-
-          <!-- Main Description -->
-          <div class="bg-white rounded-2xl shadow-xl p-8 mb-12">
-            <div class="max-w-4xl mx-auto text-center">
-              <p class="text-lg text-gray-600 mb-6 leading-relaxed">
-                RAVIN helps you understand your lab results and doctor's notes — privately, clearly, and instantly.
-                It runs entirely offline on your device, using local AI to translate complex medical data into plain, human language.
-              </p>
-              <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-                No accounts. No uploads. Just clarity and peace of mind.
-              </p>
-              
-              <div class="bg-blue-50 rounded-xl p-6 mb-8">
-                <p class="text-gray-700 leading-relaxed">
-                  Whether it's your blood test, cholesterol check, or kidney panel, RAVIN explains what your numbers mean, 
-                  what's normal, and when it might be time to talk to your doctor — without ever replacing one.
-                </p>
-              </div>
-              
-              <p class="text-lg text-gray-600 leading-relaxed">
-                Built on a foundation of privacy, transparency, and trust, RAVIN makes medical information 
-                understandable and accessible for everyone, everywhere.
-              </p>
-              
-              <!-- Medical Disclaimer -->
-              <div class="bg-yellow-50 border-l-4 border-yellow-400 p-6 mt-8">
-                <div class="flex">
-                  <div class="flex-shrink-0">
-                    <svg class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
-                      <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
-                    </svg>
-                  </div>
-                  <div class="ml-3">
-                    <h3 class="text-sm font-medium text-yellow-800">Important Medical Disclaimer</h3>
-                    <div class="mt-2 text-sm text-yellow-700">
-                      <p><strong>RAVIN does not provide medical advice, diagnosis, or treatment.</strong> It is designed to help interpret and understand medical information for educational purposes only. Always consult with qualified healthcare professionals for medical advice, diagnosis, or treatment decisions. RAVIN should be used as a supplementary tool to enhance understanding, not as a replacement for professional medical care.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <!-- Language Support -->
-              <div class="bg-blue-50 rounded-xl p-6 mt-6">
-                <h3 class="text-lg font-semibold text-blue-800 mb-4">Multi-Language Support</h3>
-                <p class="text-blue-700 mb-4">RAVIN provides medical information interpretation in multiple languages to serve diverse communities:</p>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-                  <div class="flex items-center space-x-2">
-                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
-                    <span class="text-blue-800 font-medium">English</span>
-                  </div>
-                  <div class="flex items-center space-x-2">
-                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
-                    <span class="text-blue-800 font-medium">हिन्दी (Hindi)</span>
-                  </div>
-                  <div class="flex items-center space-x-2">
-                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
-                    <span class="text-blue-800 font-medium">Español (Spanish)</span>
-                  </div>
-                  <div class="flex items-center space-x-2">
-                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
-                    <span class="text-blue-800 font-medium">中文 (Chinese)</span>
-                  </div>
-                  <div class="flex items-center space-x-2">
-                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
-                    <span class="text-blue-800 font-medium">العربية (Arabic)</span>
-                  </div>
-                  <div class="flex items-center space-x-2">
-                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
-                    <span class="text-blue-800 font-medium">Português (Portuguese)</span>
-                  </div>
-                  <div class="flex items-center space-x-2">
-                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
-                    <span class="text-blue-800 font-medium">Français (French)</span>
-                  </div>
-                  <div class="flex items-center space-x-2">
-                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
-                    <span class="text-blue-800 font-medium">Русский (Russian)</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Key Features -->
-          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-            <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-              <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-                <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
-                </svg>
-              </div>
-              <h3 class="text-xl font-bold text-gray-800 mb-3">Complete Privacy</h3>
-              <p class="text-gray-600">All processing happens on your device. No data ever leaves your phone or tablet.</p>
-            </div>
-
-            <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-              <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                </svg>
-              </div>
-              <h3 class="text-xl font-bold text-gray-800 mb-3">Instant Analysis</h3>
-              <p class="text-gray-600">Get clear explanations of your lab results in seconds, not days.</p>
-            </div>
-
-            <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-              <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-                <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
-                </svg>
-              </div>
-              <h3 class="text-xl font-bold text-gray-800 mb-3">Offline AI</h3>
-              <p class="text-gray-600">Works without internet connection. Your health data stays completely private.</p>
-            </div>
-
-            <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-              <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
-                <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-              </div>
-              <h3 class="text-xl font-bold text-gray-800 mb-3">Medical Accuracy</h3>
-              <p class="text-gray-600">Trained on medical literature to provide accurate, evidence-based explanations.</p>
-            </div>
-
-            <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-              <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
-                <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-              </div>
-              <h3 class="text-xl font-bold text-gray-800 mb-3">Smart Alerts</h3>
-              <p class="text-gray-600">Know when to follow up with your doctor based on your specific results.</p>
-            </div>
-
-            <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-              <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
-                <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
-                </svg>
-              </div>
-              <h3 class="text-xl font-bold text-gray-800 mb-3">Plain Language</h3>
-              <p class="text-gray-600">Translates complex medical jargon into clear, understandable explanations.</p>
-            </div>
-          </div>
-
-          <!-- Use Cases -->
-          <div class="bg-white rounded-2xl shadow-xl p-8 mb-12">
-            <h3 class="text-2xl font-bold text-center text-gray-800 mb-8">Perfect For</h3>
-            <div class="grid md:grid-cols-2 gap-8">
-              <div class="space-y-4">
-                <div class="flex items-start space-x-3">
-                  <div class="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
-                  <span class="text-gray-700">Understanding blood test results and lab panels</span>
-                </div>
-                <div class="flex items-start space-x-3">
-                  <div class="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
-                  <span class="text-gray-700">Deciphering doctor's notes and medical reports</span>
-                </div>
-                <div class="flex items-start space-x-3">
-                  <div class="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
-                  <span class="text-gray-700">Tracking health trends over time</span>
-                </div>
-                <div class="flex items-start space-x-3">
-                  <div class="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
-                  <span class="text-gray-700">Preparing questions for your next doctor visit</span>
-                </div>
-              </div>
-              <div class="space-y-4">
-                <div class="flex items-start space-x-3">
-                  <div class="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
-                  <span class="text-gray-700">Understanding medication side effects and interactions</span>
-                </div>
-                <div class="flex items-start space-x-3">
-                  <div class="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
-                  <span class="text-gray-700">Learning about normal vs. abnormal values</span>
-                </div>
-                <div class="flex items-start space-x-3">
-                  <div class="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
-                  <span class="text-gray-700">Getting peace of mind about your health status</span>
-                </div>
-                <div class="flex items-start space-x-3">
-                  <div class="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
-                  <span class="text-gray-700">Sharing clear explanations with family members</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- CTA Section -->
-          <div class="text-center">
-            <div class="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl p-8 text-white">
-              <h3 class="text-2xl font-bold mb-4">Ready to understand your health better?</h3>
-              <p class="text-lg mb-6 opacity-90">
-                Get early access to RAVIN and experience the future of private, offline medical AI.
-              </p>
-              <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="mailto:hi@offlyn.ai?subject=RAVIN Early Access" class="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors font-medium">
-                  Request Early Access
-                </a>
-                <a href="mailto:hi@offlyn.ai?subject=RAVIN Information" class="inline-block border-2 border-white text-white px-8 py-3 rounded-lg hover:bg-white hover:text-blue-600 transition-colors font-medium">
-                  Learn More
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TerraGuide Features -->
-    <section id="terraguide" class="py-16 bg-white">
-      <div class="container mx-auto px-6 text-center">
-        <h2 class="text-3xl font-semibold mb-8">TerraGuide Features</h2>
-        <p class="text-lg text-gray-600 mb-12 max-w-4xl mx-auto">
-          TerraGuide™ is a comprehensive outdoor safety and communication platform that combines on-device AI assistance, mesh networking, offline navigation, and emergency preparedness into a single, privacy-focused iOS application designed for outdoor enthusiasts and emergency situations.
-        </p>
-        
-        <div class="max-w-6xl mx-auto">
-          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-            <div class="p-8 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl border border-blue-100">
-              <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
-                </svg>
-              </div>
-              <h3 class="text-2xl font-bold mb-4 text-gray-800">On-Device AI Assistant</h3>
-              <p class="text-gray-600 leading-relaxed">
-                Meta Llama 3.2 model provides instant emergency guidance, survival tips, and medical assistance without requiring internet connectivity.
-              </p>
-            </div>
-
-            <div class="p-8 bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl border border-green-100">
-              <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
-                </svg>
-              </div>
-              <h3 class="text-2xl font-bold mb-4 text-gray-800">Mesh Networking</h3>
-              <p class="text-gray-600 leading-relaxed">
-                Dual-transport mesh networking combines Bluetooth and WiFi for reliable communication up to 10 miles without cell towers.
-              </p>
-            </div>
-
-            <div class="p-8 bg-gradient-to-br from-yellow-50 to-amber-50 rounded-2xl border border-yellow-100">
-              <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path>
-                </svg>
-              </div>
-              <h3 class="text-2xl font-bold mb-4 text-gray-800">Offline Navigation</h3>
-              <p class="text-gray-600 leading-relaxed">
-                Full offline maps with terrain data, GPS navigation, and emergency waypoint management for complete navigation without internet.
-              </p>
-            </div>
-
-            <div class="p-8 bg-gradient-to-br from-red-50 to-pink-50 rounded-2xl border border-red-100">
-              <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
-                </svg>
-              </div>
-              <h3 class="text-2xl font-bold mb-4 text-gray-800">Emergency Features</h3>
-              <p class="text-gray-600 leading-relaxed">
-                Emergency beacon broadcasting, SOS flashlight patterns, and automated distress signals for critical situations.
-              </p>
-            </div>
-
-            <div class="p-8 bg-gradient-to-br from-purple-50 to-violet-50 rounded-2xl border border-purple-100">
-              <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                </svg>
-              </div>
-              <h3 class="text-2xl font-bold mb-4 text-gray-800">FEMA Integration</h3>
-              <p class="text-gray-600 leading-relaxed">
-                Local access to official FEMA emergency guides, disaster-specific guidance, and emergency kit checklists.
-        </p>
-      </div>
-
-            <div class="p-8 bg-gradient-to-br from-gray-50 to-slate-50 rounded-2xl border border-gray-100">
-              <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg class="w-8 h-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
-                </svg>
-              </div>
-              <h3 class="text-2xl font-bold mb-4 text-gray-800">Privacy & Security</h3>
-              <p class="text-gray-600 leading-relaxed">
-                Zero-knowledge architecture ensures AI conversations never leave your device, with end-to-end encryption for all communications.
-              </p>
-            </div>
-          </div>
-
-          <div class="bg-gradient-to-r from-indigo-50 to-blue-50 p-8 rounded-2xl border border-indigo-100">
-            <h3 class="text-2xl font-bold mb-6 text-gray-800">Get Support</h3>
-            <p class="text-gray-600 mb-6 max-w-2xl mx-auto">
-              Need help with TerraGuide? Our support team is here to assist you with any questions or issues.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="mailto:hi@offlyn.ai" class="inline-block bg-indigo-600 text-white px-8 py-3 rounded-lg hover:bg-indigo-700 transition-colors font-medium">
-                Email Support
-              </a>
-              <a href="#" class="inline-block bg-gray-600 text-white px-8 py-3 rounded-lg hover:bg-gray-700 transition-colors font-medium">
-                View Documentation
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TerraGuide Privacy Policy -->
-    <section id="terraguide-privacy" class="py-16 bg-gray-50">
-      <div class="container mx-auto px-6 max-w-3xl">
-        <h2 class="text-3xl font-semibold text-center mb-6">TerraGuide Privacy Policy</h2>
-        <p class="mb-4">TerraGuide operates completely offline and does not collect personal data. Any information you enter remains on your device to support app functionality.</p>
-        <p class="mb-4">We do not transmit or store your data on our servers. Diagnostic logs stay local and are deleted when you remove the app.</p>
-        <p class="mb-4">We never share your information with third parties. You may request deletion of any support communications by contacting us.</p>
-        <p class="mb-4">Contact: <a href="mailto:hi@offlyn.ai" class="text-indigo-600 hover:underline">hi@offlyn.ai</a></p>
-        <p class="text-sm text-gray-600">Last updated: August 15, 2024</p>
-      </div>
-    </section>
   </main>
 
-  <footer class="bg-gray-100 py-6">
-    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
-      <p class="text-gray-600">© 2025 offlyn.ai. All rights reserved.</p>
-      <div class="space-x-4 mt-4 md:mt-0">
-        <a href="#terraguide-privacy" class="text-gray-600 hover:text-indigo-600">Privacy</a>
-        <a href="#" class="text-gray-600 hover:text-indigo-600">Terms</a>
-        <a href="#" class="text-gray-600 hover:text-indigo-600">Contact</a>
+  <footer class="bg-offlyn-navy text-gray-400 py-12">
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <a href="#hero" class="flex items-center mb-4">
+            <img src="assets/offlyn-logo-3d.png" alt="offlyn.ai logo" class="h-10 w-auto">
+            <span class="ml-2 text-lg font-bold text-white">offlyn.ai</span>
+          </a>
+          <p class="text-sm leading-relaxed">On-device AI solutions for industries on the edge. Privacy-first, offline-capable, always reliable.</p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Products</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#offlyn-apply" class="hover:text-offlyn-green transition">Offlyn Apply</a></li>
+            <li><a href="#terraguide-gallery" class="hover:text-offlyn-green transition">TerraGuide</a></li>
+            <li><a href="#ravin" class="hover:text-offlyn-green transition">RAVIN</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Resources</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#terraguide-privacy" class="hover:text-offlyn-green transition">Privacy Policy</a></li>
+            <li><a href="mailto:hi@offlyn.ai" class="hover:text-offlyn-green transition">Contact Us</a></li>
+            <li><a href="https://github.com/joelnishanth/offlyn-apply" target="_blank" rel="noopener" class="hover:text-offlyn-green transition">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 pt-6 flex flex-col md:flex-row items-center justify-between text-sm">
+            <p>&copy; 2026 offlyn.ai. All rights reserved.</p>
+      <div class="space-x-6 mt-4 md:mt-0">
+        <a href="#offlyn-apply" class="hover:text-offlyn-green transition">Offlyn Apply</a>
+        <a href="#terraguide-privacy" class="hover:text-offlyn-green transition">Privacy</a>
+        <a href="mailto:hi@offlyn.ai" class="hover:text-offlyn-green transition">Contact</a>
+      </div>
       </div>
     </div>
   </footer>
