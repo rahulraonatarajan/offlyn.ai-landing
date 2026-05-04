@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Metadata Preview Test - Offlyn.ai</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #0F172A 100%);
+      min-height: 100vh;
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .preview-card {
+      background: #ffffff;
+      border: none;
+    }
+  </style>
+</head>
+
+<body class="p-8">
+  <div class="max-w-6xl mx-auto">
+
+    <div class="text-center mb-12">
+      <h1 class="text-4xl font-bold mb-3 text-white">Social Media Preview</h1>
+      <p class="text-gray-300 text-lg">How your site will appear across platforms</p>
+    </div>
+
+    <div class="glass rounded-3xl p-8 mb-8">
+
+      <div class="mb-10">
+        <h3 class="text-lg font-semibold mb-4 text-white flex items-center gap-2">
+          <svg class="w-5 h-5 text-[#27E38D]" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+          </svg>
+          Twitter / X
+        </h3>
+
+        <div class="preview-card rounded-2xl overflow-hidden max-w-2xl shadow-xl">
+          <img src="/og-image.png" alt="OG Image" class="w-full" />
+          <div class="p-5 bg-white">
+            <div class="text-xs text-gray-400 mb-1">offlyn.ai</div>
+            <div class="font-semibold text-gray-900 mb-1 text-base">
+              Offlyn.ai — AI Connectivity with No Network
+            </div>
+            <div class="text-sm text-gray-500">
+              Build and run AI apps entirely offline. Edge-first, privacy-first, no internet required.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-10">
+        <h3 class="text-lg font-semibold mb-4 text-white flex items-center gap-2">
+          <svg class="w-5 h-5 text-[#27E38D]" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          </svg>
+          LinkedIn / Facebook / Slack / Discord
+        </h3>
+
+        <div class="preview-card rounded-2xl overflow-hidden max-w-2xl shadow-xl">
+          <img src="/og-image.png" alt="OG Image" class="w-full" />
+          <div class="p-5 bg-white">
+            <div class="text-xs text-gray-400 uppercase mb-1 tracking-wide">offlyn.ai</div>
+            <div class="font-semibold text-gray-900 mb-1 text-base">
+              Offlyn.ai — AI Connectivity with No Network
+            </div>
+            <div class="text-sm text-gray-500">
+              Build and run AI apps entirely offline. Edge-first, privacy-first, no internet required.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-semibold mb-4 text-white flex items-center gap-2">
+          <svg class="w-5 h-5 text-[#27E38D]" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M.05 3.555A3 3 0 0 1 3 0h18a3 3 0 0 1 2.95 3.555l-1.5 10A3 3 0 0 1 19.5 16H4.5a3 3 0 0 1-2.95-2.445l-1.5-10zM5.5 4a.5.5 0 1 0 0 1h13a.5.5 0 1 0 0-1h-13zM5 12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1v4z"/>
+          </svg>
+          iMessage / WhatsApp / Telegram
+        </h3>
+
+        <div class="preview-card rounded-2xl overflow-hidden max-w-sm shadow-xl">
+          <img src="/og-image.png" alt="OG Image" class="w-full" />
+          <div class="p-4 bg-white">
+            <div class="font-semibold text-sm text-gray-900 mb-1">
+              Offlyn.ai — AI Connectivity with No Network
+            </div>
+            <div class="text-xs text-gray-400">offlyn.ai</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="glass-card rounded-3xl p-8 mb-8">
+      <h2 class="text-2xl font-semibold mb-6 text-white">Installed Metadata Tags</h2>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="glass rounded-2xl p-5">
+          <h3 class="font-semibold text-sm text-[#27E38D] mb-3 uppercase tracking-wide">Basic SEO</h3>
+          <p class="text-gray-300 text-sm">Title, canonical URL, meta description, robots tag.</p>
+        </div>
+
+        <div class="glass rounded-2xl p-5">
+          <h3 class="font-semibold text-sm text-[#27E38D] mb-3 uppercase tracking-wide">Open Graph</h3>
+          <p class="text-gray-300 text-sm">OG title, description, URL, image, type, and site name.</p>
+        </div>
+
+        <div class="glass rounded-2xl p-5">
+          <h3 class="font-semibold text-sm text-[#27E38D] mb-3 uppercase tracking-wide">Twitter / X</h3>
+          <p class="text-gray-300 text-sm">Summary large image card, title, description, and image.</p>
+        </div>
+
+        <div class="glass rounded-2xl p-5">
+          <h3 class="font-semibold text-sm text-[#27E38D] mb-3 uppercase tracking-wide">Structured Data</h3>
+          <p class="text-gray-300 text-sm">Organization schema, sitemap, robots.txt, and favicon suite.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="glass-card rounded-3xl p-8 mb-8">
+      <h2 class="text-2xl font-semibold mb-6 text-white">Your OG Image</h2>
+
+      <div class="glass rounded-2xl overflow-hidden">
+        <img src="/og-image.png" alt="OG Image" class="w-full" />
+      </div>
+
+      <div class="mt-4 grid grid-cols-2 md:grid-cols-4 gap-3 text-sm">
+        <div class="glass rounded-xl p-3">
+          <div class="text-[#27E38D] font-semibold mb-1">Dimensions</div>
+          <div class="text-gray-300">1200 × 630 px</div>
+        </div>
+
+        <div class="glass rounded-xl p-3">
+          <div class="text-[#27E38D] font-semibold mb-1">Format</div>
+          <div class="text-gray-300">PNG</div>
+        </div>
+
+        <div class="glass rounded-xl p-3">
+          <div class="text-[#27E38D] font-semibold mb-1">Status</div>
+          <div class="text-gray-300">Optimized</div>
+        </div>
+
+        <div class="glass rounded-xl p-3">
+          <div class="text-[#27E38D] font-semibold mb-1">Path</div>
+          <div class="text-gray-300">/og-image.png</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="glass rounded-3xl p-8">
+      <h3 class="text-xl font-semibold text-white mb-3">Testing After Deployment</h3>
+      <p class="text-gray-300 mb-4">
+        Once deployed to production, validate your social media previews:
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-3">
+        <a href="https://cards-dev.twitter.com/validator" target="_blank" class="glass rounded-xl p-4 hover:bg-white/10 transition-colors group">
+          <div class="font-semibold text-white group-hover:text-[#27E38D] transition-colors">Twitter / X Card Validator</div>
+          <div class="text-sm text-gray-400 mt-1">cards-dev.twitter.com/validator</div>
+        </a>
+
+        <a href="https://www.linkedin.com/post-inspector/" target="_blank" class="glass rounded-xl p-4 hover:bg-white/10 transition-colors group">
+          <div class="font-semibold text-white group-hover:text-[#27E38D] transition-colors">LinkedIn Post Inspector</div>
+          <div class="text-sm text-gray-400 mt-1">linkedin.com/post-inspector</div>
+        </a>
+
+        <a href="https://developers.facebook.com/tools/debug/" target="_blank" class="glass rounded-xl p-4 hover:bg-white/10 transition-colors group">
+          <div class="font-semibold text-white group-hover:text-[#27E38D] transition-colors">Facebook Sharing Debugger</div>
+          <div class="text-sm text-gray-400 mt-1">developers.facebook.com/tools/debug</div>
+        </a>
+
+        <a href="https://www.opengraph.xyz/" target="_blank" class="glass rounded-xl p-4 hover:bg-white/10 transition-colors group">
+          <div class="font-semibold text-white group-hover:text-[#27E38D] transition-colors">OpenGraph.xyz</div>
+          <div class="text-sm text-gray-400 mt-1">opengraph.xyz</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="text-center mt-8">
+      <a href="/" class="inline-flex items-center gap-2 glass-card px-6 py-3 rounded-xl hover:bg-white/10 transition-colors text-white font-semibold">
+        Back to Main Site
+      </a>
+    </div>
+
+  </div>
+</body>
+</html>

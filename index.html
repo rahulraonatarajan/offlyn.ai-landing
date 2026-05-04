@@ -3,15 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>offlyn.ai</title>
-  <meta name="description" content="offlyn.ai — On-device AI solutions for industries on the edge. Featuring Apply by Offlyn.ai, which fills out job applications for you in seconds.">
-  <meta property="og:title" content="offlyn.ai — AI Connectivity with No Network">
-  <meta property="og:description" content="On-device AI solutions for agriculture, mining, disaster response, energy, navigation, conservation — plus Apply, the privacy-first job application assistant.">
-  <meta property="og:image" content="assets/offlyn-apply-hero.png">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="offlyn.ai — AI Connectivity with No Network">
-  <meta name="twitter:image" content="assets/offlyn-apply-hero.png">
+  <title>Offlyn.ai — AI Connectivity with No Network</title>
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.offlyn.ai/" />
+  
+  <!-- Meta Description -->
+  <meta name="description" content="Build and run AI apps entirely offline. Edge-first, privacy-first, no internet required." />
+  
+  <!-- Robots & Indexing -->
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  
+  <!-- Open Graph / Facebook / LinkedIn / Slack / Discord / WhatsApp / Telegram / iMessage -->
+  <meta property="og:title" content="Offlyn.ai — AI Connectivity with No Network" />
+  <meta property="og:description" content="Build and run AI apps entirely offline. Edge-first, privacy-first, no internet required." />
+  <meta property="og:url" content="https://www.offlyn.ai/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Offlyn.ai" />
+  <meta property="og:image" content="https://www.offlyn.ai/og-image.png" />
+  <meta property="og:image:secure_url" content="https://www.offlyn.ai/og-image.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Offlyn.ai — AI connectivity with no network" />
+  
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Offlyn.ai — AI Connectivity with No Network" />
+  <meta name="twitter:description" content="Build and run AI apps entirely offline. Edge-first, privacy-first, no internet required." />
+  <meta name="twitter:image" content="https://www.offlyn.ai/og-image.png" />
+  <meta name="twitter:image:alt" content="Offlyn.ai — AI connectivity with no network" />
+  
+  <!-- Favicon + Brand Icons -->
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  
+  <!-- Structured Data (JSON-LD) for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Offlyn.ai",
+    "url": "https://www.offlyn.ai",
+    "logo": "https://www.offlyn.ai/og-image.png",
+    "description": "Offline-first AI platform for running intelligent apps on-device without internet. Edge-first, privacy-first, no network required.",
+    "foundingDate": "2025",
+    "sameAs": [
+      "https://twitter.com/nishanthred92",
+      "https://github.com/joelnishanth"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "hi@offlyn.ai",
+      "contactType": "Customer Support"
+    }
+  }
+  </script>
+  
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -26,28 +75,6 @@
       }
     }
   </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Apply",
-    "applicationCategory": "BrowserApplication",
-    "operatingSystem": "Chrome 88+, Firefox 109+",
-    "description": "Privacy-first browser extension for automating job applications. Smart auto-fill, AI-powered cover letters via local Ollama, Kanban tracking, and ATS compatibility — all running locally with zero cloud uploads.",
-    "url": "https://joelnishanth.github.io/offlyn-apply",
-    "downloadUrl": "https://github.com/joelnishanth/offlyn-apply",
-    "author": {
-      "@type": "Organization",
-      "name": "offlyn.ai",
-      "url": "https://offlyn.ai"
-    },
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
-    }
-  }
-  </script>
 </head>
 <body class="antialiased bg-gray-50 text-gray-800">
   <header class="bg-white shadow">
@@ -60,18 +87,16 @@
         <li><a href="#product-suite" class="hover:text-indigo-600">Home</a></li>
         <li><a href="#product-suite" class="hover:text-indigo-600">Products</a></li>
         <li><a href="#offlyn-apply" class="hover:text-indigo-600">Apply</a></li>
-        <li><a href="#industries" class="hover:text-indigo-600">Industries</a></li>
         <li><a href="#terraguide-gallery" class="hover:text-indigo-600">TerraGuide</a></li>
-        <li><a href="#ravin" class="hover:text-indigo-600">RAVIN</a></li>
+        <li><a href="#clipper" class="hover:text-indigo-600">Clipper</a></li>
       </ul>
     </nav>
     <div id="mobile-menu" class="hidden bg-white shadow-md">
       <a href="#product-suite" class="block px-6 py-3 border-b hover:bg-gray-100">Home</a>
       <a href="#product-suite" class="block px-6 py-3 border-b hover:bg-gray-100">Products</a>
       <a href="#offlyn-apply" class="block px-6 py-3 border-b hover:bg-gray-100">Apply</a>
-      <a href="#industries" class="block px-6 py-3 border-b hover:bg-gray-100">Industries</a>
       <a href="#terraguide-gallery" class="block px-6 py-3 border-b hover:bg-gray-100">TerraGuide</a>
-      <a href="#ravin" class="block px-6 py-3 border-b hover:bg-gray-100">RAVIN</a>
+      <a href="#clipper" class="block px-6 py-3 border-b hover:bg-gray-100">Clipper</a>
     </div>
   </header>
 
@@ -87,7 +112,7 @@
           <div style="display:inline-flex;align-items:center;gap:4px;background:#F3F4F6;border-radius:9999px;padding:5px;">
             <button onclick="switchProduct('apply')" id="prod-apply" style="padding:10px 24px;border-radius:9999px;font-size:15px;font-weight:600;border:none;cursor:pointer;transition:all 0.25s;background:#4F46E5;color:white;box-shadow:0 2px 8px rgba(79,70,229,0.3);">Apply</button>
             <button onclick="switchProduct('terraguide')" id="prod-terraguide" style="padding:10px 24px;border-radius:9999px;font-size:15px;font-weight:600;border:none;cursor:pointer;transition:all 0.25s;background:transparent;color:#6B7280;">TerraGuide</button>
-            <button onclick="switchProduct('ravin')" id="prod-ravin" style="padding:10px 24px;border-radius:9999px;font-size:15px;font-weight:600;border:none;cursor:pointer;transition:all 0.25s;background:transparent;color:#6B7280;">RAVIN</button>
+            <button onclick="switchProduct('ravin')" id="prod-ravin" style="padding:10px 24px;border-radius:9999px;font-size:15px;font-weight:600;border:none;cursor:pointer;transition:all 0.25s;background:transparent;color:#6B7280;">Clipper</button>
           </div>
           </div>
 
@@ -151,29 +176,29 @@
             </div>
           </div>
 
-        <!-- RAVIN Panel -->
+        <!-- Clipper Panel -->
         <div id="panel-ravin" class="max-w-4xl mx-auto" style="display:none;">
           <div class="bg-gray-50 rounded-3xl p-8 md:p-12 border border-gray-100">
             <div class="flex flex-col md:flex-row items-start gap-8">
               <div class="flex-shrink-0">
-                <div class="w-20 h-20 bg-blue-100 rounded-2xl flex items-center justify-center shadow-md">
-                  <svg class="w-10 h-10 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                <div class="w-20 h-20 bg-indigo-100 rounded-2xl flex items-center justify-center shadow-md">
+                  <svg class="w-10 h-10 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/></svg>
                 </div>
                 </div>
               <div class="flex-1">
                 <div class="flex items-center gap-3 mb-3">
-                  <h3 class="text-2xl font-bold text-gray-800">RAVIN</h3>
-                  <span class="px-3 py-0.5 bg-blue-100 text-blue-600 text-xs font-bold rounded-full">COMING FALL 2026</span>
+                  <h3 class="text-2xl font-bold text-gray-800">Clipper</h3>
+                  <span class="px-3 py-0.5 bg-indigo-100 text-indigo-600 text-xs font-bold rounded-full">COMING SOON</span>
               </div>
-                <p class="text-sm text-blue-600 font-medium mb-4">Private Medical AI Assistant</p>
-                <p class="text-lg text-gray-600 mb-6">Understand lab results and doctor’s notes privately with on-device AI. No accounts, no uploads — just clarity and peace of mind.</p>
+                <p class="text-sm text-indigo-600 font-medium mb-4">Your Offline-First Personal Work Intelligence Layer</p>
+                <p class="text-lg text-gray-600 mb-6">Captures your meetings, voice notes, and quick thoughts. Processes everything locally with on-device AI. Makes it all searchable and connected.</p>
                 <ul class="space-y-2.5 text-gray-600 text-sm mb-8">
-                  <li class="flex items-start gap-2.5"><svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Interpret lab results in plain language</li>
-                  <li class="flex items-start gap-2.5"><svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Summarize doctor’s notes and prescriptions</li>
-                  <li class="flex items-start gap-2.5"><svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>100% private — runs entirely on your device</li>
-                  <li class="flex items-start gap-2.5"><svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>No accounts, no sign-ups, no cloud uploads</li>
+                  <li class="flex items-start gap-2.5"><svg class="w-5 h-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Remember every conversation</li>
+                  <li class="flex items-start gap-2.5"><svg class="w-5 h-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Find any idea instantly</li>
+                  <li class="flex items-start gap-2.5"><svg class="w-5 h-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Stay focused with on-device AI</li>
+                  <li class="flex items-start gap-2.5"><svg class="w-5 h-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Mac-only MVP launching soon</li>
                 </ul>
-                <span class="px-6 py-2.5 bg-gray-200 text-gray-500 rounded-lg text-sm font-medium inline-block cursor-default">Coming Fall 2026</span>
+                <a href="#clipper" class="px-6 py-2.5 bg-indigo-600 text-white rounded-lg text-sm font-medium inline-block hover:bg-indigo-700 transition-colors">Sign Up for Early Access</a>
               </div>
             </div>
           </div>
@@ -526,653 +551,92 @@
     </section>
 
 
-    <section id="ravin" class="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
+    <section id="clipper" class="py-20 bg-gradient-to-br from-indigo-50 to-purple-100">
       <div class="container mx-auto px-6">
-        <div class="max-w-6xl mx-auto">
+        <div class="max-w-4xl mx-auto">
           <!-- Header -->
           <div class="text-center mb-16">
-            <div class="inline-flex items-center justify-center w-20 h-20 bg-blue-600 rounded-full mb-6">
+            <div class="inline-flex items-center justify-center w-20 h-20 bg-indigo-600 rounded-full mb-6">
               <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path>
               </svg>
                     </div>
-            <h2 class="text-4xl font-bold text-gray-800 mb-4">RAVIN</h2>
-            <p class="text-xl text-blue-600 font-semibold mb-6">Reliable AI for Vital INformation</p>
-            <p class="text-2xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
-              "Understand your health, privately."
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Coming Soon: Clipper</h2>
+            <p class="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed mb-8">
+              Your offline-first personal work intelligence layer for Mac. Clipper captures your meetings, voice notes, and quick thoughts, processes everything locally with on-device AI, and makes it all searchable and connected.
+            </p>
+            <p class="text-2xl font-semibold text-indigo-600 mb-4">
+              Remember every conversation. Find any idea. Stay focused.
+            </p>
+            <p class="text-lg text-gray-600">
+              Mac-only MVP launching soon.
             </p>
                     </div>
 
-          <!-- Main Description -->
-          <div class="bg-white rounded-2xl shadow-xl p-8 mb-12">
-            <div class="max-w-4xl mx-auto text-center">
-              <p class="text-lg text-gray-600 mb-6 leading-relaxed">
-                RAVIN helps you understand your lab results and doctor's notes — privately, clearly, and instantly.
-                It runs entirely offline on your device, using local AI to translate complex medical data into plain, human language.
-              </p>
-              <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-                No accounts. No uploads. Just clarity and peace of mind.
-              </p>
-              
-              <div class="bg-blue-50 rounded-xl p-6 mb-8">
-                <p class="text-gray-700 leading-relaxed">
-                  Whether it's your blood test, cholesterol check, or kidney panel, RAVIN explains what your numbers mean, 
-                  what's normal, and when it might be time to talk to your doctor — without ever replacing one.
-                </p>
-                  </div>
-              
-              <p class="text-lg text-gray-600 leading-relaxed">
-                Built on a foundation of privacy, transparency, and trust, RAVIN makes medical information 
-                understandable and accessible for everyone, everywhere.
-              </p>
-              
-              <!-- Medical Disclaimer -->
-              <div class="bg-yellow-50 border-l-4 border-yellow-400 p-6 mt-8">
-                <div class="flex">
-                  <div class="flex-shrink-0">
-                    <svg class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
-                      <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
-                    </svg>
-                  </div>
-                  <div class="ml-3">
-                    <h3 class="text-sm font-medium text-yellow-800">Important Medical Disclaimer</h3>
-                    <div class="mt-2 text-sm text-yellow-700">
-                      <p><strong>RAVIN does not provide medical advice, diagnosis, or treatment.</strong> It is designed to help interpret and understand medical information for educational purposes only. Always consult with qualified healthcare professionals for medical advice, diagnosis, or treatment decisions. RAVIN should be used as a supplementary tool to enhance understanding, not as a replacement for professional medical care.</p>
+          <!-- Sign Up Form -->
+          <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+            <div class="max-w-2xl mx-auto">
+              <h3 class="text-2xl font-bold text-center text-gray-800 mb-6">Sign Up for Early Access</h3>
+              <form action="mailto:hi@offlyn.ai" method="get" enctype="text/plain" class="space-y-6">
+                <input type="hidden" name="subject" value="Clipper Early Access Sign Up">
+                <div>
+                  <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                  <input 
+                    type="text" 
+                    id="name" 
+                    name="name" 
+                    required 
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition"
+                    placeholder="Your name"
+                  >
                 </div>
-              </div>
-            </div>
-          </div>
-
-              <!-- Language Support -->
-              <div class="bg-blue-50 rounded-xl p-6 mt-6">
-                <h3 class="text-lg font-semibold text-blue-800 mb-4">Multi-Language Support</h3>
-                <p class="text-blue-700 mb-4">RAVIN provides medical information interpretation in multiple languages to serve diverse communities:</p>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-                  <div class="flex items-center space-x-2">
-                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
-                    <span class="text-blue-800 font-medium">English</span>
-                  </div>
-                  <div class="flex items-center space-x-2">
-                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
-                    <span class="text-blue-800 font-medium">हिन्दी (Hindi)</span>
-                  </div>
-                  <div class="flex items-center space-x-2">
-                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
-                    <span class="text-blue-800 font-medium">Español (Spanish)</span>
-                  </div>
-                  <div class="flex items-center space-x-2">
-                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
-                    <span class="text-blue-800 font-medium">中文 (Chinese)</span>
-                  </div>
-                  <div class="flex items-center space-x-2">
-                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
-                    <span class="text-blue-800 font-medium">العربية (Arabic)</span>
-                  </div>
-                  <div class="flex items-center space-x-2">
-                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
-                    <span class="text-blue-800 font-medium">Português (Portuguese)</span>
-                  </div>
-                  <div class="flex items-center space-x-2">
-                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
-                    <span class="text-blue-800 font-medium">Français (French)</span>
-                  </div>
-                  <div class="flex items-center space-x-2">
-                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
-                    <span class="text-blue-800 font-medium">Русский (Russian)</span>
-                  </div>
+                <div>
+                  <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                  <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    required 
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition"
+                    placeholder="your@email.com"
+                  >
                 </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Key Features -->
-          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-            <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-              <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-                <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
-                </svg>
-              </div>
-              <h3 class="text-xl font-bold text-gray-800 mb-3">Complete Privacy</h3>
-              <p class="text-gray-600">All processing happens on your device. No data ever leaves your phone or tablet.</p>
-            </div>
-
-            <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-              <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                </svg>
-              </div>
-              <h3 class="text-xl font-bold text-gray-800 mb-3">Instant Analysis</h3>
-              <p class="text-gray-600">Get clear explanations of your lab results in seconds, not days.</p>
-            </div>
-
-            <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-              <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-                <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
-                </svg>
-              </div>
-              <h3 class="text-xl font-bold text-gray-800 mb-3">Offline AI</h3>
-              <p class="text-gray-600">Works without internet connection. Your health data stays completely private.</p>
-            </div>
-
-            <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-              <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
-                <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-              </div>
-              <h3 class="text-xl font-bold text-gray-800 mb-3">Medical Accuracy</h3>
-              <p class="text-gray-600">Trained on medical literature to provide accurate, evidence-based explanations.</p>
-            </div>
-
-            <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-              <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
-                <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-              </div>
-              <h3 class="text-xl font-bold text-gray-800 mb-3">Smart Alerts</h3>
-              <p class="text-gray-600">Know when to follow up with your doctor based on your specific results.</p>
-            </div>
-
-            <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-              <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
-                <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
-                </svg>
-              </div>
-              <h3 class="text-xl font-bold text-gray-800 mb-3">Plain Language</h3>
-              <p class="text-gray-600">Translates complex medical jargon into clear, understandable explanations.</p>
-            </div>
-          </div>
-
-          <!-- Use Cases -->
-          <div class="bg-white rounded-2xl shadow-xl p-8 mb-12">
-            <h3 class="text-2xl font-bold text-center text-gray-800 mb-8">Perfect For</h3>
-            <div class="grid md:grid-cols-2 gap-8">
-              <div class="space-y-4">
-                <div class="flex items-start space-x-3">
-                  <div class="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
-                  <span class="text-gray-700">Understanding blood test results and lab panels</span>
+                <div>
+                  <label for="company" class="block text-sm font-medium text-gray-700 mb-2">Company (Optional)</label>
+                  <input 
+                    type="text" 
+                    id="company" 
+                    name="company" 
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition"
+                    placeholder="Your company"
+                  >
                 </div>
-                <div class="flex items-start space-x-3">
-                  <div class="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
-                  <span class="text-gray-700">Deciphering doctor's notes and medical reports</span>
+                <div>
+                  <label for="interest" class="block text-sm font-medium text-gray-700 mb-2">What interests you most about Clipper?</label>
+                  <textarea 
+                    id="interest" 
+                    name="interest" 
+                    rows="4" 
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition resize-none"
+                    placeholder="Tell us what you're excited about..."
+                  ></textarea>
                 </div>
-                <div class="flex items-start space-x-3">
-                  <div class="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
-                  <span class="text-gray-700">Tracking health trends over time</span>
-                </div>
-                <div class="flex items-start space-x-3">
-                  <div class="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
-                  <span class="text-gray-700">Preparing questions for your next doctor visit</span>
-                </div>
-              </div>
-              <div class="space-y-4">
-                <div class="flex items-start space-x-3">
-                  <div class="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
-                  <span class="text-gray-700">Understanding medication side effects and interactions</span>
-                </div>
-                <div class="flex items-start space-x-3">
-                  <div class="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
-                  <span class="text-gray-700">Learning about normal vs. abnormal values</span>
-                </div>
-                <div class="flex items-start space-x-3">
-                  <div class="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
-                  <span class="text-gray-700">Getting peace of mind about your health status</span>
-                </div>
-                <div class="flex items-start space-x-3">
-                  <div class="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
-                  <span class="text-gray-700">Sharing clear explanations with family members</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- CTA Section -->
-          <div class="text-center">
-            <div class="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl p-8 text-white">
-              <h3 class="text-2xl font-bold mb-4">Ready to understand your health better?</h3>
-              <p class="text-lg mb-6 opacity-90">
-                Get early access to RAVIN and experience the future of private, offline medical AI.
-              </p>
-              <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="mailto:hi@offlyn.ai?subject=RAVIN Early Access" class="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors font-medium">
+                <button 
+                  type="submit" 
+                  class="w-full bg-indigo-600 text-white px-8 py-4 rounded-lg hover:bg-indigo-700 transition-colors font-semibold text-lg shadow-lg hover:shadow-xl"
+                >
                   Request Early Access
-                </a>
-                <a href="mailto:hi@offlyn.ai?subject=RAVIN Information" class="inline-block border-2 border-white text-white px-8 py-3 rounded-lg hover:bg-white hover:text-blue-600 transition-colors font-medium">
-                  Learn More
-                </a>
-              </div>
+                </button>
+                <p class="text-sm text-gray-500 text-center mt-4">We'll reach out as soon as Clipper is ready to launch.</p>
+              </form>
             </div>
           </div>
+
         </div>
       </div>
     </section>
 
 
-    <section id="industries" class="py-16">
-      <div class="container mx-auto px-6">
-        <span class="block text-center mb-4"><span class="inline-block px-4 py-1.5 bg-gray-200 text-gray-600 text-sm font-semibold rounded-full tracking-wide">COMING SOON</span></span>
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-3 text-gray-800">Future Industries</h2>
-        <p class="text-lg text-gray-500 text-center mb-12 max-w-2xl mx-auto">Where we're headed next — on-device AI for industries where connectivity isn't guaranteed.</p>
-
-        <!-- Industry Tabs -->
-        <div class="flex flex-wrap justify-center mb-8 gap-2">
-          <button class="tab-button px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 bg-indigo-600 text-white shadow-lg" data-tab="healthcare">
-            Healthcare
-          </button>
-          <button class="tab-button px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 bg-gray-200 text-gray-700 hover:bg-gray-300" data-tab="mining">
-            Mining
-          </button>
-          <button class="tab-button px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 bg-gray-200 text-gray-700 hover:bg-gray-300" data-tab="energy">
-            Energy
-          </button>
-          <button class="tab-button px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 bg-gray-200 text-gray-700 hover:bg-gray-300" data-tab="maintenance">
-            Site Maintenance
-          </button>
-          <button class="tab-button px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 bg-gray-200 text-gray-700 hover:bg-gray-300" data-tab="conservation">
-            Conservation
-          </button>
-          <button class="tab-button px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 bg-gray-200 text-gray-700 hover:bg-gray-300" data-tab="agriculture">
-            Agriculture
-          </button>
-          <button class="tab-button px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 bg-gray-200 text-gray-700 hover:bg-gray-300" data-tab="aviation">
-            Aviation
-          </button>
-        </div>
-
-        <!-- Tab Content -->
-        <div class="tab-content">
-          <!-- Healthcare Tab -->
-          <div id="healthcare" class="tab-pane active">
-            <div class="max-w-6xl mx-auto">
-              <div class="text-center mb-12">
-                <h3 class="text-3xl font-bold mb-4 text-indigo-600">Healthcare & Medical</h3>
-                <p class="text-xl text-gray-600 mb-8">
-                  RAVIN™ provides comprehensive medical AI assistance with on-device processing, offline lab result analysis, and private health data understanding for healthcare professionals and patients in remote or privacy-sensitive environments.
-                </p>
-              </div>
-              
-              <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-                <div class="p-8 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl border border-blue-100">
-                  <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                    </svg>
-                  </div>
-                  <h4 class="text-2xl font-bold mb-4 text-gray-800">Lab Result Analysis</h4>
-                  <p class="text-gray-600 leading-relaxed">
-                    Instant analysis of blood tests, cholesterol panels, and lab results with clear explanations of normal vs. abnormal values.
-                  </p>
-                </div>
-
-                <div class="p-8 bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl border border-green-100">
-                  <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
-                    </svg>
-                  </div>
-                  <h4 class="text-2xl font-bold mb-4 text-gray-800">Complete Privacy</h4>
-                  <p class="text-gray-600 leading-relaxed">
-                    All medical data processing happens on-device. No patient information ever leaves the local environment.
-                  </p>
-                </div>
-
-                <div class="p-8 bg-gradient-to-br from-purple-50 to-violet-50 rounded-2xl border border-purple-100">
-                  <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
-                    </svg>
-                  </div>
-                  <h4 class="text-2xl font-bold mb-4 text-gray-800">Offline Medical AI</h4>
-                  <p class="text-gray-600 leading-relaxed">
-                    Works without internet connection, ensuring medical data analysis in remote clinics and field hospitals.
-                  </p>
-                </div>
-
-                <div class="p-8 bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl border border-orange-100">
-                  <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                    </svg>
-                  </div>
-                  <h4 class="text-2xl font-bold mb-4 text-gray-800">Medical Accuracy</h4>
-                  <p class="text-gray-600 leading-relaxed">
-                    Trained on medical literature and evidence-based guidelines for accurate, reliable health information.
-                  </p>
-                </div>
-
-                <div class="p-8 bg-gradient-to-br from-red-50 to-pink-50 rounded-2xl border border-red-100">
-                  <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                    </svg>
-                  </div>
-                  <h4 class="text-2xl font-bold mb-4 text-gray-800">Smart Alerts</h4>
-                  <p class="text-gray-600 leading-relaxed">
-                    Intelligent recommendations for when to consult healthcare providers based on specific lab values and trends.
-                  </p>
-                </div>
-
-                <div class="p-8 bg-gradient-to-br from-indigo-50 to-blue-50 rounded-2xl border border-indigo-100">
-                  <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
-                    </svg>
-                  </div>
-                  <h4 class="text-2xl font-bold mb-4 text-gray-800">Plain Language</h4>
-                  <p class="text-gray-600 leading-relaxed">
-                    Translates complex medical terminology into clear, understandable explanations for patients and families.
-                  </p>
-                </div>
-              </div>
-
-              <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-8 rounded-2xl border border-blue-200">
-                <h4 class="text-xl font-bold mb-6 text-gray-800 text-center">Key Healthcare Applications</h4>
-                <div class="grid md:grid-cols-2 gap-6">
-                  <div class="space-y-3">
-                    <div class="flex items-center space-x-3">
-                      <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
-                      <span class="text-gray-700">Remote clinic lab result interpretation</span>
-                    </div>
-                    <div class="flex items-center space-x-3">
-                      <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
-                      <span class="text-gray-700">Patient education and health literacy</span>
-                    </div>
-                    <div class="flex items-center space-x-3">
-                      <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
-                      <span class="text-gray-700">Medication interaction analysis</span>
-                    </div>
-                  </div>
-                  <div class="space-y-3">
-                    <div class="flex items-center space-x-3">
-                      <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
-                      <span class="text-gray-700">Health trend monitoring and tracking</span>
-                    </div>
-                    <div class="flex items-center space-x-3">
-                      <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
-                      <span class="text-gray-700">Medical report summarization</span>
-                    </div>
-                    <div class="flex items-center space-x-3">
-                      <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
-                      <span class="text-gray-700">Emergency medical information access</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Medical Disclaimer for Industry Tab -->
-              <div class="bg-yellow-50 border-l-4 border-yellow-400 p-6 mt-8">
-                <div class="flex">
-                  <div class="flex-shrink-0">
-                    <svg class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
-                      <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
-                    </svg>
-                  </div>
-                  <div class="ml-3">
-                    <h3 class="text-sm font-medium text-yellow-800">Important Medical Disclaimer</h3>
-                    <div class="mt-2 text-sm text-yellow-700">
-                      <p><strong>RAVIN does not provide medical advice, diagnosis, or treatment.</strong> It is designed to help interpret and understand medical information for educational purposes only. Always consult with qualified healthcare professionals for medical advice, diagnosis, or treatment decisions. RAVIN should be used as a supplementary tool to enhance understanding, not as a replacement for professional medical care.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Language Support for Industry Tab -->
-              <div class="bg-blue-50 rounded-xl p-6 mt-6">
-                <h3 class="text-lg font-semibold text-blue-800 mb-4">Multi-Language Support</h3>
-                <p class="text-blue-700 mb-4">RAVIN provides medical information interpretation in multiple languages to serve diverse communities:</p>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-                  <div class="flex items-center space-x-2">
-                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
-                    <span class="text-blue-800 font-medium">English</span>
-                  </div>
-                  <div class="flex items-center space-x-2">
-                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
-                    <span class="text-blue-800 font-medium">हिन्दी (Hindi)</span>
-                  </div>
-                  <div class="flex items-center space-x-2">
-                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
-                    <span class="text-blue-800 font-medium">Español (Spanish)</span>
-                  </div>
-                  <div class="flex items-center space-x-2">
-                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
-                    <span class="text-blue-800 font-medium">中文 (Chinese)</span>
-                  </div>
-                  <div class="flex items-center space-x-2">
-                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
-                    <span class="text-blue-800 font-medium">العربية (Arabic)</span>
-                  </div>
-                  <div class="flex items-center space-x-2">
-                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
-                    <span class="text-blue-800 font-medium">Português (Portuguese)</span>
-                  </div>
-                  <div class="flex items-center space-x-2">
-                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
-                    <span class="text-blue-800 font-medium">Français (French)</span>
-                  </div>
-                  <div class="flex items-center space-x-2">
-                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
-                    <span class="text-blue-800 font-medium">Русский (Russian)</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Mining Tab -->
-          <div id="mining" class="tab-pane hidden">
-            <div class="max-w-6xl mx-auto">
-              <div class="text-center mb-12">
-                <h3 class="text-3xl font-bold mb-4 text-indigo-600">Mining Operations</h3>
-                <p class="text-xl text-gray-600 mb-8">
-                  Mipilot™ for shift automation workflows, equipment checks, and safety audits in remote mining environments.
-                </p>
-              </div>
-              
-              <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-                <div class="p-6 bg-yellow-50 rounded-xl border-l-4 border-yellow-500">
-                  <h4 class="font-bold text-yellow-700 mb-3 text-lg">Safety Compliance</h4>
-                  <p class="text-gray-600 mb-4">Automated safety checks and compliance monitoring in remote mining sites.</p>
-                  <ul class="text-sm text-gray-600 space-y-1">
-                    <li>• Real-time safety protocol monitoring</li>
-                    <li>• Automated compliance reporting</li>
-                    <li>• Incident prevention algorithms</li>
-                  </ul>
-                </div>
-                <div class="p-6 bg-green-50 rounded-xl border-l-4 border-green-500">
-                  <h4 class="font-bold text-green-700 mb-3 text-lg">Equipment Monitoring</h4>
-                  <p class="text-gray-600 mb-4">Real-time equipment diagnostics and predictive maintenance alerts.</p>
-                  <ul class="text-sm text-gray-600 space-y-1">
-                    <li>• Predictive maintenance scheduling</li>
-                    <li>• Equipment performance analytics</li>
-                    <li>• Automated fault detection</li>
-                  </ul>
-                </div>
-                <div class="p-6 bg-blue-50 rounded-xl border-l-4 border-blue-500">
-                  <h4 class="font-bold text-blue-700 mb-3 text-lg">Shift Management</h4>
-                  <p class="text-gray-600 mb-4">Intelligent workforce coordination and task automation for mining operations.</p>
-                  <ul class="text-sm text-gray-600 space-y-1">
-                    <li>• Automated shift handovers</li>
-                    <li>• Task prioritization algorithms</li>
-                    <li>• Resource allocation optimization</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="bg-gray-50 rounded-xl p-8">
-                <h4 class="text-xl font-bold mb-4 text-center">Key Features for Mining Operations</h4>
-                <div class="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <h5 class="font-semibold text-gray-800 mb-2">Offline Equipment Diagnostics</h5>
-                    <p class="text-gray-600 text-sm">AI-powered equipment analysis that works without connectivity, providing instant diagnostics and maintenance recommendations.</p>
-                  </div>
-                  <div>
-                    <h5 class="font-semibold text-gray-800 mb-2">Automated Safety Protocols</h5>
-                    <p class="text-gray-600 text-sm">Continuous monitoring of safety conditions with automated alerts and emergency response procedures.</p>
-                  </div>
-                  <div>
-                    <h5 class="font-semibold text-gray-800 mb-2">Production Optimization</h5>
-                    <p class="text-gray-600 text-sm">AI-driven insights for optimizing mining operations, reducing downtime, and maximizing resource extraction efficiency.</p>
-                  </div>
-                  <div>
-                    <h5 class="font-semibold text-gray-800 mb-2">Environmental Monitoring</h5>
-                    <p class="text-gray-600 text-sm">Real-time environmental condition tracking with automated compliance reporting and alert systems.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Energy Tab -->
-          <div id="energy" class="tab-pane hidden">
-            <div class="max-w-6xl mx-auto">
-              <div class="text-center mb-12">
-                <h3 class="text-3xl font-bold mb-4 text-indigo-600">Energy Infrastructure</h3>
-                <p class="text-xl text-gray-600 mb-8">
-                  Microgrid analytics, billing, and peer-to-peer power sharing offline for remote energy systems.
-                </p>
-              </div>
-              
-              <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-                <div class="p-6 bg-purple-50 rounded-xl border-l-4 border-purple-500">
-                  <h4 class="font-bold text-purple-700 mb-3 text-lg">Smart Grid Management</h4>
-                  <p class="text-gray-600 mb-4">Intelligent power distribution and load balancing in isolated microgrids.</p>
-                  <ul class="text-sm text-gray-600 space-y-1">
-                    <li>• Real-time load balancing</li>
-                    <li>• Automated grid optimization</li>
-                    <li>• Fault detection and isolation</li>
-                  </ul>
-                </div>
-                <div class="p-6 bg-orange-50 rounded-xl border-l-4 border-orange-500">
-                  <h4 class="font-bold text-orange-700 mb-3 text-lg">Energy Trading</h4>
-                  <p class="text-gray-600 mb-4">Peer-to-peer energy sharing and automated billing systems.</p>
-                  <ul class="text-sm text-gray-600 space-y-1">
-                    <li>• Automated P2P transactions</li>
-                    <li>• Smart contract execution</li>
-                    <li>• Real-time pricing algorithms</li>
-                  </ul>
-                </div>
-                <div class="p-6 bg-green-50 rounded-xl border-l-4 border-green-500">
-                  <h4 class="font-bold text-green-700 mb-3 text-lg">Renewable Integration</h4>
-                  <p class="text-gray-600 mb-4">Seamless integration of renewable energy sources with offline monitoring and control.</p>
-                  <ul class="text-sm text-gray-600 space-y-1">
-                    <li>• Solar/wind optimization</li>
-                    <li>• Battery management systems</li>
-                    <li>• Weather prediction integration</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="bg-gray-50 rounded-xl p-8">
-                <h4 class="text-xl font-bold mb-4 text-center">Key Features for Energy Infrastructure</h4>
-                <div class="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <h5 class="font-semibold text-gray-800 mb-2">Offline Microgrid Control</h5>
-                    <p class="text-gray-600 text-sm">Complete microgrid management without internet connectivity, ensuring reliable power distribution in remote locations.</p>
-                  </div>
-                  <div>
-                    <h5 class="font-semibold text-gray-800 mb-2">Automated Energy Trading</h5>
-                    <p class="text-gray-600 text-sm">AI-driven peer-to-peer energy trading with automated billing and settlement, enabling local energy markets.</p>
-                  </div>
-                  <div>
-                    <h5 class="font-semibold text-gray-800 mb-2">Predictive Maintenance</h5>
-                    <p class="text-gray-600 text-sm">Advanced analytics for predicting equipment failures and optimizing maintenance schedules for energy infrastructure.</p>
-                  </div>
-                  <div>
-                    <h5 class="font-semibold text-gray-800 mb-2">Grid Resilience</h5>
-                    <p class="text-gray-600 text-sm">Enhanced grid stability through intelligent load management and automated response to power quality issues.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Site Maintenance Tab -->
-          <div id="maintenance" class="tab-pane hidden">
-            <div class="max-w-4xl mx-auto text-center">
-              <h3 class="text-2xl font-bold mb-6 text-indigo-600">Site Maintenance</h3>
-              <p class="text-lg text-gray-600 mb-8">
-                FieldFixer™ delivers step-by-step maintenance guidance with on-device AI trained on equipment manuals, safety protocols, and ticket data for technicians in remote sites.
-              </p>
-              <div class="grid md:grid-cols-2 gap-8">
-                <div class="p-6 bg-teal-50 rounded-xl border-l-4 border-teal-500">
-                  <h4 class="font-bold text-teal-700 mb-2">AI-Powered Diagnostics</h4>
-                  <p class="text-gray-600">Intelligent troubleshooting and repair guidance for complex equipment.</p>
-                </div>
-                <div class="p-6 bg-cyan-50 rounded-xl border-l-4 border-cyan-500">
-                  <h4 class="font-bold text-cyan-700 mb-2">Safety Protocols</h4>
-                  <p class="text-gray-600">Automated safety checks and compliance verification during maintenance procedures.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Conservation Tab -->
-          <div id="conservation" class="tab-pane hidden">
-            <div class="max-w-4xl mx-auto text-center">
-              <h3 class="text-2xl font-bold mb-6 text-indigo-600">Conservation Research</h3>
-              <p class="text-lg text-gray-600 mb-8">
-                EcoDex App: catalog and identify species with AI-powered tagging.
-              </p>
-              <div class="grid md:grid-cols-2 gap-8">
-                <div class="p-6 bg-green-50 rounded-xl border-l-4 border-green-500">
-                  <h4 class="font-bold text-green-700 mb-2">Species Identification</h4>
-                  <p class="text-gray-600">AI-powered species recognition and automated cataloging in remote field conditions.</p>
-                </div>
-                <div class="p-6 bg-emerald-50 rounded-xl border-l-4 border-emerald-500">
-                  <h4 class="font-bold text-emerald-700 mb-2">Environmental Monitoring</h4>
-                  <p class="text-gray-600">Continuous environmental data collection and analysis without connectivity.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Agriculture Tab -->
-          <div id="agriculture" class="tab-pane hidden">
-            <div class="max-w-4xl mx-auto text-center">
-              <h3 class="text-2xl font-bold mb-6 text-indigo-600">Agricultural Operations</h3>
-              <p class="text-lg text-gray-600 mb-8">
-                Offline soil analysis, prescriptions, and workflow automation.
-              </p>
-              <div class="grid md:grid-cols-2 gap-8">
-                <div class="p-6 bg-lime-50 rounded-xl border-l-4 border-lime-500">
-                  <h4 class="font-bold text-lime-700 mb-2">Soil Analysis</h4>
-                  <p class="text-gray-600">Real-time soil testing and nutrient analysis for optimal crop management.</p>
-                </div>
-                <div class="p-6 bg-amber-50 rounded-xl border-l-4 border-amber-500">
-                  <h4 class="font-bold text-amber-700 mb-2">Precision Farming</h4>
-                  <p class="text-gray-600">Data-driven farming decisions and automated irrigation systems.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Aviation Tab -->
-          <div id="aviation" class="tab-pane hidden">
-            <div class="max-w-4xl mx-auto text-center">
-              <h3 class="text-2xl font-bold mb-6 text-indigo-600">Aviation Operations</h3>
-              <p class="text-lg text-gray-600 mb-8">
-                Offline ground crew workflow automation and resilience.
-              </p>
-              <div class="grid md:grid-cols-2 gap-8">
-                <div class="p-6 bg-sky-50 rounded-xl border-l-4 border-sky-500">
-                  <h4 class="font-bold text-sky-700 mb-2">Ground Operations</h4>
-                  <p class="text-gray-600">Automated aircraft servicing and maintenance procedures with safety protocols.</p>
-                </div>
-                <div class="p-6 bg-indigo-50 rounded-xl border-l-4 border-indigo-500">
-                  <h4 class="font-bold text-indigo-700 mb-2">Flight Operations</h4>
-                  <p class="text-gray-600">Offline flight planning and emergency response coordination systems.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     
   </main>
 
@@ -1191,7 +655,7 @@
           <ul class="space-y-2 text-sm">
             <li><a href="#offlyn-apply" class="hover:text-offlyn-green transition">Apply</a></li>
             <li><a href="#terraguide-gallery" class="hover:text-offlyn-green transition">TerraGuide</a></li>
-            <li><a href="#ravin" class="hover:text-offlyn-green transition">RAVIN</a></li>
+            <li><a href="#clipper" class="hover:text-offlyn-green transition">Clipper</a></li>
           </ul>
         </div>
         <div>
