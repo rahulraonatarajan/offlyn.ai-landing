@@ -86,17 +86,17 @@
       <ul class="hidden md:flex space-x-8">
         <li><a href="#product-suite" class="hover:text-indigo-600">Home</a></li>
         <li><a href="#product-suite" class="hover:text-indigo-600">Products</a></li>
+        <li><a href="#clipper" class="hover:text-indigo-600">Clipper</a></li>
         <li><a href="#offlyn-apply" class="hover:text-indigo-600">Apply</a></li>
         <li><a href="#terraguide-gallery" class="hover:text-indigo-600">TerraGuide</a></li>
-        <li><a href="#clipper" class="hover:text-indigo-600">Clipper</a></li>
       </ul>
     </nav>
     <div id="mobile-menu" class="hidden bg-white shadow-md">
       <a href="#product-suite" class="block px-6 py-3 border-b hover:bg-gray-100">Home</a>
       <a href="#product-suite" class="block px-6 py-3 border-b hover:bg-gray-100">Products</a>
+      <a href="#clipper" class="block px-6 py-3 border-b hover:bg-gray-100">Clipper</a>
       <a href="#offlyn-apply" class="block px-6 py-3 border-b hover:bg-gray-100">Apply</a>
       <a href="#terraguide-gallery" class="block px-6 py-3 border-b hover:bg-gray-100">TerraGuide</a>
-      <a href="#clipper" class="block px-6 py-3 border-b hover:bg-gray-100">Clipper</a>
     </div>
   </header>
 
@@ -110,14 +110,44 @@
 
           <!-- Pill Switcher -->
           <div style="display:inline-flex;align-items:center;gap:4px;background:#F3F4F6;border-radius:9999px;padding:5px;">
-            <button onclick="switchProduct('apply')" id="prod-apply" style="padding:10px 24px;border-radius:9999px;font-size:15px;font-weight:600;border:none;cursor:pointer;transition:all 0.25s;background:#4F46E5;color:white;box-shadow:0 2px 8px rgba(79,70,229,0.3);">Apply</button>
+            <button onclick="switchProduct('ravin')" id="prod-ravin" style="padding:10px 24px;border-radius:9999px;font-size:15px;font-weight:600;border:none;cursor:pointer;transition:all 0.25s;background:#4F46E5;color:white;box-shadow:0 2px 8px rgba(79,70,229,0.3);">Clipper</button>
+            <button onclick="switchProduct('apply')" id="prod-apply" style="padding:10px 24px;border-radius:9999px;font-size:15px;font-weight:600;border:none;cursor:pointer;transition:all 0.25s;background:transparent;color:#6B7280;">Apply</button>
             <button onclick="switchProduct('terraguide')" id="prod-terraguide" style="padding:10px 24px;border-radius:9999px;font-size:15px;font-weight:600;border:none;cursor:pointer;transition:all 0.25s;background:transparent;color:#6B7280;">TerraGuide</button>
-            <button onclick="switchProduct('ravin')" id="prod-ravin" style="padding:10px 24px;border-radius:9999px;font-size:15px;font-weight:600;border:none;cursor:pointer;transition:all 0.25s;background:transparent;color:#6B7280;">Clipper</button>
           </div>
           </div>
 
+        <!-- Clipper Panel -->
+        <div id="panel-ravin" class="max-w-4xl mx-auto">
+          <div class="bg-gray-50 rounded-3xl p-8 md:p-12 border border-gray-100">
+            <div class="flex flex-col md:flex-row items-start gap-8">
+              <div class="flex-shrink-0">
+                <img src="assets/clipper-logo.png" alt="Clipper icon" width="80" height="80" class="rounded-2xl shadow-md" loading="lazy">
+                </div>
+              <div class="flex-1">
+                <div class="flex items-center gap-3 mb-3">
+                  <h3 class="text-2xl font-bold text-gray-800">Clipper</h3>
+                  <span class="text-sm text-gray-500 font-medium">by Offlyn.ai</span>
+                  <span class="px-3 py-0.5 bg-indigo-600 text-white text-xs font-bold rounded-full">NOW LIVE</span>
+              </div>
+                <p class="text-sm text-indigo-600 font-medium mb-4">The Offline AI Notepad for Meetings</p>
+                <p class="text-lg text-gray-600 mb-6">Takes your raw meeting notes and makes them awesome — with transcription and AI that never leaves your Mac. No cloud. No meeting bots.</p>
+                <ul class="space-y-2.5 text-gray-600 text-sm mb-8">
+                  <li class="flex items-start gap-2.5"><svg class="w-5 h-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Live transcription with on-device Whisper</li>
+                  <li class="flex items-start gap-2.5"><svg class="w-5 h-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>No meeting bots — captures Mac audio directly</li>
+                  <li class="flex items-start gap-2.5"><svg class="w-5 h-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Enhance shorthand notes with on-device AI</li>
+                  <li class="flex items-start gap-2.5"><svg class="w-5 h-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Hybrid search across meetings, PDFs, and clips</li>
+                </ul>
+                <div class="flex flex-wrap gap-3">
+                  <a href="https://clipper.offlyn.ai" target="_blank" rel="noopener" class="px-6 py-2.5 bg-indigo-600 text-white font-bold rounded-lg hover:bg-indigo-700 transition text-sm inline-block">Download for Mac</a>
+                  <a href="#clipper" class="px-6 py-2.5 border border-indigo-600 text-indigo-600 rounded-lg hover:bg-indigo-600 hover:text-white transition text-sm font-medium inline-block">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- Apply Panel -->
-        <div id="panel-apply" class="max-w-4xl mx-auto">
+        <div id="panel-apply" class="max-w-4xl mx-auto" style="display:none;">
           <div class="bg-gray-50 rounded-3xl p-8 md:p-12 border border-gray-100">
             <div class="flex flex-col md:flex-row items-start gap-8">
               <div class="flex-shrink-0">
@@ -176,41 +206,12 @@
             </div>
           </div>
 
-        <!-- Clipper Panel -->
-        <div id="panel-ravin" class="max-w-4xl mx-auto" style="display:none;">
-          <div class="bg-gray-50 rounded-3xl p-8 md:p-12 border border-gray-100">
-            <div class="flex flex-col md:flex-row items-start gap-8">
-              <div class="flex-shrink-0">
-                <img src="assets/clipper-logo.png" alt="Clipper icon" width="80" height="80" class="rounded-2xl shadow-md" loading="lazy">
-                </div>
-              <div class="flex-1">
-                <div class="flex items-center gap-3 mb-3">
-                  <h3 class="text-2xl font-bold text-gray-800">Clipper</h3>
-                  <span class="text-sm text-gray-500 font-medium">by Offlyn.ai</span>
-                  <span class="px-3 py-0.5 bg-indigo-600 text-white text-xs font-bold rounded-full">NOW LIVE</span>
-              </div>
-                <p class="text-sm text-indigo-600 font-medium mb-4">The Offline AI Notepad for Meetings</p>
-                <p class="text-lg text-gray-600 mb-6">Takes your raw meeting notes and makes them awesome — with transcription and AI that never leaves your Mac. No cloud. No meeting bots.</p>
-                <ul class="space-y-2.5 text-gray-600 text-sm mb-8">
-                  <li class="flex items-start gap-2.5"><svg class="w-5 h-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Live transcription with on-device Whisper</li>
-                  <li class="flex items-start gap-2.5"><svg class="w-5 h-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>No meeting bots — captures Mac audio directly</li>
-                  <li class="flex items-start gap-2.5"><svg class="w-5 h-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Enhance shorthand notes with on-device AI</li>
-                  <li class="flex items-start gap-2.5"><svg class="w-5 h-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Hybrid search across meetings, PDFs, and clips</li>
-                </ul>
-                <div class="flex flex-wrap gap-3">
-                  <a href="https://clipper.offlyn.ai" target="_blank" rel="noopener" class="px-6 py-2.5 bg-indigo-600 text-white font-bold rounded-lg hover:bg-indigo-700 transition text-sm inline-block">Download for Mac</a>
-                  <a href="#clipper" class="px-6 py-2.5 border border-indigo-600 text-indigo-600 rounded-lg hover:bg-indigo-600 hover:text-white transition text-sm font-medium inline-block">Learn More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
     <script>
       function switchProduct(product) {
-        var products = ['apply', 'terraguide', 'ravin'];
+        var products = ['ravin', 'apply', 'terraguide'];
         products.forEach(function(p) {
           var panel = document.getElementById('panel-' + p);
           var btn = document.getElementById('prod-' + p);
@@ -619,9 +620,9 @@
         <div>
           <h4 class="text-white font-semibold mb-4">Products</h4>
           <ul class="space-y-2 text-sm">
+            <li><a href="#clipper" class="hover:text-offlyn-green transition">Clipper</a></li>
             <li><a href="#offlyn-apply" class="hover:text-offlyn-green transition">Apply</a></li>
             <li><a href="#terraguide-gallery" class="hover:text-offlyn-green transition">TerraGuide</a></li>
-            <li><a href="#clipper" class="hover:text-offlyn-green transition">Clipper</a></li>
           </ul>
         </div>
         <div>
