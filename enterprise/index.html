@@ -6,11 +6,11 @@
   <title>Offlyn.ai for Enterprise | Reduce AI Token Spend with Local Intelligence</title>
 
   <link rel="canonical" href="https://www.offlyn.ai/enterprise" />
-  <meta name="description" content="Offlyn.ai helps AI teams reduce repeated token usage with local-first context compilation, evidence packs, MLX optimization, and selective cloud escalation." />
+  <meta name="description" content="Offlyn.ai helps AI teams reduce unnecessary cloud token usage by auditing repeated-context workflows, routing work between local and cloud models, and sending only compact, source-grounded evidence." />
   <meta name="robots" content="index, follow, max-image-preview:large" />
 
   <meta property="og:title" content="Offlyn.ai for Enterprise | Reduce AI Token Spend with Local Intelligence" />
-  <meta property="og:description" content="Offlyn.ai helps AI teams reduce repeated token usage with local-first context compilation, evidence packs, MLX optimization, and selective cloud escalation." />
+  <meta property="og:description" content="Offlyn.ai helps AI teams reduce unnecessary cloud token usage by auditing repeated-context workflows, routing work between local and cloud models, and sending only compact, source-grounded evidence." />
   <meta property="og:url" content="https://www.offlyn.ai/enterprise" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Offlyn.ai" />
@@ -23,7 +23,7 @@
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Offlyn.ai for Enterprise | Reduce AI Token Spend with Local Intelligence" />
-  <meta name="twitter:description" content="Offlyn.ai helps AI teams reduce repeated token usage with local-first context compilation, evidence packs, MLX optimization, and selective cloud escalation." />
+  <meta name="twitter:description" content="Offlyn.ai helps AI teams reduce unnecessary cloud token usage by auditing repeated-context workflows, routing work between local and cloud models, and sending only compact, source-grounded evidence." />
   <meta name="twitter:image" content="https://www.offlyn.ai/og-image.png" />
   <meta name="twitter:image:alt" content="Offlyn.ai for Enterprise — Reduce AI token spend with local intelligence" />
 
@@ -36,7 +36,7 @@
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "Offlyn.ai for Enterprise",
-    "description": "Offlyn.ai helps AI teams reduce repeated token usage with local-first context compilation, evidence packs, MLX optimization, and selective cloud escalation.",
+    "description": "Offlyn.ai helps AI teams reduce unnecessary cloud token usage by auditing repeated-context workflows, routing work between local and cloud models, and sending only compact, source-grounded evidence.",
     "url": "https://www.offlyn.ai/enterprise",
     "isPartOf": {
       "@type": "WebSite",
@@ -63,7 +63,6 @@
 </head>
 <body class="antialiased bg-gray-50 text-gray-800">
 
-  <!-- Header — matches homepage -->
   <header class="bg-white shadow">
     <nav class="container mx-auto flex items-center justify-between py-4 px-6">
       <a href="/" class="flex items-center">
@@ -78,8 +77,11 @@
         <li><a href="/#offlyn-apply" class="hover:text-indigo-600">Apply</a></li>
         <li><a href="/#terraguide-gallery" class="hover:text-indigo-600">TerraGuide</a></li>
       </ul>
+      <button id="mobile-toggle" class="md:hidden p-2" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
     </nav>
-    <div id="mobile-menu" class="hidden bg-white shadow-md">
+    <div id="mobile-menu" class="hidden bg-white shadow-md md:hidden">
       <a href="/" class="block px-6 py-3 border-b hover:bg-gray-100">Home</a>
       <a href="/#product-suite" class="block px-6 py-3 border-b hover:bg-gray-100">Products</a>
       <a href="/enterprise" class="block px-6 py-3 border-b hover:bg-gray-100 text-indigo-600 font-medium">Enterprise</a>
@@ -91,581 +93,313 @@
 
   <main>
 
-    <!-- ============================================ -->
-    <!-- HERO -->
-    <!-- ============================================ -->
+    <!-- 1. HERO -->
     <section class="py-20 md:py-28 bg-white">
+      <div class="container mx-auto px-6 max-w-4xl text-center">
+        <p class="text-indigo-600 text-sm font-semibold tracking-widest uppercase mb-6">For Enterprise</p>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-800 leading-tight mb-6">
+          Reduce cloud AI token spend without reducing answer quality.
+        </h1>
+        <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-10 leading-relaxed">
+          Offlyn helps AI teams audit repeated-context workflows, route work between local device models and cloud models, and send cloud models only compact, source-grounded evidence.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+          <a href="#token-savings-audit" class="px-8 py-3.5 bg-indigo-600 text-white font-bold rounded-xl hover:bg-indigo-700 transition text-base shadow-lg hover:shadow-xl">Run a Token Savings Audit</a>
+          <a href="#how-it-works" class="px-8 py-3.5 border border-indigo-600 text-indigo-600 font-medium rounded-xl hover:bg-indigo-600 hover:text-white transition text-base">See how Offlyn works</a>
+        </div>
+        <p class="text-gray-400 text-sm">Built from Offlyn&rsquo;s local AI products: Clipper, TerraGuide, Apply, and MLX optimization work.</p>
+      </div>
+    </section>
+
+    <!-- 2. WHO THIS IS FOR -->
+    <section class="py-16 md:py-20 bg-gray-50">
       <div class="container mx-auto px-6">
-        <div class="max-w-4xl mx-auto text-center">
-          <p class="text-indigo-600 text-sm font-semibold tracking-widest uppercase mb-6">For Enterprise</p>
-          <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-800 leading-tight mb-6">
-            Reduce AI token spend without reducing answer quality.
-          </h1>
-          <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-10 leading-relaxed">
-            Offlyn.ai helps AI teams compile meetings, PDFs, web pages, logs, audio, and field documents into compact, source-grounded evidence before cloud inference.
-          </p>
-          <div class="flex flex-col sm:flex-row gap-4 justify-center mb-6">
-            <a href="#token-savings-audit" class="px-8 py-3.5 bg-indigo-600 text-white font-bold rounded-xl hover:bg-indigo-700 transition text-base shadow-lg hover:shadow-xl">Run a token savings audit</a>
-            <a href="#token-audit-mcp" class="px-8 py-3.5 border border-indigo-600 text-indigo-600 font-medium rounded-xl hover:bg-indigo-600 hover:text-white transition text-base">See Token Audit MCP</a>
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-800 text-center mb-10">Built for AI teams with repeated-context costs.</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-5xl mx-auto">
+          <div class="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm">
+            <h3 class="text-gray-800 font-semibold mb-2">AI SaaS teams</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">Meeting copilots, support agents, research assistants, document Q&A, sales intelligence.</p>
           </div>
-          <div class="flex justify-center mb-20">
-            <a href="#token-audit-mcp" class="inline-flex items-center gap-2 px-4 py-2 bg-gray-50 border border-gray-200 rounded-full text-sm text-gray-600 hover:border-indigo-300 hover:text-indigo-600 transition">
-              <span class="px-2 py-0.5 bg-indigo-100 text-indigo-700 text-xs font-semibold rounded-full">Coming Soon</span>
-              Token Audit MCP for prompt, trace, and context audits
+          <div class="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm">
+            <h3 class="text-gray-800 font-semibold mb-2">Agent infrastructure teams</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">Teams using RAG, traces, MCP tools, gateways, observability, and model routing.</p>
+          </div>
+          <div class="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm">
+            <h3 class="text-gray-800 font-semibold mb-2">Enterprise AI teams</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">Teams working with private documents, transcripts, logs, manuals, and internal knowledge.</p>
+          </div>
+          <div class="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm">
+            <h3 class="text-gray-800 font-semibold mb-2">Remote-industry teams</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">Agriculture, mining, energy, utilities, field service, and disaster response teams with limited connectivity.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. PROBLEM -->
+    <section class="py-16 md:py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center mb-10">
+          <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">AI products waste tokens by sending the same context again and again.</h2>
+          <p class="text-gray-600 max-w-3xl mx-auto">Cloud models often receive full transcripts, long PDFs, support logs, web pages, tool outputs, or too many RAG chunks &mdash; even when most of that context is repeated, low relevance, or better processed locally first.</p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-5xl mx-auto">
+          <div class="bg-gray-50 border border-gray-100 rounded-2xl p-5">
+            <h3 class="text-gray-800 font-semibold mb-2">Repeated context</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">The same transcripts, documents, logs, and chunks get resent across sessions.</p>
+          </div>
+          <div class="bg-gray-50 border border-gray-100 rounded-2xl p-5">
+            <h3 class="text-gray-800 font-semibold mb-2">Long-context bloat</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">Large PDFs and manuals overflow practical context budgets.</p>
+          </div>
+          <div class="bg-gray-50 border border-gray-100 rounded-2xl p-5">
+            <h3 class="text-gray-800 font-semibold mb-2">Retrieval noise</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">RAG systems often send too many low-relevance chunks.</p>
+          </div>
+          <div class="bg-gray-50 border border-gray-100 rounded-2xl p-5">
+            <h3 class="text-gray-800 font-semibold mb-2">No quality guardrail</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">Teams cut tokens but cannot prove citations, recall, or answer quality stayed intact.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. HOW IT WORKS -->
+    <section id="how-it-works" class="py-16 md:py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-800 text-center mb-12">Audit. Route. Evidence-pack. Measure.</h2>
+        <div class="grid md:grid-cols-5 gap-4 max-w-5xl mx-auto">
+          <div class="text-center">
+            <div class="w-12 h-12 bg-indigo-50 border border-indigo-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <span class="text-indigo-600 font-bold text-lg">1</span>
+            </div>
+            <h3 class="text-gray-800 font-semibold mb-2">Audit</h3>
+            <p class="text-gray-500 text-xs leading-relaxed">Analyze prompts, traces, retrieved chunks, documents, transcripts, logs, and tool outputs.</p>
+          </div>
+          <div class="text-center">
+            <div class="w-12 h-12 bg-indigo-50 border border-indigo-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <span class="text-indigo-600 font-bold text-lg">2</span>
+            </div>
+            <h3 class="text-gray-800 font-semibold mb-2">Route</h3>
+            <p class="text-gray-500 text-xs leading-relaxed">Decide what runs locally, what gets compressed, and what needs cloud reasoning.</p>
+          </div>
+          <div class="text-center">
+            <div class="w-12 h-12 bg-indigo-50 border border-indigo-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <span class="text-indigo-600 font-bold text-lg">3</span>
+            </div>
+            <h3 class="text-gray-800 font-semibold mb-2">Optimize locally</h3>
+            <p class="text-gray-500 text-xs leading-relaxed">Local transcription, chunking, summarization, embeddings, hybrid retrieval, first-pass classification.</p>
+          </div>
+          <div class="text-center">
+            <div class="w-12 h-12 bg-indigo-50 border border-indigo-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <span class="text-indigo-600 font-bold text-lg">4</span>
+            </div>
+            <h3 class="text-gray-800 font-semibold mb-2">Escalate with evidence</h3>
+            <p class="text-gray-500 text-xs leading-relaxed">Send cloud models only the smallest source-grounded evidence pack needed for the answer.</p>
+          </div>
+          <div class="text-center">
+            <div class="w-12 h-12 bg-indigo-50 border border-indigo-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <span class="text-indigo-600 font-bold text-lg">5</span>
+            </div>
+            <h3 class="text-gray-800 font-semibold mb-2">Measure quality</h3>
+            <p class="text-gray-500 text-xs leading-relaxed">Compare tokens, latency, citation coverage, retrieval precision, answer quality, and fallback risk.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. PAID OFFER / BUSINESS MODEL -->
+    <section class="py-16 md:py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <div class="text-center mb-10">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Start with a paid Token Savings Audit.</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">A focused engagement that identifies repeated-context waste and prototypes a quality-preserving local/cloud routing path for one workflow.</p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-10">
+            <div class="bg-gray-50 border border-gray-100 rounded-2xl p-6">
+              <h3 class="text-gray-800 font-semibold mb-3">What we review</h3>
+              <ul class="space-y-2">
+                <li class="flex items-start gap-2 text-gray-600 text-sm"><svg class="w-4 h-4 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Prompts and traces</li>
+                <li class="flex items-start gap-2 text-gray-600 text-sm"><svg class="w-4 h-4 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>RAG chunks and retrieval patterns</li>
+                <li class="flex items-start gap-2 text-gray-600 text-sm"><svg class="w-4 h-4 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Meeting transcripts and PDFs</li>
+                <li class="flex items-start gap-2 text-gray-600 text-sm"><svg class="w-4 h-4 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Support logs and MCP tool calls</li>
+                <li class="flex items-start gap-2 text-gray-600 text-sm"><svg class="w-4 h-4 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Cloud model usage patterns</li>
+              </ul>
+            </div>
+            <div class="bg-gray-50 border border-gray-100 rounded-2xl p-6">
+              <h3 class="text-gray-800 font-semibold mb-3">What you get</h3>
+              <ul class="space-y-2">
+                <li class="flex items-start gap-2 text-gray-600 text-sm"><svg class="w-4 h-4 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Token waste scorecard</li>
+                <li class="flex items-start gap-2 text-gray-600 text-sm"><svg class="w-4 h-4 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Local/cloud routing plan</li>
+                <li class="flex items-start gap-2 text-gray-600 text-sm"><svg class="w-4 h-4 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Evidence-pack prototype</li>
+                <li class="flex items-start gap-2 text-gray-600 text-sm"><svg class="w-4 h-4 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Quality-risk report</li>
+                <li class="flex items-start gap-2 text-gray-600 text-sm"><svg class="w-4 h-4 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Integration roadmap + optional MCP early access</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-offlyn-navy rounded-2xl p-5 max-w-3xl mx-auto text-center">
+            <p class="text-gray-400 text-xs uppercase tracking-widest mb-1">How Offlyn makes money</p>
+            <p class="text-white text-sm font-medium">Paid audits &rarr; Prototype sprints &rarr; Enterprise integration / license &rarr; MCP and gateway integrations</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. ROUTING -->
+    <section class="py-16 md:py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center mb-10">
+          <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Local when possible. Cloud when it improves quality.</h2>
+          <p class="text-gray-600 max-w-3xl mx-auto">Offlyn does not force every task offline. It routes each step based on context size, privacy, latency, local model availability, token budget, and answer-quality risk.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-5 max-w-4xl mx-auto mb-8">
+          <div class="bg-green-50 border border-green-200 rounded-2xl p-5">
+            <h3 class="text-green-800 font-semibold mb-3">Local device path</h3>
+            <ul class="space-y-1.5">
+              <li class="flex items-center gap-2 text-sm text-green-700"><span class="w-1.5 h-1.5 bg-green-400 rounded-full flex-shrink-0"></span>MLX Whisper transcription</li>
+              <li class="flex items-center gap-2 text-sm text-green-700"><span class="w-1.5 h-1.5 bg-green-400 rounded-full flex-shrink-0"></span>Local SLM classification</li>
+              <li class="flex items-center gap-2 text-sm text-green-700"><span class="w-1.5 h-1.5 bg-green-400 rounded-full flex-shrink-0"></span>Local embeddings</li>
+              <li class="flex items-center gap-2 text-sm text-green-700"><span class="w-1.5 h-1.5 bg-green-400 rounded-full flex-shrink-0"></span>Sensitive-context checks</li>
+            </ul>
+          </div>
+          <div class="bg-indigo-50 border border-indigo-200 rounded-2xl p-5">
+            <h3 class="text-indigo-800 font-semibold mb-3">Local optimization path</h3>
+            <ul class="space-y-1.5">
+              <li class="flex items-center gap-2 text-sm text-indigo-700"><span class="w-1.5 h-1.5 bg-indigo-400 rounded-full flex-shrink-0"></span>Chunking</li>
+              <li class="flex items-center gap-2 text-sm text-indigo-700"><span class="w-1.5 h-1.5 bg-indigo-400 rounded-full flex-shrink-0"></span>Map-reduce summaries</li>
+              <li class="flex items-center gap-2 text-sm text-indigo-700"><span class="w-1.5 h-1.5 bg-indigo-400 rounded-full flex-shrink-0"></span>Hybrid retrieval</li>
+              <li class="flex items-center gap-2 text-sm text-indigo-700"><span class="w-1.5 h-1.5 bg-indigo-400 rounded-full flex-shrink-0"></span>Evidence-pack creation</li>
+            </ul>
+          </div>
+          <div class="bg-blue-50 border border-blue-200 rounded-2xl p-5">
+            <h3 class="text-blue-800 font-semibold mb-3">Cloud escalation path</h3>
+            <ul class="space-y-1.5">
+              <li class="flex items-center gap-2 text-sm text-blue-700"><span class="w-1.5 h-1.5 bg-blue-400 rounded-full flex-shrink-0"></span>Frontier reasoning</li>
+              <li class="flex items-center gap-2 text-sm text-blue-700"><span class="w-1.5 h-1.5 bg-blue-400 rounded-full flex-shrink-0"></span>High-stakes synthesis</li>
+              <li class="flex items-center gap-2 text-sm text-blue-700"><span class="w-1.5 h-1.5 bg-blue-400 rounded-full flex-shrink-0"></span>Low-confidence fallback</li>
+              <li class="flex items-center gap-2 text-sm text-blue-700"><span class="w-1.5 h-1.5 bg-blue-400 rounded-full flex-shrink-0"></span>Final polished response</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="max-w-3xl mx-auto">
+          <div class="bg-white border border-gray-200 rounded-2xl p-4 text-center mb-6">
+            <p class="text-gray-800 font-semibold mb-1">Quality Gate</p>
+            <p class="text-gray-500 text-xs">Citation coverage &bull; Confidence &bull; Privacy &bull; Latency &bull; Token budget &bull; Fallback risk</p>
+          </div>
+          <p class="text-gray-400 text-sm text-center">Offlyn does not replace your LLM gateway. It improves what reaches the gateway.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. PROOF -->
+    <section class="py-16 md:py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center mb-10">
+          <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Built from real local AI products.</h2>
+          <p class="text-gray-600 max-w-3xl mx-auto">Offlyn&rsquo;s enterprise work comes from the constraints behind its own products: local transcription, long-document workflows, hybrid retrieval, offline use cases, and Apple-native AI optimization.</p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-5xl mx-auto">
+          <div class="bg-gray-50 border border-gray-100 rounded-2xl p-5">
+            <h3 class="text-gray-800 font-semibold mb-2">Clipper</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">Local work intelligence for meetings, PDFs, YouTube, web pages, notes, and search.</p>
+          </div>
+          <div class="bg-gray-50 border border-gray-100 rounded-2xl p-5">
+            <h3 class="text-gray-800 font-semibold mb-2">TerraGuide</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">Offline AI guidance for field and emergency environments.</p>
+          </div>
+          <div class="bg-gray-50 border border-gray-100 rounded-2xl p-5">
+            <a href="https://github.com/joelnishanth" target="_blank" rel="noopener" class="block group">
+              <h3 class="text-gray-800 font-semibold mb-2 group-hover:text-indigo-600 transition">MLX + open-source work</h3>
+              <p class="text-gray-500 text-sm leading-relaxed">Local transcription, long-document processing, local inference, KV-cache, and speculative decoding experiments.</p>
+              <span class="text-indigo-600 text-xs font-medium mt-2 inline-block">View on GitHub &rarr;</span>
             </a>
           </div>
-        </div>
-
-        <!-- Flow Diagram -->
-        <div class="max-w-2xl mx-auto">
-          <div class="flex flex-col items-center gap-0">
-            <!-- Raw Context -->
-            <div class="w-full bg-gray-50 border border-gray-200 rounded-2xl p-6 text-center">
-              <p class="text-gray-800 font-semibold text-lg mb-1">Raw Context</p>
-              <p class="text-gray-500 text-sm">PDFs &bull; Meetings &bull; Audio &bull; Web Pages &bull; Logs</p>
-            </div>
-            <!-- Arrow -->
-            <div class="flex flex-col items-center py-2">
-              <div class="w-px h-6 bg-indigo-300"></div>
-              <svg class="w-5 h-5 text-indigo-400 -mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
-            </div>
-            <!-- Offlyn Context Optimizer -->
-            <div class="w-full bg-gradient-to-r from-indigo-50 to-blue-50 border border-indigo-200 rounded-2xl p-6 text-center">
-              <p class="text-indigo-700 font-semibold text-lg mb-1">Offlyn Context Optimizer</p>
-              <p class="text-gray-500 text-sm">Local processing &bull; Routing &bull; Chunking &bull; Retrieval &bull; Evidence packs</p>
-            </div>
-            <!-- Arrow -->
-            <div class="flex flex-col items-center py-2">
-              <div class="w-px h-6 bg-indigo-300"></div>
-              <svg class="w-5 h-5 text-indigo-400 -mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
-            </div>
-            <!-- Cloud Model -->
-            <div class="w-full bg-gray-50 border border-gray-200 rounded-2xl p-6 text-center">
-              <p class="text-gray-800 font-semibold text-lg mb-1">Cloud Model</p>
-              <p class="text-gray-500 text-sm">Only the smallest useful context</p>
-            </div>
-          </div>
-
-          <!-- Chips -->
-          <div class="flex flex-wrap justify-center gap-3 mt-10">
-            <span class="px-4 py-1.5 bg-white border border-gray-200 rounded-full text-xs font-medium text-gray-600 shadow-sm">Context Compiler</span>
-            <span class="px-4 py-1.5 bg-white border border-gray-200 rounded-full text-xs font-medium text-gray-600 shadow-sm">Token Firewall</span>
-            <span class="px-4 py-1.5 bg-white border border-gray-200 rounded-full text-xs font-medium text-gray-600 shadow-sm">Quality Bench</span>
-            <span class="px-4 py-1.5 bg-white border border-gray-200 rounded-full text-xs font-medium text-gray-600 shadow-sm">Context Router</span>
-            <span class="px-4 py-1.5 bg-white border border-gray-200 rounded-full text-xs font-medium text-gray-600 shadow-sm">Local First-Pass Agent</span>
-            <span class="px-4 py-1.5 bg-white border border-gray-200 rounded-full text-xs font-medium text-gray-600 shadow-sm">Evidence Packs</span>
+          <div class="bg-gray-50 border border-indigo-200 rounded-2xl p-5 relative">
+            <span class="absolute top-3 right-3 px-2 py-0.5 bg-indigo-100 text-indigo-700 text-xs font-semibold rounded-full">Coming Soon</span>
+            <h3 class="text-gray-800 font-semibold mb-2">Token Audit MCP</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">A developer-facing MCP server for auditing prompt context, agent traces, retrieved chunks, and repeated-context waste before cloud inference.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ============================================ -->
-    <!-- SECTION 1: ORIGIN STORY -->
-    <!-- ============================================ -->
-    <section class="py-20 md:py-28 bg-gray-50">
+    <!-- 8. WORKFLOW EXAMPLES -->
+    <section class="py-16 md:py-20 bg-gray-50">
       <div class="container mx-auto px-6">
-        <div class="max-w-4xl mx-auto">
-          <p class="text-indigo-600 text-sm font-semibold tracking-widest uppercase mb-4">Our Story</p>
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8">Built from the constraints of offline AI.</h2>
-
-          <div class="space-y-6 text-lg text-gray-600 leading-relaxed mb-12">
-            <p>We started by building AI products that had to work without network access. TerraGuide needed to provide emergency guidance in disaster zones. Clipper needed to process meetings and documents entirely on-device. Apply needed to automate browser tasks with local models.</p>
-            <p>These constraints forced us to optimize everything: transcription, chunking, retrieval, summarization, and model inference &mdash; all running locally on Apple Silicon.</p>
-            <p class="text-gray-800 font-medium">Now we package those same techniques to help enterprise AI teams reduce repeated token usage while preserving answer quality.</p>
-          </div>
-
-          <!-- Timeline -->
-          <div class="grid md:grid-cols-3 gap-6">
-            <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm">
-              <div class="w-10 h-10 bg-indigo-50 rounded-full flex items-center justify-center mb-4">
-                <span class="text-indigo-600 font-bold text-sm">01</span>
-              </div>
-              <h3 class="text-gray-800 font-semibold mb-2">Offline Products</h3>
-              <p class="text-gray-500 text-sm">TerraGuide, Clipper, and Apply &mdash; built to work without network access.</p>
-            </div>
-            <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm">
-              <div class="w-10 h-10 bg-indigo-50 rounded-full flex items-center justify-center mb-4">
-                <span class="text-indigo-600 font-bold text-sm">02</span>
-              </div>
-              <h3 class="text-gray-800 font-semibold mb-2">Local Optimizations</h3>
-              <p class="text-gray-500 text-sm">MLX inference, Whisper transcription, chunking, retrieval, and evidence packing on Apple Silicon.</p>
-            </div>
-            <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm">
-              <div class="w-10 h-10 bg-indigo-50 rounded-full flex items-center justify-center mb-4">
-                <span class="text-indigo-600 font-bold text-sm">03</span>
-              </div>
-              <h3 class="text-gray-800 font-semibold mb-2">Enterprise Context Layer</h3>
-              <p class="text-gray-500 text-sm">Packaging those learnings to help teams reduce unnecessary cloud token usage while preserving answer quality.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!-- SECTION 2: THE PROBLEM -->
-    <!-- ============================================ -->
-    <section class="py-20 md:py-28 bg-white">
-      <div class="container mx-auto px-6">
-        <div class="max-w-4xl mx-auto text-center mb-14">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Most AI products waste tokens on repeated context.</h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto">AI systems often send the same documents, transcripts, web pages, logs, and meeting history to cloud models again and again. That creates compounding token cost, latency, privacy exposure, and quality risk.</p>
-        </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          <div class="bg-gray-50 border border-gray-100 rounded-2xl p-6">
-            <div class="w-10 h-10 bg-red-50 rounded-lg flex items-center justify-center mb-4">
-              <svg class="w-5 h-5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
-            </div>
-            <h3 class="text-gray-800 font-semibold mb-2">Repeated raw context</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">The same source material gets re-sent, re-parsed, and re-summarized across sessions and agent workflows.</p>
-          </div>
-          <div class="bg-gray-50 border border-gray-100 rounded-2xl p-6">
-            <div class="w-10 h-10 bg-amber-50 rounded-lg flex items-center justify-center mb-4">
-              <svg class="w-5 h-5 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-            </div>
-            <h3 class="text-gray-800 font-semibold mb-2">Long-document overflow</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">PDFs, manuals, transcripts, and logs exceed practical context limits, forcing truncation or expensive large-context calls.</p>
-          </div>
-          <div class="bg-gray-50 border border-gray-100 rounded-2xl p-6">
-            <div class="w-10 h-10 bg-orange-50 rounded-lg flex items-center justify-center mb-4">
-              <svg class="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"/></svg>
-            </div>
-            <h3 class="text-gray-800 font-semibold mb-2">No quality floor</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">Teams try to reduce tokens, but cannot easily prove whether answer quality, citations, or retrieval coverage stayed intact.</p>
-          </div>
-          <div class="bg-gray-50 border border-gray-100 rounded-2xl p-6">
-            <div class="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center mb-4">
-              <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-            </div>
-            <h3 class="text-gray-800 font-semibold mb-2">Local hardware is underused</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">Modern Macs and edge devices can handle transcription, chunking, embeddings, local search, and first-pass reasoning before cloud escalation.</p>
-          </div>
-          <div class="bg-gray-50 border border-gray-100 rounded-2xl p-6">
-            <div class="w-10 h-10 bg-violet-50 rounded-lg flex items-center justify-center mb-4">
-              <svg class="w-5 h-5 text-violet-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            </div>
-            <h3 class="text-gray-800 font-semibold mb-2">Agent traces are hard to audit</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">AI teams can see prompts, tool calls, and retrieved chunks, but it is still difficult to identify which context is repeated, oversized, low relevance, or better handled locally.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!-- SECTION 3: THE OFFLYN APPROACH -->
-    <!-- ============================================ -->
-    <section class="py-20 md:py-28 bg-gray-50">
-      <div class="container mx-auto px-6">
-        <div class="max-w-4xl mx-auto text-center mb-14">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Compile context before inference.</h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto">Offlyn is not another memory layer. It is a context efficiency layer that turns messy work data into compact evidence packs.</p>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
-          <div class="text-center">
-            <div class="w-14 h-14 bg-indigo-50 border border-indigo-100 rounded-2xl flex items-center justify-center mx-auto mb-5">
-              <span class="text-indigo-600 font-bold text-xl">1</span>
-            </div>
-            <h3 class="text-gray-800 font-semibold text-lg mb-3">Ingest once</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">Meetings, PDFs, web pages, videos, audio, logs, and notes.</p>
-          </div>
-          <div class="text-center">
-            <div class="w-14 h-14 bg-indigo-50 border border-indigo-100 rounded-2xl flex items-center justify-center mx-auto mb-5">
-              <span class="text-indigo-600 font-bold text-xl">2</span>
-            </div>
-            <h3 class="text-gray-800 font-semibold text-lg mb-3">Process locally</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">Transcribe, chunk, summarize, embed, index, and classify with local-first pipelines.</p>
-          </div>
-          <div class="text-center">
-            <div class="w-14 h-14 bg-indigo-50 border border-indigo-100 rounded-2xl flex items-center justify-center mx-auto mb-5">
-              <span class="text-indigo-600 font-bold text-xl">3</span>
-            </div>
-            <h3 class="text-gray-800 font-semibold text-lg mb-3">Send only what matters</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">Build source-grounded evidence packs and escalate to cloud models only when needed.</p>
-          </div>
-        </div>
-
-        <p class="text-center text-gray-500 text-base max-w-2xl mx-auto border-t border-gray-200 pt-8 mb-4">Use the cloud for frontier reasoning. Use the edge for repeated context work.</p>
-        <p class="text-center text-gray-400 text-sm max-w-2xl mx-auto">Token Audit MCP brings this workflow into agent development environments by auditing context before cloud inference.</p>
-      </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!-- SECTION 4: OFFLYN CONTEXT OPTIMIZER -->
-    <!-- ============================================ -->
-    <section class="py-20 md:py-28 bg-white">
-      <div class="container mx-auto px-6">
-        <div class="max-w-4xl mx-auto text-center mb-14">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Offlyn Context Optimizer</h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto">A local-first optimization and routing layer that reduces unnecessary cloud token usage while preserving answer quality.</p>
-        </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          <div class="bg-gray-50 border border-gray-100 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
-            <div class="w-12 h-12 bg-indigo-50 border border-indigo-100 rounded-xl flex items-center justify-center mb-5">
-              <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
-            </div>
-            <h3 class="text-gray-800 font-semibold text-lg mb-3">Context Compiler</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">Turns raw documents, meetings, logs, audio, and web pages into structured, source-grounded evidence packs.</p>
-          </div>
-          <div class="bg-gray-50 border border-gray-100 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
-            <div class="w-12 h-12 bg-indigo-50 border border-indigo-100 rounded-xl flex items-center justify-center mb-5">
-              <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
-            </div>
-            <h3 class="text-gray-800 font-semibold text-lg mb-3">Token Firewall</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">Flags expensive raw-context uploads and recommends local retrieval, local summarization, or selective cloud escalation.</p>
-          </div>
-          <div class="bg-gray-50 border border-gray-100 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
-            <div class="w-12 h-12 bg-indigo-50 border border-indigo-100 rounded-xl flex items-center justify-center mb-5">
-              <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
-            </div>
-            <h3 class="text-gray-800 font-semibold text-lg mb-3">Quality Bench</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">Measures token usage, retrieval precision, citation coverage, answer quality, latency, and cloud calls avoided.</p>
-          </div>
-          <div class="bg-gray-50 border border-gray-100 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
-            <div class="w-12 h-12 bg-indigo-50 border border-indigo-100 rounded-xl flex items-center justify-center mb-5">
-              <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-            </div>
-            <h3 class="text-gray-800 font-semibold text-lg mb-3">Context Router</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">Routes work between local device models, local preprocessing, edge/private models, and cloud models based on cost, latency, privacy, and answer-quality targets.</p>
-          </div>
-          <div class="bg-gray-50 border border-indigo-200 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300 relative">
-            <span class="absolute top-4 right-4 px-2.5 py-0.5 bg-indigo-100 text-indigo-700 text-xs font-semibold rounded-full">Coming Soon</span>
-            <div class="w-12 h-12 bg-indigo-50 border border-indigo-100 rounded-xl flex items-center justify-center mb-5">
-              <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            </div>
-            <h3 class="text-gray-800 font-semibold text-lg mb-3">Token Audit MCP</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">A developer-facing MCP server for auditing prompts, traces, retrieved chunks, tool calls, and repeated context before expensive cloud inference.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!-- TOKEN AUDIT MCP SECTION -->
-    <!-- ============================================ -->
-    <section id="token-audit-mcp" class="py-20 md:py-28 bg-gray-50">
-      <div class="container mx-auto px-6">
-        <div class="max-w-6xl mx-auto">
-          <div class="grid lg:grid-cols-2 gap-12 items-start">
-            <!-- Left: Copy -->
-            <div>
-              <p class="text-indigo-600 text-sm font-semibold tracking-widest uppercase mb-4">Coming Soon</p>
-              <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Token Audit MCP</h2>
-              <p class="text-lg text-gray-500 mb-6">Audit repeated context before it becomes cloud spend.</p>
-              <p class="text-gray-600 leading-relaxed mb-6">Offlyn Token Audit MCP is a coming-soon developer tool that connects to agent workflows and helps teams inspect prompts, traces, retrieved chunks, documents, transcripts, and tool calls before they are sent to cloud models.</p>
-              <p class="text-gray-700 font-medium mb-4">It is designed to answer:</p>
-              <ul class="space-y-2 mb-8">
-                <li class="flex items-start gap-2.5 text-gray-600 text-sm"><svg class="w-4 h-4 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Where are we wasting tokens?</li>
-                <li class="flex items-start gap-2.5 text-gray-600 text-sm"><svg class="w-4 h-4 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Which context is repeated or oversized?</li>
-                <li class="flex items-start gap-2.5 text-gray-600 text-sm"><svg class="w-4 h-4 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>What can be processed locally first?</li>
-                <li class="flex items-start gap-2.5 text-gray-600 text-sm"><svg class="w-4 h-4 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Can we send a smaller evidence pack without lowering quality?</li>
-              </ul>
-              <div class="flex flex-col sm:flex-row gap-3">
-                <a href="#token-savings-audit" class="px-6 py-2.5 bg-indigo-600 text-white font-bold rounded-lg hover:bg-indigo-700 transition text-sm">Run a token savings audit</a>
-                <a href="#token-savings-audit" onclick="document.getElementById('mcp-waitlist-check').checked=true" class="px-6 py-2.5 border border-indigo-600 text-indigo-600 rounded-lg hover:bg-indigo-600 hover:text-white transition text-sm font-medium">Join MCP waitlist</a>
-              </div>
-            </div>
-
-            <!-- Right: Mock audit panel -->
-            <div class="bg-offlyn-navy rounded-2xl p-6 shadow-lg font-mono text-sm overflow-x-auto">
-              <div class="flex items-center gap-2 mb-4">
-                <div class="w-3 h-3 rounded-full bg-red-400"></div>
-                <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
-                <div class="w-3 h-3 rounded-full bg-green-400"></div>
-                <span class="ml-2 text-gray-500 text-xs font-sans">Offlyn Token Audit MCP</span>
-                <span class="ml-auto px-2 py-0.5 bg-indigo-500/20 text-indigo-300 text-xs rounded font-sans">coming soon</span>
-              </div>
-              <div class="space-y-3 text-gray-400">
-                <p><span class="text-cyan-400">audit_prompt_context</span><span class="text-gray-600">()</span></p>
-                <div class="pl-4 space-y-1 border-l-2 border-gray-700">
-                  <p>Input tokens: <span class="text-white">82,400</span></p>
-                  <p>Repeated sources: <span class="text-amber-400">3</span></p>
-                  <p>Low-relevance chunks: <span class="text-amber-400">14</span></p>
-                  <p>Sensitive context risk: <span class="text-yellow-400">medium</span></p>
-                </div>
-                <p class="text-gray-500 mt-4">Recommendation:</p>
-                <p class="text-green-400 text-xs leading-relaxed">Build source-grounded evidence pack before cloud call.</p>
-                <p class="text-gray-500 mt-3">Suggested route:</p>
-                <p class="text-gray-300 text-xs">local chunking <span class="text-gray-600">&rarr;</span> hybrid retrieval <span class="text-gray-600">&rarr;</span> compact evidence pack <span class="text-gray-600">&rarr;</span> cloud escalation</p>
-                <p class="text-gray-500 mt-3">Quality risk:</p>
-                <p class="text-yellow-400 text-xs">medium until citations verified</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Mini cards -->
-          <div class="grid md:grid-cols-3 gap-6 mt-12 max-w-4xl mx-auto">
-            <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm">
-              <h3 class="text-gray-800 font-semibold mb-2">Prompt + trace audit</h3>
-              <p class="text-gray-500 text-sm leading-relaxed">Find oversized prompts, repeated context, and expensive tool-call patterns.</p>
-            </div>
-            <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm">
-              <h3 class="text-gray-800 font-semibold mb-2">Evidence pack builder</h3>
-              <p class="text-gray-500 text-sm leading-relaxed">Recommend compact, source-grounded context for cloud models.</p>
-            </div>
-            <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm">
-              <h3 class="text-gray-800 font-semibold mb-2">Quality-aware savings</h3>
-              <p class="text-gray-500 text-sm leading-relaxed">Estimate token reduction while tracking citation coverage and quality risk.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!-- CONTEXT ROUTER SECTION -->
-    <!-- ============================================ -->
-    <section class="py-20 md:py-28 bg-white">
-      <div class="container mx-auto px-6">
-        <div class="max-w-4xl mx-auto text-center mb-14">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Route context work to the right model.</h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto">Offlyn uses the Token Savings Audit and Token Audit MCP to decide what should run locally, what should be compressed into source-grounded evidence, and what should be escalated to cloud models.</p>
-        </div>
-
-        <div class="max-w-4xl mx-auto mb-8">
-          <p class="text-gray-600 leading-relaxed text-center max-w-3xl mx-auto mb-12">The goal is not to force every AI task offline. The goal is to maximize answer quality while reducing unnecessary cloud token use. Offlyn routes transcription, chunking, retrieval, summarization, classification, and first-pass reasoning to local device models when quality risk is low &mdash; then escalates to cloud models with compact evidence packs when stronger reasoning is required.</p>
-
-          <div class="grid md:grid-cols-3 gap-6">
-            <div class="bg-green-50 border border-green-200 rounded-2xl p-6">
-              <div class="flex items-center gap-2 mb-4">
-                <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center">
-                  <svg class="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-                </div>
-                <h3 class="text-green-800 font-semibold">Local device path</h3>
-              </div>
-              <ul class="space-y-2">
-                <li class="flex items-center gap-2 text-sm text-green-700"><span class="w-1.5 h-1.5 bg-green-400 rounded-full flex-shrink-0"></span>MLX Whisper transcription</li>
-                <li class="flex items-center gap-2 text-sm text-green-700"><span class="w-1.5 h-1.5 bg-green-400 rounded-full flex-shrink-0"></span>Local SLM classification</li>
-                <li class="flex items-center gap-2 text-sm text-green-700"><span class="w-1.5 h-1.5 bg-green-400 rounded-full flex-shrink-0"></span>Local embeddings</li>
-                <li class="flex items-center gap-2 text-sm text-green-700"><span class="w-1.5 h-1.5 bg-green-400 rounded-full flex-shrink-0"></span>Sensitive context checks</li>
-              </ul>
-            </div>
-            <div class="bg-indigo-50 border border-indigo-200 rounded-2xl p-6">
-              <div class="flex items-center gap-2 mb-4">
-                <div class="w-8 h-8 bg-indigo-100 rounded-lg flex items-center justify-center">
-                  <svg class="w-4 h-4 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
-                </div>
-                <h3 class="text-indigo-800 font-semibold">Local optimization path</h3>
-              </div>
-              <ul class="space-y-2">
-                <li class="flex items-center gap-2 text-sm text-indigo-700"><span class="w-1.5 h-1.5 bg-indigo-400 rounded-full flex-shrink-0"></span>Chunking</li>
-                <li class="flex items-center gap-2 text-sm text-indigo-700"><span class="w-1.5 h-1.5 bg-indigo-400 rounded-full flex-shrink-0"></span>Map-reduce summaries</li>
-                <li class="flex items-center gap-2 text-sm text-indigo-700"><span class="w-1.5 h-1.5 bg-indigo-400 rounded-full flex-shrink-0"></span>Hybrid retrieval</li>
-                <li class="flex items-center gap-2 text-sm text-indigo-700"><span class="w-1.5 h-1.5 bg-indigo-400 rounded-full flex-shrink-0"></span>Evidence-pack creation</li>
-              </ul>
-            </div>
-            <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6">
-              <div class="flex items-center gap-2 mb-4">
-                <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center">
-                  <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
-                </div>
-                <h3 class="text-blue-800 font-semibold">Cloud escalation path</h3>
-              </div>
-              <ul class="space-y-2">
-                <li class="flex items-center gap-2 text-sm text-blue-700"><span class="w-1.5 h-1.5 bg-blue-400 rounded-full flex-shrink-0"></span>Frontier reasoning</li>
-                <li class="flex items-center gap-2 text-sm text-blue-700"><span class="w-1.5 h-1.5 bg-blue-400 rounded-full flex-shrink-0"></span>High-stakes synthesis</li>
-                <li class="flex items-center gap-2 text-sm text-blue-700"><span class="w-1.5 h-1.5 bg-blue-400 rounded-full flex-shrink-0"></span>Low-confidence fallback</li>
-                <li class="flex items-center gap-2 text-sm text-blue-700"><span class="w-1.5 h-1.5 bg-blue-400 rounded-full flex-shrink-0"></span>Final polished response</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- Quality Gate -->
-        <div class="max-w-3xl mx-auto">
-          <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6 text-center mb-10">
-            <p class="text-gray-800 font-semibold text-lg mb-2">Quality Gate</p>
-            <p class="text-gray-500 text-sm">Citation coverage &bull; Confidence &bull; Privacy sensitivity &bull; Latency &bull; Token budget &bull; Fallback risk</p>
-          </div>
-
-          <div class="text-center">
-            <a href="#token-savings-audit" class="px-8 py-3.5 bg-indigo-600 text-white font-bold rounded-xl hover:bg-indigo-700 transition text-base shadow-lg hover:shadow-xl inline-block mb-6">Run a token savings audit</a>
-            <p class="text-gray-400 text-sm max-w-xl mx-auto">Offlyn does not replace your LLM gateway. It improves what reaches the gateway.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!-- SECTION 5: EVIDENCE PACKS -->
-    <!-- ============================================ -->
-    <section class="py-20 md:py-28 bg-gray-50">
-      <div class="container mx-auto px-6">
-        <div class="max-w-4xl mx-auto">
-          <div class="text-center mb-14">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Evidence packs: fewer tokens, better grounding.</h2>
-            <p class="text-lg text-gray-600 max-w-3xl mx-auto">Instead of sending full documents or transcripts to a model, Offlyn builds a compact, source-grounded package that contains only the most relevant sections, timestamps, pages, and snippets.</p>
-          </div>
-
-          <!-- JSON Card -->
-          <div class="bg-offlyn-navy rounded-2xl p-6 md:p-8 mb-8 overflow-x-auto shadow-lg">
-            <pre class="text-sm leading-relaxed"><code><span class="text-gray-500">{</span>
-  <span class="text-cyan-400">"query"</span><span class="text-gray-500">:</span> <span class="text-green-400">"What is the shutdown procedure for fault code E203?"</span><span class="text-gray-500">,</span>
-  <span class="text-cyan-400">"evidence_pack"</span><span class="text-gray-500">: [</span>
-    <span class="text-gray-500">{</span>
-      <span class="text-cyan-400">"source"</span><span class="text-gray-500">:</span> <span class="text-green-400">"field_manual.pdf"</span><span class="text-gray-500">,</span>
-      <span class="text-cyan-400">"section"</span><span class="text-gray-500">:</span> <span class="text-green-400">"Hydraulic Safety Shutdown"</span><span class="text-gray-500">,</span>
-      <span class="text-cyan-400">"page"</span><span class="text-gray-500">:</span> <span class="text-violet-400">182</span><span class="text-gray-500">,</span>
-      <span class="text-cyan-400">"confidence"</span><span class="text-gray-500">:</span> <span class="text-violet-400">0.91</span>
-    <span class="text-gray-500">}</span>
-  <span class="text-gray-500">],</span>
-  <span class="text-cyan-400">"token_budget"</span><span class="text-gray-500">:</span> <span class="text-violet-400">1200</span><span class="text-gray-500">,</span>
-  <span class="text-cyan-400">"quality_risk"</span><span class="text-gray-500">:</span> <span class="text-green-400">"low"</span><span class="text-gray-500">,</span>
-  <span class="text-cyan-400">"recommended_route"</span><span class="text-gray-500">:</span> <span class="text-green-400">"local_summary_then_cloud"</span>
-<span class="text-gray-500">}</span></code></pre>
-          </div>
-
-          <!-- Benefit Chips -->
-          <div class="flex flex-wrap justify-center gap-3">
-            <span class="px-5 py-2 bg-indigo-50 border border-indigo-100 rounded-full text-sm font-medium text-indigo-600">Source-grounded</span>
-            <span class="px-5 py-2 bg-indigo-50 border border-indigo-100 rounded-full text-sm font-medium text-indigo-600">Token-budgeted</span>
-            <span class="px-5 py-2 bg-indigo-50 border border-indigo-100 rounded-full text-sm font-medium text-indigo-600">Quality-aware</span>
-          </div>
-
-          <p class="text-center text-gray-400 text-sm mt-8 max-w-3xl mx-auto">Token Audit MCP will expose evidence-pack recommendations as an agent-accessible tool, while enterprise audits help teams validate the workflow before production rollout.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!-- SECTION 6: BUILT FROM REAL PRODUCTS -->
-    <!-- ============================================ -->
-    <section class="py-20 md:py-28 bg-white">
-      <div class="container mx-auto px-6">
-        <div class="max-w-4xl mx-auto text-center mb-14">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Built from real local AI products, packaged for enterprise.</h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto">Offlyn&rsquo;s enterprise work comes from the constraints behind its own products: local transcription, long-document workflows, hybrid retrieval, offline use cases, and Apple-native AI optimization. Clipper proves the repeated-context pattern in a real product: meetings, web pages, PDFs, YouTube audio, and notes are processed once and queried repeatedly instead of being resent to cloud models.</p>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          <div class="bg-gray-50 border border-gray-100 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
-            <h3 class="text-gray-800 font-semibold text-lg mb-2">Offlyn Clipper</h3>
-            <p class="text-gray-500 text-sm leading-relaxed mb-5">Local work intelligence for macOS. Turns meetings, YouTube audio, web pages, PDFs, notes, and clips into searchable local context.</p>
-            <div class="border-t border-gray-200 pt-4">
-              <p class="text-xs text-indigo-600 font-semibold uppercase tracking-wider mb-1">Enterprise primitive</p>
-              <p class="text-gray-500 text-xs leading-relaxed">Private meeting intelligence, document Q&amp;A, local search, repeated-query token reduction.</p>
-            </div>
-          </div>
-          <div class="bg-gray-50 border border-gray-100 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
-            <h3 class="text-gray-800 font-semibold text-lg mb-2">TerraGuide</h3>
-            <p class="text-gray-500 text-sm leading-relaxed mb-5">Offline AI guidance for field and emergency environments where network access may be unreliable.</p>
-            <div class="border-t border-gray-200 pt-4">
-              <p class="text-xs text-indigo-600 font-semibold uppercase tracking-wider mb-1">Enterprise primitive</p>
-              <p class="text-gray-500 text-xs leading-relaxed">Remote operations, field knowledge, offline decision support, resilient local workflows.</p>
-            </div>
-          </div>
-          <div class="bg-gray-50 border border-gray-100 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
-            <h3 class="text-gray-800 font-semibold text-lg mb-2">Offlyn Apply</h3>
-            <p class="text-gray-500 text-sm leading-relaxed mb-5">Privacy-first local AI workflow automation for browser-based forms and task completion.</p>
-            <div class="border-t border-gray-200 pt-4">
-              <p class="text-xs text-indigo-600 font-semibold uppercase tracking-wider mb-1">Enterprise primitive</p>
-              <p class="text-gray-500 text-xs leading-relaxed">Local browser context, private task automation, small-model orchestration.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!-- SECTION 7: MLX OPEN SOURCE -->
-    <!-- ============================================ -->
-    <section id="mlx-repos" class="py-20 md:py-28 bg-gray-50">
-      <div class="container mx-auto px-6">
-        <div class="max-w-4xl mx-auto text-center mb-14">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Open-source primitives behind the optimization layer.</h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-3">The same Apple-native and MLX-oriented primitives used to power Offlyn&rsquo;s consumer products can help enterprise teams build local-first AI workflows.</p>
-          <p class="text-sm text-gray-400 max-w-3xl mx-auto">These projects inform the local-first primitives behind the enterprise workflow: transcription, long-document processing, local inference, and optimization experiments.</p>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-10">
-          <a href="https://github.com/joelnishanth/mlx-swift-chain" target="_blank" rel="noopener" class="bg-white border border-gray-100 rounded-2xl p-6 hover:shadow-lg transition-shadow duration-300 group block">
-            <div class="flex items-center gap-3 mb-3">
-              <svg class="w-5 h-5 text-gray-400 group-hover:text-gray-800 transition" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-              <span class="text-xs text-indigo-600 font-medium px-2.5 py-0.5 bg-indigo-50 border border-indigo-100 rounded-full">Long-document reasoning</span>
-            </div>
-            <h3 class="text-gray-800 font-semibold mb-2 group-hover:text-indigo-600 transition">mlx-swift-chain</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">Chunking, map-reduce summarization, prompt budgeting, progress reporting, retries, and source-grounded long-context workflows.</p>
-          </a>
-          <a href="https://github.com/joelnishanth/mlx-swift-turboquant" target="_blank" rel="noopener" class="bg-white border border-gray-100 rounded-2xl p-6 hover:shadow-lg transition-shadow duration-300 group block">
-            <div class="flex items-center gap-3 mb-3">
-              <svg class="w-5 h-5 text-gray-400 group-hover:text-gray-800 transition" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-              <span class="text-xs text-indigo-600 font-medium px-2.5 py-0.5 bg-indigo-50 border border-indigo-100 rounded-full">KV-cache optimization research</span>
-            </div>
-            <h3 class="text-gray-800 font-semibold mb-2 group-hover:text-indigo-600 transition">mlx-swift-turboquant</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">Experiments and benchmarks around KV-cache compression for more practical local inference.</p>
-          </a>
-          <a href="https://github.com/joelnishanth/mlx-swift-mtp" target="_blank" rel="noopener" class="bg-white border border-gray-100 rounded-2xl p-6 hover:shadow-lg transition-shadow duration-300 group block">
-            <div class="flex items-center gap-3 mb-3">
-              <svg class="w-5 h-5 text-gray-400 group-hover:text-gray-800 transition" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-              <span class="text-xs text-indigo-600 font-medium px-2.5 py-0.5 bg-indigo-50 border border-indigo-100 rounded-full">Speculative decoding / MTP</span>
-            </div>
-            <h3 class="text-gray-800 font-semibold mb-2 group-hover:text-indigo-600 transition">mlx-swift-mtp</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">Native experiments for faster local generation and Apple Silicon inference workflows.</p>
-          </a>
-          <a href="https://github.com/joelnishanth/mlx-whisper-swift" target="_blank" rel="noopener" class="bg-white border border-gray-100 rounded-2xl p-6 hover:shadow-lg transition-shadow duration-300 group block">
-            <div class="flex items-center gap-3 mb-3">
-              <svg class="w-5 h-5 text-gray-400 group-hover:text-gray-800 transition" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-              <span class="text-xs text-indigo-600 font-medium px-2.5 py-0.5 bg-indigo-50 border border-indigo-100 rounded-full">Local speech-to-text</span>
-            </div>
-            <h3 class="text-gray-800 font-semibold mb-2 group-hover:text-indigo-600 transition">mlx-whisper-swift</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">Whisper-style local transcription, translation, and language detection for private meeting and audio workflows.</p>
-          </a>
-        </div>
-
-        <div class="text-center">
-          <a href="https://github.com/joelnishanth" target="_blank" rel="noopener" class="px-8 py-3.5 border border-indigo-600 text-indigo-600 font-medium rounded-xl hover:bg-indigo-600 hover:text-white transition text-base inline-flex items-center gap-2">
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-            View GitHub projects
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!-- SECTION 8: EXAMPLE WORKFLOWS -->
-    <!-- ============================================ -->
-    <section class="py-20 md:py-28 bg-white">
-      <div class="container mx-auto px-6">
-        <div class="max-w-4xl mx-auto text-center mb-14">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Where Offlyn reduces unnecessary cloud token usage while preserving quality.</h2>
-        </div>
-
-        <div class="max-w-5xl mx-auto overflow-x-auto">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-800 text-center mb-10">Where customers feel the pain first.</h2>
+        <div class="max-w-4xl mx-auto overflow-x-auto mb-6">
           <table class="w-full text-left border-collapse">
             <thead>
               <tr>
-                <th class="py-4 px-5 text-xs font-semibold text-gray-500 uppercase tracking-wider border-b-2 border-gray-100 w-1/4">Workflow</th>
-                <th class="py-4 px-5 text-xs font-semibold text-gray-500 uppercase tracking-wider border-b-2 border-gray-100">Current pattern</th>
-                <th class="py-4 px-5 text-xs font-bold text-white uppercase tracking-wider border-b-2 border-indigo-600 bg-indigo-600 rounded-tl-lg rounded-tr-lg text-center">Offlyn pattern</th>
+                <th class="py-3 px-4 text-xs font-semibold text-gray-500 uppercase tracking-wider border-b-2 border-gray-200 w-1/5">Workflow</th>
+                <th class="py-3 px-4 text-xs font-semibold text-gray-500 uppercase tracking-wider border-b-2 border-gray-200">Current pattern</th>
+                <th class="py-3 px-4 text-xs font-bold text-white uppercase tracking-wider border-b-2 border-indigo-600 bg-indigo-600 rounded-tl-lg rounded-tr-lg text-center">Offlyn pattern</th>
+              </tr>
+            </thead>
+            <tbody class="text-sm">
+              <tr class="bg-white">
+                <td class="py-4 px-4 font-medium text-gray-800">300-page PDF Q&amp;A</td>
+                <td class="py-4 px-4 text-gray-500">Send or retrieve too much document context.</td>
+                <td class="py-4 px-4 text-gray-700 bg-indigo-50/50">Chunk locally, retrieve relevant sections, send evidence pack.</td>
+              </tr>
+              <tr>
+                <td class="py-4 px-4 font-medium text-gray-800">Meeting copilot</td>
+                <td class="py-4 px-4 text-gray-500">Cloud transcription and repeated cloud summaries.</td>
+                <td class="py-4 px-4 text-gray-700 bg-indigo-50/30">Local transcription/search, cloud only for final synthesis.</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="py-4 px-4 font-medium text-gray-800">Support log triage</td>
+                <td class="py-4 px-4 text-gray-500">Paste full logs into LLMs.</td>
+                <td class="py-4 px-4 text-gray-700 bg-indigo-50/50">Local extraction, clustering, compact root-cause evidence.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-gray-400 text-sm text-center">Also useful for research archives, field manuals, agent traces, and MCP tool-call workflows.</p>
+      </div>
+    </section>
+
+    <!-- 9. COMPETITIVE POSITIONING -->
+    <section class="py-16 md:py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center mb-10">
+          <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Not a gateway. Not a memory layer. Context optimization before inference.</h2>
+          <p class="text-gray-600 max-w-3xl mx-auto">Gateways route model calls. Observability tools show what happened. Vector stores retrieve chunks. Offlyn helps decide what context should reach the model at all.</p>
+        </div>
+        <div class="max-w-3xl mx-auto overflow-x-auto">
+          <table class="w-full text-left border-collapse">
+            <thead>
+              <tr>
+                <th class="py-3 px-4 text-xs font-semibold text-gray-500 uppercase tracking-wider border-b-2 border-gray-200">Category</th>
+                <th class="py-3 px-4 text-xs font-semibold text-gray-500 uppercase tracking-wider border-b-2 border-gray-200">They optimize</th>
+                <th class="py-3 px-4 text-xs font-bold text-white uppercase tracking-wider border-b-2 border-indigo-600 bg-indigo-600 rounded-tl-lg rounded-tr-lg text-center">Offlyn adds</th>
               </tr>
             </thead>
             <tbody class="text-sm">
               <tr class="bg-gray-50">
-                <td class="py-5 px-5 font-medium text-gray-800">300-page PDF Q&amp;A</td>
-                <td class="py-5 px-5 text-gray-500">Attach or send the whole document repeatedly.</td>
-                <td class="py-5 px-5 text-gray-700 bg-indigo-50/50">Chunk, index, retrieve locally, then send only relevant evidence.</td>
+                <td class="py-3 px-4 font-medium text-gray-800">LLM gateways</td>
+                <td class="py-3 px-4 text-gray-500">Route model calls</td>
+                <td class="py-3 px-4 text-gray-700 bg-indigo-50/50">Smaller, cleaner context before routing</td>
               </tr>
               <tr>
-                <td class="py-5 px-5 font-medium text-gray-800">Meeting copilot</td>
-                <td class="py-5 px-5 text-gray-500">Cloud transcription and repeated cloud summaries.</td>
-                <td class="py-5 px-5 text-gray-700 bg-indigo-50/30">Local transcription, local search, local notes, optional cloud escalation.</td>
+                <td class="py-3 px-4 font-medium text-gray-800">Observability</td>
+                <td class="py-3 px-4 text-gray-500">Track cost and traces</td>
+                <td class="py-3 px-4 text-gray-700 bg-indigo-50/30">Recommendations to reduce context waste</td>
               </tr>
               <tr class="bg-gray-50">
-                <td class="py-5 px-5 font-medium text-gray-800">Support log triage</td>
-                <td class="py-5 px-5 text-gray-500">Paste full logs into LLMs.</td>
-                <td class="py-5 px-5 text-gray-700 bg-indigo-50/50">Local extraction, issue clustering, compact root-cause evidence pack.</td>
+                <td class="py-3 px-4 font-medium text-gray-800">RAG / vector DBs</td>
+                <td class="py-3 px-4 text-gray-500">Retrieve chunks</td>
+                <td class="py-3 px-4 text-gray-700 bg-indigo-50/50">Quality-aware evidence packing</td>
               </tr>
               <tr>
-                <td class="py-5 px-5 font-medium text-gray-800">Research agent</td>
-                <td class="py-5 px-5 text-gray-500">Re-scrape and summarize the same sources.</td>
-                <td class="py-5 px-5 text-gray-700 bg-indigo-50/30">Ingest once, embed locally, retrieve source-grounded context repeatedly.</td>
-              </tr>
-              <tr class="bg-gray-50">
-                <td class="py-5 px-5 font-medium text-gray-800">Field manual assistant</td>
-                <td class="py-5 px-5 text-gray-500">Cloud lookup in poor connectivity.</td>
-                <td class="py-5 px-5 text-gray-700 bg-indigo-50/50">Offline local manual context with selective sync or escalation.</td>
+                <td class="py-3 px-4 font-medium text-gray-800">Local runtimes</td>
+                <td class="py-3 px-4 text-gray-500">Run local models</td>
+                <td class="py-3 px-4 text-gray-700 bg-indigo-50/30">Workflow routing between local and cloud</td>
               </tr>
             </tbody>
           </table>
@@ -673,218 +407,16 @@
       </div>
     </section>
 
-    <!-- ============================================ -->
-    <!-- SECTION 9: COMPETITIVE POSITIONING -->
-    <!-- ============================================ -->
-    <section class="py-20 md:py-28 bg-gray-50">
+    <!-- 10. FINAL CTA + FORM -->
+    <section id="token-savings-audit" class="py-20 md:py-24 bg-gradient-to-r from-indigo-50 to-blue-50 border-y border-indigo-100">
       <div class="container mx-auto px-6">
-        <div class="max-w-4xl mx-auto text-center mb-6">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Not another LLM gateway. The context audit layer before the gateway.</h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto">Gateways route model calls. Observability tools show what happened. Offlyn Token Audit MCP is designed to inspect context before the call, helping teams identify repeated raw context and convert it into smaller evidence packs.</p>
-        </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto mt-14">
-          <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm">
-            <h3 class="text-gray-800 font-semibold mb-1">LLM gateways</h3>
-            <p class="text-gray-400 text-xs mb-4">LiteLLM, Portkey, OpenRouter</p>
-            <p class="text-gray-500 text-sm mb-3"><span class="text-gray-700 font-medium">They optimize:</span> Routing, budgets, fallbacks, provider access</p>
-            <div class="border-t border-gray-100 pt-3">
-              <p class="text-sm"><span class="text-indigo-600 font-medium">Offlyn adds:</span> <span class="text-gray-600">Smaller, cleaner context before routing</span></p>
-            </div>
-          </div>
-          <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm">
-            <h3 class="text-gray-800 font-semibold mb-1">Observability</h3>
-            <p class="text-gray-400 text-xs mb-4">LangSmith, Helicone, Langfuse</p>
-            <p class="text-gray-500 text-sm mb-3"><span class="text-gray-700 font-medium">They optimize:</span> Tracing, cost visibility, evals</p>
-            <div class="border-t border-gray-100 pt-3">
-              <p class="text-sm"><span class="text-indigo-600 font-medium">Offlyn adds:</span> <span class="text-gray-600">Workflow redesign and local preprocessing</span></p>
-            </div>
-          </div>
-          <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm">
-            <h3 class="text-gray-800 font-semibold mb-1">Local runtimes</h3>
-            <p class="text-gray-400 text-xs mb-4">Ollama, llama.cpp, MLX</p>
-            <p class="text-gray-500 text-sm mb-3"><span class="text-gray-700 font-medium">They optimize:</span> Running models locally</p>
-            <div class="border-t border-gray-100 pt-3">
-              <p class="text-sm"><span class="text-indigo-600 font-medium">Offlyn adds:</span> <span class="text-gray-600">Ingestion, chunking, retrieval, evidence packs, escalation</span></p>
-            </div>
-          </div>
-          <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm">
-            <h3 class="text-gray-800 font-semibold mb-1">RAG / memory platforms</h3>
-            <p class="text-gray-400 text-xs mb-4">Vector DBs and memory APIs</p>
-            <p class="text-gray-500 text-sm mb-3"><span class="text-gray-700 font-medium">They optimize:</span> Storage and retrieval</p>
-            <div class="border-t border-gray-100 pt-3">
-              <p class="text-sm"><span class="text-indigo-600 font-medium">Offlyn adds:</span> <span class="text-gray-600">Quality-aware context compilation and token budgeting</span></p>
-            </div>
-          </div>
-          <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm">
-            <h3 class="text-gray-800 font-semibold mb-1">MCP tools</h3>
-            <p class="text-gray-400 text-xs mb-4">Agent-facing tool servers</p>
-            <p class="text-gray-500 text-sm mb-3"><span class="text-gray-700 font-medium">They connect:</span> Agents to tools and data</p>
-            <div class="border-t border-gray-100 pt-3">
-              <p class="text-sm"><span class="text-indigo-600 font-medium">Offlyn adds:</span> <span class="text-gray-600">Token-aware context audits, local-first recommendations, and evidence-pack generation</span></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!-- SECTION 10: ENTERPRISE OFFERS -->
-    <!-- ============================================ -->
-    <section class="py-20 md:py-28 bg-white">
-      <div class="container mx-auto px-6">
-        <div class="max-w-4xl mx-auto text-center mb-14">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Start with one expensive workflow.</h2>
-        </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          <div class="bg-gray-50 border border-gray-100 rounded-2xl p-6 hover:shadow-lg transition-shadow duration-300 flex flex-col">
-            <div class="w-10 h-10 bg-indigo-50 rounded-lg flex items-center justify-center mb-4">
-              <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
-            </div>
-            <h3 class="text-gray-800 font-semibold mb-2">Token Savings Audit</h3>
-            <p class="text-gray-500 text-sm leading-relaxed flex-1">A focused review of one repeated-context workflow. We baseline current token usage, identify repeated or oversized context, and prototype an evidence-pack approach.</p>
-          </div>
-          <div class="bg-gray-50 border border-gray-100 rounded-2xl p-6 hover:shadow-lg transition-shadow duration-300 flex flex-col">
-            <div class="w-10 h-10 bg-indigo-50 rounded-lg flex items-center justify-center mb-4">
-              <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
-            </div>
-            <h3 class="text-gray-800 font-semibold mb-2">Context Optimizer Prototype</h3>
-            <p class="text-gray-500 text-sm leading-relaxed flex-1">A working prototype that converts one workflow into evidence packs with measurable token and quality tradeoffs.</p>
-          </div>
-          <div class="bg-gray-50 border border-gray-100 rounded-2xl p-6 hover:shadow-lg transition-shadow duration-300 flex flex-col">
-            <div class="w-10 h-10 bg-indigo-50 rounded-lg flex items-center justify-center mb-4">
-              <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-            </div>
-            <h3 class="text-gray-800 font-semibold mb-2">MLX Optimization Package</h3>
-            <p class="text-gray-500 text-sm leading-relaxed flex-1">Apple Silicon and MLX-focused support for local transcription, long-document processing, and on-device inference.</p>
-          </div>
-          <div class="bg-gray-50 border border-gray-100 rounded-2xl p-6 hover:shadow-lg transition-shadow duration-300 flex flex-col">
-            <div class="w-10 h-10 bg-indigo-50 rounded-lg flex items-center justify-center mb-4">
-              <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-            </div>
-            <h3 class="text-gray-800 font-semibold mb-2">Remote Industry Context Kit</h3>
-            <p class="text-gray-500 text-sm leading-relaxed flex-1">Offline-first context workflows for agriculture, mining, energy, field service, disaster response, and industrial teams.</p>
-          </div>
-          <div class="bg-gray-50 border border-indigo-200 rounded-2xl p-6 hover:shadow-lg transition-shadow duration-300 flex flex-col relative">
-            <span class="absolute top-4 right-4 px-2.5 py-0.5 bg-indigo-100 text-indigo-700 text-xs font-semibold rounded-full">Coming Soon</span>
-            <div class="w-10 h-10 bg-indigo-50 rounded-lg flex items-center justify-center mb-4">
-              <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            </div>
-            <h3 class="text-gray-800 font-semibold mb-2">Token Audit MCP Early Access</h3>
-            <p class="text-gray-500 text-sm leading-relaxed flex-1">Coming soon for teams that want to audit prompts, traces, retrieved chunks, and repeated context directly from MCP-compatible agent workflows.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!-- SECTION 11: MEASUREMENT FRAMEWORK -->
-    <!-- ============================================ -->
-    <section class="py-20 md:py-28 bg-gray-50">
-      <div class="container mx-auto px-6">
-        <div class="max-w-4xl mx-auto">
-          <div class="text-center mb-14">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Cut context, not correctness.</h2>
-            <p class="text-lg text-gray-600 max-w-3xl mx-auto">Every token-savings workflow should be measured against quality. Offlyn focuses on measurable tradeoffs, not generic claims.</p>
+        <div class="max-w-xl mx-auto">
+          <div class="text-center mb-10">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Find your repeated-context waste.</h2>
+            <p class="text-gray-600 max-w-lg mx-auto leading-relaxed">Send us one workflow &mdash; PDFs, meetings, support logs, RAG chunks, MCP tool calls, or agent traces. We&rsquo;ll show where tokens are wasted and how to route work locally or to cloud while preserving quality.</p>
           </div>
 
-          <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
-            <div>
-              <p class="text-xs text-gray-400 font-semibold uppercase tracking-wider mb-4">Workflow metrics</p>
-              <div class="space-y-0">
-                <div class="flex items-center gap-3 py-3 border-b border-gray-200">
-                  <svg class="w-4 h-4 text-indigo-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                  <span class="text-gray-700 text-sm">Tokens sent before vs. after</span>
-                </div>
-                <div class="flex items-center gap-3 py-3 border-b border-gray-200">
-                  <svg class="w-4 h-4 text-indigo-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                  <span class="text-gray-700 text-sm">Cloud calls avoided</span>
-                </div>
-                <div class="flex items-center gap-3 py-3 border-b border-gray-200">
-                  <svg class="w-4 h-4 text-indigo-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                  <span class="text-gray-700 text-sm">Retrieval precision</span>
-                </div>
-                <div class="flex items-center gap-3 py-3 border-b border-gray-200">
-                  <svg class="w-4 h-4 text-indigo-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                  <span class="text-gray-700 text-sm">Citation / source coverage</span>
-                </div>
-                <div class="flex items-center gap-3 py-3 border-b border-gray-200">
-                  <svg class="w-4 h-4 text-indigo-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                  <span class="text-gray-700 text-sm">Answer quality score</span>
-                </div>
-                <div class="flex items-center gap-3 py-3 border-b border-gray-200">
-                  <svg class="w-4 h-4 text-indigo-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                  <span class="text-gray-700 text-sm">Latency</span>
-                </div>
-                <div class="flex items-center gap-3 py-3 border-b border-gray-200">
-                  <svg class="w-4 h-4 text-indigo-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                  <span class="text-gray-700 text-sm">Local processing time</span>
-                </div>
-                <div class="flex items-center gap-3 py-3 border-b border-gray-200">
-                  <svg class="w-4 h-4 text-indigo-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                  <span class="text-gray-700 text-sm">Privacy boundary</span>
-                </div>
-                <div class="flex items-center gap-3 py-3 border-b border-gray-200">
-                  <svg class="w-4 h-4 text-indigo-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                  <span class="text-gray-700 text-sm">Fallback rate</span>
-                </div>
-                <div class="flex items-center gap-3 py-3 border-b border-gray-200">
-                  <svg class="w-4 h-4 text-indigo-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                  <span class="text-gray-700 text-sm">Quality risk</span>
-                </div>
-              </div>
-            </div>
-            <div>
-              <p class="text-xs text-gray-400 font-semibold uppercase tracking-wider mb-4">MCP audit metrics</p>
-              <div class="space-y-0">
-                <div class="flex items-center gap-3 py-3 border-b border-gray-200">
-                  <svg class="w-4 h-4 text-indigo-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                  <span class="text-gray-700 text-sm">Repeated source frequency</span>
-                </div>
-                <div class="flex items-center gap-3 py-3 border-b border-gray-200">
-                  <svg class="w-4 h-4 text-indigo-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                  <span class="text-gray-700 text-sm">Prompt bloat score</span>
-                </div>
-                <div class="flex items-center gap-3 py-3 border-b border-gray-200">
-                  <svg class="w-4 h-4 text-indigo-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                  <span class="text-gray-700 text-sm">Retrieved chunk relevance</span>
-                </div>
-                <div class="flex items-center gap-3 py-3 border-b border-gray-200">
-                  <svg class="w-4 h-4 text-indigo-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                  <span class="text-gray-700 text-sm">Evidence-pack token budget</span>
-                </div>
-                <div class="flex items-center gap-3 py-3 border-b border-gray-200">
-                  <svg class="w-4 h-4 text-indigo-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                  <span class="text-gray-700 text-sm">Quality risk before / after</span>
-                </div>
-                <div class="flex items-center gap-3 py-3 border-b border-gray-200">
-                  <svg class="w-4 h-4 text-indigo-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                  <span class="text-gray-700 text-sm">Local preprocessing recommendation</span>
-                </div>
-                <div class="flex items-center gap-3 py-3 border-b border-gray-200">
-                  <svg class="w-4 h-4 text-indigo-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                  <span class="text-gray-700 text-sm">Cloud escalation rate</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!-- SECTION 12: FINAL CTA + FORM -->
-    <!-- ============================================ -->
-    <section id="token-savings-audit" class="py-24 md:py-32 bg-gradient-to-r from-indigo-50 to-blue-50 border-y border-indigo-100">
-      <div class="container mx-auto px-6">
-        <div class="max-w-3xl mx-auto">
-          <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-6">Turn repeated context into compact evidence.</h2>
-            <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">Start with a Token Savings Audit. Join the Token Audit MCP waitlist if your team wants early access to developer-facing context audits.</p>
-          </div>
-
-          <form id="audit-form" class="bg-white rounded-2xl p-8 shadow-lg max-w-lg mx-auto mb-10" onsubmit="event.preventDefault(); document.getElementById('form-success').classList.remove('hidden'); this.classList.add('hidden');">
+          <form id="audit-form" class="bg-white rounded-2xl p-8 shadow-lg mb-6" onsubmit="event.preventDefault(); document.getElementById('form-success').classList.remove('hidden'); this.classList.add('hidden');">
             <div class="space-y-4">
               <div>
                 <label for="audit-name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
@@ -899,9 +431,9 @@
                 <input type="text" id="audit-company" name="company" class="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-sm" placeholder="Company name">
               </div>
               <div>
-                <label for="audit-type" class="block text-sm font-medium text-gray-700 mb-1">What are you trying to audit?</label>
+                <label for="audit-type" class="block text-sm font-medium text-gray-700 mb-1">Workflow to audit</label>
                 <select id="audit-type" name="audit_type" class="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-sm text-gray-600">
-                  <option value="">Select an option</option>
+                  <option value="">Select a workflow</option>
                   <option value="long-documents">300-page PDFs / long documents</option>
                   <option value="meeting-transcripts">Meeting transcripts</option>
                   <option value="support-logs">Support logs</option>
@@ -913,7 +445,7 @@
                 </select>
               </div>
               <div>
-                <label for="audit-usecase" class="block text-sm font-medium text-gray-700 mb-1">Use case / workflow to audit</label>
+                <label for="audit-usecase" class="block text-sm font-medium text-gray-700 mb-1">Use-case description</label>
                 <textarea id="audit-usecase" name="usecase" rows="3" class="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-sm" placeholder="Describe the workflow you want to audit..."></textarea>
               </div>
               <div class="flex items-start gap-2">
@@ -921,11 +453,11 @@
                 <label for="mcp-waitlist-check" class="text-sm text-gray-600">Also notify me when Token Audit MCP early access opens</label>
               </div>
               <input type="hidden" name="source" value="enterprise-token-audit">
-              <button type="submit" class="w-full px-6 py-3 bg-indigo-600 text-white font-bold rounded-lg hover:bg-indigo-700 transition text-sm shadow-lg">Request token savings audit</button>
+              <button type="submit" class="w-full px-6 py-3 bg-indigo-600 text-white font-bold rounded-lg hover:bg-indigo-700 transition text-sm shadow-lg">Request Token Savings Audit</button>
             </div>
           </form>
 
-          <div id="form-success" class="hidden bg-white rounded-2xl p-8 shadow-lg max-w-lg mx-auto mb-10 text-center">
+          <div id="form-success" class="hidden bg-white rounded-2xl p-8 shadow-lg mb-6 text-center">
             <div class="w-14 h-14 bg-green-50 rounded-full flex items-center justify-center mx-auto mb-4">
               <svg class="w-7 h-7 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
             </div>
@@ -933,18 +465,13 @@
             <p class="text-gray-500 text-sm">We&rsquo;ll reach out to schedule your token savings audit.</p>
           </div>
 
-          <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <a href="#token-savings-audit" class="px-8 py-3.5 bg-indigo-600 text-white font-bold rounded-xl hover:bg-indigo-700 transition text-base shadow-lg hover:shadow-xl text-center">Run a token savings audit</a>
-            <a href="#token-savings-audit" onclick="document.getElementById('mcp-waitlist-check').checked=true" class="px-8 py-3.5 border border-indigo-600 text-indigo-600 font-medium rounded-xl hover:bg-indigo-600 hover:text-white transition text-base text-center">Join Token Audit MCP waitlist</a>
-          </div>
-          <p class="text-gray-500 text-sm text-center">Offlyn.ai &mdash; local-first AI for work, field, and edge environments.</p>
+          <p class="text-gray-400 text-sm text-center">Offlyn.ai &mdash; local-first AI for work, field, and edge environments.</p>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- Footer — matches homepage -->
   <footer class="bg-offlyn-navy text-gray-400 py-12">
     <div class="container mx-auto px-6">
       <div class="grid md:grid-cols-3 gap-8 mb-8">
