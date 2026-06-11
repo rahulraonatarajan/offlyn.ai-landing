@@ -3,20 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Offlyn.ai — AI Connectivity with No Network</title>
-  
-  <!-- Canonical URL -->
+  <title>Offlyn.ai | Reduce Annual AI Spend with Fewer Tokens and Lower Watts</title>
+
   <link rel="canonical" href="https://www.offlyn.ai/" />
-  
-  <!-- Meta Description -->
-  <meta name="description" content="Build and run AI apps entirely offline. Edge-first, privacy-first, no internet required." />
-  
-  <!-- Robots & Indexing -->
+  <meta name="description" content="Offlyn helps teams reduce annual AI spend with offline-first and hybrid AI routing. Explore local-first products, run the open-source Token Savings Audit, or request an enterprise AI efficiency audit." />
   <meta name="robots" content="index, follow, max-image-preview:large" />
-  
-  <!-- Open Graph / Facebook / LinkedIn / Slack / Discord / WhatsApp / Telegram / iMessage -->
-  <meta property="og:title" content="Offlyn.ai — AI Connectivity with No Network" />
-  <meta property="og:description" content="Build and run AI apps entirely offline. Edge-first, privacy-first, no internet required." />
+
+  <meta property="og:title" content="Offlyn.ai | Reduce Annual AI Spend with Fewer Tokens and Lower Watts" />
+  <meta property="og:description" content="Offlyn helps teams reduce annual AI spend with offline-first and hybrid AI routing. Explore local-first products, run the open-source Token Savings Audit, or request an enterprise AI efficiency audit." />
   <meta property="og:url" content="https://www.offlyn.ai/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Offlyn.ai" />
@@ -25,21 +19,18 @@
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Offlyn.ai — AI connectivity with no network" />
-  
-  <!-- Twitter / X Card -->
+  <meta property="og:image:alt" content="Offlyn.ai — Useful intelligence with fewer tokens and lower watts" />
+
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Offlyn.ai — AI Connectivity with No Network" />
-  <meta name="twitter:description" content="Build and run AI apps entirely offline. Edge-first, privacy-first, no internet required." />
+  <meta name="twitter:title" content="Offlyn.ai | Reduce Annual AI Spend with Fewer Tokens and Lower Watts" />
+  <meta name="twitter:description" content="Offlyn helps teams reduce annual AI spend with offline-first and hybrid AI routing. Explore local-first products, run the open-source Token Savings Audit, or request an enterprise AI efficiency audit." />
   <meta name="twitter:image" content="https://www.offlyn.ai/og-image.png" />
-  <meta name="twitter:image:alt" content="Offlyn.ai — AI connectivity with no network" />
-  
-  <!-- Favicon + Brand Icons -->
+  <meta name="twitter:image:alt" content="Offlyn.ai — Useful intelligence with fewer tokens and lower watts" />
+
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  
-  <!-- Structured Data (JSON-LD) for SEO -->
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -47,7 +38,7 @@
     "name": "Offlyn.ai",
     "url": "https://www.offlyn.ai",
     "logo": "https://www.offlyn.ai/og-image.png",
-    "description": "Offline-first AI platform for running intelligent apps on-device without internet. Edge-first, privacy-first, no network required.",
+    "description": "Offlyn helps teams reduce annual AI spend with offline-first and hybrid AI routing. Local-first products and enterprise AI efficiency tools for privacy, resilience, and cost-aware AI.",
     "foundingDate": "2025",
     "sameAs": [
       "https://twitter.com/nishanthred92",
@@ -60,7 +51,7 @@
     }
   }
   </script>
-  
+
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -78,70 +69,88 @@
 </head>
 <body class="antialiased bg-gray-50 text-gray-800">
   <header class="bg-white shadow">
-    <nav class="container mx-auto flex items-center justify-between py-4 px-6">
-      <a href="#product-suite" class="flex items-center">
-        <img src="assets/offlyn-logo-3d.png" alt="offlyn.ai logo" class="h-14 w-auto">
+    <nav class="container mx-auto flex items-center justify-between py-3 px-6">
+      <a href="/" class="flex items-center">
+        <img src="assets/offlyn-logo-3d.png" alt="offlyn.ai logo" class="h-11 w-auto">
         <span class="ml-2 text-xl font-bold text-gray-800">offlyn.ai</span>
       </a>
       <ul class="hidden md:flex space-x-8">
-        <li><a href="#product-suite" class="hover:text-indigo-600">Home</a></li>
-        <li><a href="#product-suite" class="hover:text-indigo-600">Products</a></li>
-        <li><a href="/enterprise" class="hover:text-indigo-600">Enterprise</a></li>
-        <li><a href="#clipper" class="hover:text-indigo-600">Clipper</a></li>
-        <li><a href="#offlyn-apply" class="hover:text-indigo-600">Apply</a></li>
-        <li><a href="#terraguide-gallery" class="hover:text-indigo-600">TerraGuide</a></li>
+        <li><a href="/" class="hover:text-indigo-600">Home</a></li>
+        <li><a href="#products" class="hover:text-indigo-600">Products</a></li>
+        <li><a href="/enterprise" class="text-indigo-600 font-medium">Enterprise Audit</a></li>
       </ul>
+      <button id="mobile-toggle" class="md:hidden p-2" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
     </nav>
-    <div id="mobile-menu" class="hidden bg-white shadow-md">
-      <a href="#product-suite" class="block px-6 py-3 border-b hover:bg-gray-100">Home</a>
-      <a href="#product-suite" class="block px-6 py-3 border-b hover:bg-gray-100">Products</a>
-      <a href="/enterprise" class="block px-6 py-3 border-b hover:bg-gray-100">Enterprise</a>
-      <a href="#clipper" class="block px-6 py-3 border-b hover:bg-gray-100">Clipper</a>
-      <a href="#offlyn-apply" class="block px-6 py-3 border-b hover:bg-gray-100">Apply</a>
-      <a href="#terraguide-gallery" class="block px-6 py-3 border-b hover:bg-gray-100">TerraGuide</a>
+    <div id="mobile-menu" class="hidden bg-white shadow-md md:hidden">
+      <a href="/" class="block px-6 py-3 border-b hover:bg-gray-100">Home</a>
+      <a href="#products" class="block px-6 py-3 border-b hover:bg-gray-100">Products</a>
+      <a href="/enterprise" class="block px-6 py-3 border-b hover:bg-gray-100 text-indigo-600 font-medium">Enterprise Audit</a>
     </div>
   </header>
 
   <main>
-    <!-- Product Suite with Pill Switcher -->
-    <section id="product-suite" class="py-20 bg-white">
-      <div class="container mx-auto px-6">
-        <div class="text-center mb-10">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Product Suite</h2>
-          <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">On-device AI tools designed for privacy, resilience, and real-world impact.</p>
 
-          <!-- Pill Switcher -->
-          <div style="display:inline-flex;align-items:center;gap:4px;background:#F3F4F6;border-radius:9999px;padding:5px;">
-            <button onclick="switchProduct('ravin')" id="prod-ravin" style="padding:10px 24px;border-radius:9999px;font-size:15px;font-weight:600;border:none;cursor:pointer;transition:all 0.25s;background:#4F46E5;color:white;box-shadow:0 2px 8px rgba(79,70,229,0.3);">Clipper</button>
-            <button onclick="switchProduct('apply')" id="prod-apply" style="padding:10px 24px;border-radius:9999px;font-size:15px;font-weight:600;border:none;cursor:pointer;transition:all 0.25s;background:transparent;color:#6B7280;">Apply</button>
-            <button onclick="switchProduct('terraguide')" id="prod-terraguide" style="padding:10px 24px;border-radius:9999px;font-size:15px;font-weight:600;border:none;cursor:pointer;transition:all 0.25s;background:transparent;color:#6B7280;">TerraGuide</button>
+    <!-- 1. HERO -->
+    <section class="py-16 md:py-20 bg-white">
+      <div class="container mx-auto px-6 max-w-4xl text-center">
+        <p class="text-indigo-600 text-sm font-semibold tracking-widest uppercase mb-5">Enterprise AI spend reduction</p>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-800 leading-tight mb-5">
+          Useful intelligence. Fewer tokens. Lower watts.
+        </h1>
+        <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed">
+          Offlyn helps teams reduce annual AI spend by auditing token-heavy workflows and implementing offline-first, hybrid AI routing.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+          <a href="/enterprise" class="px-8 py-3.5 bg-indigo-600 text-white font-bold rounded-xl hover:bg-indigo-700 transition text-base shadow-lg hover:shadow-xl">Estimate Annual AI Spend Reduced</a>
+          <a href="https://github.com/offlyn-ai/offlyn-token-savings-audit" target="_blank" rel="noopener" class="px-8 py-3.5 border border-indigo-600 text-indigo-600 font-medium rounded-xl hover:bg-indigo-600 hover:text-white transition text-base">Run Open-Source Audit</a>
+        </div>
+        <p class="text-gray-400 text-sm">Built from Clipper, Apply, TerraGuide, and the open-source Token Savings Audit.</p>
+      </div>
+    </section>
+
+    <!-- 2. PRODUCT SUITE -->
+    <section id="products" class="py-10 md:py-12 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">Product proof points</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto text-sm">Clipper, Apply, and TerraGuide prove the local-first capabilities behind Offlyn&rsquo;s enterprise audit stack.</p>
+          <p class="text-gray-500 max-w-2xl mx-auto text-xs mt-1">Each product demonstrates a reusable enterprise capability: local inference, private memory, compact context, offline workflows, or cloud fallback only when needed.</p>
+        </div>
+
+        <div class="text-center mb-6">
+          <div style="display:inline-flex;align-items:center;gap:4px;background:#F3F4F6;border-radius:9999px;padding:4px;">
+            <button onclick="switchProduct('ravin')" id="prod-ravin" style="padding:8px 20px;border-radius:9999px;font-size:14px;font-weight:600;border:none;cursor:pointer;transition:all 0.25s;background:#4F46E5;color:white;box-shadow:0 2px 8px rgba(79,70,229,0.3);">Clipper</button>
+            <button onclick="switchProduct('apply')" id="prod-apply" style="padding:8px 20px;border-radius:9999px;font-size:14px;font-weight:600;border:none;cursor:pointer;transition:all 0.25s;background:transparent;color:#6B7280;">Apply</button>
+            <button onclick="switchProduct('terraguide')" id="prod-terraguide" style="padding:8px 20px;border-radius:9999px;font-size:14px;font-weight:600;border:none;cursor:pointer;transition:all 0.25s;background:transparent;color:#6B7280;">TerraGuide</button>
           </div>
-          </div>
+        </div>
 
         <!-- Clipper Panel -->
-        <div id="panel-ravin" class="max-w-4xl mx-auto">
-          <div class="bg-gray-50 rounded-3xl p-8 md:p-12 border border-gray-100">
-            <div class="flex flex-col md:flex-row items-start gap-8">
+        <div id="panel-ravin" class="max-w-3xl mx-auto">
+          <div class="bg-white rounded-2xl p-6 md:p-8 border border-gray-100 shadow-sm">
+            <div class="flex flex-col md:flex-row items-start gap-6">
               <div class="flex-shrink-0">
-                <img src="assets/clipper-logo.png" alt="Clipper icon" width="80" height="80" class="rounded-2xl shadow-md" loading="lazy">
-                </div>
-              <div class="flex-1">
-                <div class="flex items-center gap-3 mb-3">
-                  <h3 class="text-2xl font-bold text-gray-800">Clipper</h3>
-                  <span class="text-sm text-gray-500 font-medium">by Offlyn.ai</span>
-                  <span class="px-3 py-0.5 bg-indigo-600 text-white text-xs font-bold rounded-full">NOW LIVE</span>
+                <img src="assets/clipper-logo.png" alt="Clipper" width="56" height="56" class="rounded-xl shadow-sm" loading="lazy">
               </div>
-                <p class="text-sm text-indigo-600 font-medium mb-4">The Offline AI Notepad for Meetings</p>
-                <p class="text-lg text-gray-600 mb-6">Takes your raw meeting notes and makes them awesome — with transcription and AI that never leaves your Mac. No cloud. No meeting bots.</p>
-                <ul class="space-y-2.5 text-gray-600 text-sm mb-8">
-                  <li class="flex items-start gap-2.5"><svg class="w-5 h-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Live transcription with on-device Whisper</li>
-                  <li class="flex items-start gap-2.5"><svg class="w-5 h-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>No meeting bots — captures Mac audio directly</li>
-                  <li class="flex items-start gap-2.5"><svg class="w-5 h-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Enhance shorthand notes with on-device AI</li>
-                  <li class="flex items-start gap-2.5"><svg class="w-5 h-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Hybrid search across meetings, PDFs, and clips</li>
+              <div class="flex-1">
+                <div class="flex items-center gap-2.5 mb-1">
+                  <h3 class="text-xl font-bold text-gray-800">Clipper</h3>
+                  <span class="px-2.5 py-0.5 bg-indigo-600 text-white text-xs font-bold rounded-full">NOW LIVE</span>
+                </div>
+                <p class="text-sm text-indigo-600 font-medium mb-2">Local meeting intelligence for Mac.</p>
+                <p class="text-sm text-gray-600 mb-2">On-device transcription, private meeting memory, hybrid search, and no meeting bots.</p>
+                <p class="text-xs text-gray-400 italic mb-3">Enterprise proof: meeting workflow token savings, transcript compression, local transcription, and private retrieval.</p>
+                <ul class="space-y-1.5 text-gray-600 text-xs mb-4">
+                  <li class="flex items-start gap-2"><svg class="w-4 h-4 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Local transcription and meeting memory</li>
+                  <li class="flex items-start gap-2"><svg class="w-4 h-4 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Transcript compression and reuse</li>
+                  <li class="flex items-start gap-2"><svg class="w-4 h-4 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Private search across meetings and documents</li>
+                  <li class="flex items-start gap-2"><svg class="w-4 h-4 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Benchmark foundation for meeting-intelligence audits</li>
                 </ul>
-                <div class="flex flex-wrap gap-3">
-                  <a href="https://clipper.offlyn.ai" target="_blank" rel="noopener" class="px-6 py-2.5 bg-indigo-600 text-white font-bold rounded-lg hover:bg-indigo-700 transition text-sm inline-block">Download for Mac</a>
-                  <a href="#clipper" class="px-6 py-2.5 border border-indigo-600 text-indigo-600 rounded-lg hover:bg-indigo-600 hover:text-white transition text-sm font-medium inline-block">Learn More</a>
+                <div class="flex flex-wrap gap-2.5">
+                  <a href="https://clipper.offlyn.ai" target="_blank" rel="noopener" class="px-5 py-2 bg-indigo-600 text-white font-bold rounded-lg hover:bg-indigo-700 transition text-sm">Download for Mac</a>
+                  <a href="https://clipper.offlyn.ai" target="_blank" rel="noopener" class="px-5 py-2 border border-indigo-600 text-indigo-600 rounded-lg hover:bg-indigo-600 hover:text-white transition text-sm font-medium">Learn More</a>
                 </div>
               </div>
             </div>
@@ -149,65 +158,63 @@
         </div>
 
         <!-- Apply Panel -->
-        <div id="panel-apply" class="max-w-4xl mx-auto" style="display:none;">
-          <div class="bg-gray-50 rounded-3xl p-8 md:p-12 border border-gray-100">
-            <div class="flex flex-col md:flex-row items-start gap-8">
+        <div id="panel-apply" class="max-w-3xl mx-auto" style="display:none;">
+          <div class="bg-white rounded-2xl p-6 md:p-8 border border-gray-100 shadow-sm">
+            <div class="flex flex-col md:flex-row items-start gap-6">
               <div class="flex-shrink-0">
-                <img src="assets/offlyn-monogram.png" alt="Apply icon" width="80" height="80" class="rounded-2xl shadow-md" loading="lazy">
-        </div>
+                <img src="assets/offlyn-monogram.png" alt="Apply" width="56" height="56" class="rounded-xl shadow-sm" loading="lazy">
+              </div>
               <div class="flex-1">
-                <div class="flex items-center gap-3 mb-3">
-                  <h3 class="text-2xl font-bold text-gray-800">Apply</h3>
-                  <span class="text-sm text-gray-500 font-medium">by Offlyn.ai</span>
-                  <span class="px-3 py-0.5 bg-indigo-600 text-white text-xs font-bold rounded-full">NEW</span>
+                <div class="flex items-center gap-2.5 mb-1">
+                  <h3 class="text-xl font-bold text-gray-800">Apply</h3>
+                  <span class="px-2.5 py-0.5 bg-indigo-600 text-white text-xs font-bold rounded-full">NEW</span>
                 </div>
-                <p class="text-lg text-gray-700 font-medium mb-2">Stop filling out the same job forms over and over.</p>
-                <p class="text-base text-gray-600 mb-6">Apply fills out job applications for you — in seconds, not minutes. Open a job page, review the answers, click apply. That's it.</p>
-                <div class="flex flex-wrap gap-4 mb-6">
-                  <span class="flex items-center gap-2 text-sm font-semibold text-gray-700"><span class="w-2 h-2 rounded-full bg-indigo-600 inline-block"></span>0 Bytes Uploaded</span>
-                  <span class="flex items-center gap-2 text-sm font-semibold text-gray-700"><span class="w-2 h-2 rounded-full bg-indigo-600 inline-block"></span>100% Local AI</span>
-                  <span class="flex items-center gap-2 text-sm font-semibold text-gray-700"><span class="w-2 h-2 rounded-full bg-indigo-600 inline-block"></span>Works Offline</span>
-              </div>
-                <ul class="space-y-2.5 text-gray-600 text-sm mb-8">
-                  <li class="flex items-start gap-2.5"><svg class="w-5 h-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Smart auto-fill for job application forms</li>
-                  <li class="flex items-start gap-2.5"><svg class="w-5 h-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>AI-powered cover letters using local Ollama</li>
-                  <li class="flex items-start gap-2.5"><svg class="w-5 h-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Application tracking dashboard (Kanban board)</li>
-                  <li class="flex items-start gap-2.5"><svg class="w-5 h-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>ATS compatibility checker (Workday, Greenhouse, Lever, etc.)</li>
-              </ul>
-                <div class="flex flex-wrap gap-3">
-                  <a href="https://apply.offlyn.ai" target="_blank" rel="noopener" class="px-8 py-3 bg-indigo-600 text-white font-bold rounded-xl hover:bg-indigo-700 transition text-base shadow-lg hover:shadow-xl">Try Apply</a>
+                <p class="text-sm text-indigo-600 font-medium mb-2">Private workflow automation.</p>
+                <p class="text-sm text-gray-600 mb-2">Local form filling, profile memory, document reasoning, and browser task automation.</p>
+                <p class="text-xs text-gray-400 italic mb-3">Enterprise proof: private form/document workflows, local context reuse, and repeatable task routing without unnecessary cloud calls.</p>
+                <ul class="space-y-1.5 text-gray-600 text-xs mb-4">
+                  <li class="flex items-start gap-2"><svg class="w-4 h-4 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Local form automation</li>
+                  <li class="flex items-start gap-2"><svg class="w-4 h-4 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Private profile and document context</li>
+                  <li class="flex items-start gap-2"><svg class="w-4 h-4 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Browser workflow agents</li>
+                  <li class="flex items-start gap-2"><svg class="w-4 h-4 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Repeatable task routing</li>
+                </ul>
+                <div class="flex flex-wrap gap-2.5">
+                  <a href="https://apply.offlyn.ai" target="_blank" rel="noopener" class="px-5 py-2 bg-indigo-600 text-white font-bold rounded-lg hover:bg-indigo-700 transition text-sm">Get Apply</a>
+                  <a href="https://apply.offlyn.ai" target="_blank" rel="noopener" class="px-5 py-2 border border-indigo-600 text-indigo-600 rounded-lg hover:bg-indigo-600 hover:text-white transition text-sm font-medium">Learn More</a>
                 </div>
-              </div>
               </div>
             </div>
           </div>
+        </div>
 
         <!-- TerraGuide Panel -->
-        <div id="panel-terraguide" class="max-w-4xl mx-auto" style="display:none;">
-          <div class="bg-gray-50 rounded-3xl p-8 md:p-12 border border-gray-100">
-            <div class="flex flex-col md:flex-row items-start gap-8">
+        <div id="panel-terraguide" class="max-w-3xl mx-auto" style="display:none;">
+          <div class="bg-white rounded-2xl p-6 md:p-8 border border-gray-100 shadow-sm">
+            <div class="flex flex-col md:flex-row items-start gap-6">
               <div class="flex-shrink-0">
-                <img src="assets/terraguide-icon.png" alt="TerraGuide icon" width="80" height="80" class="rounded-2xl shadow-md" loading="lazy">
-                </div>
+                <img src="assets/terraguide-icon.png" alt="TerraGuide" width="56" height="56" class="rounded-xl shadow-sm" loading="lazy">
+              </div>
               <div class="flex-1">
-                <h3 class="text-2xl font-bold text-gray-800 mb-3">TerraGuide</h3>
-                <p class="text-sm text-indigo-600 font-medium mb-4">Offline AI for Outdoor Safety</p>
-                <p class="text-lg text-gray-600 mb-6">On-device AI assistant with mesh networking, offline navigation, emergency beacons, and FEMA integration for when networks fail.</p>
-                <ul class="space-y-2.5 text-gray-600 text-sm mb-8">
-                  <li class="flex items-start gap-2.5"><svg class="w-5 h-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Offline maps with AI-powered trail recommendations</li>
-                  <li class="flex items-start gap-2.5"><svg class="w-5 h-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Mesh networking for group coordination without signal</li>
-                  <li class="flex items-start gap-2.5"><svg class="w-5 h-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Emergency SOS beacon with GPS coordinates</li>
-                  <li class="flex items-start gap-2.5"><svg class="w-5 h-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>FEMA integration for disaster response</li>
+                <div class="flex items-center gap-2.5 mb-1">
+                  <h3 class="text-xl font-bold text-gray-800">TerraGuide</h3>
+                </div>
+                <p class="text-sm text-indigo-600 font-medium mb-2">Offline AI for field operations.</p>
+                <p class="text-sm text-gray-600 mb-2">Local guidance, offline maps, emergency context, and resilient workflows when networks fail.</p>
+                <p class="text-xs text-gray-400 italic mb-3">Enterprise proof: edge resilience, offline AI routing, local procedure guidance, and low-connectivity workflow support.</p>
+                <ul class="space-y-1.5 text-gray-600 text-xs mb-4">
+                  <li class="flex items-start gap-2"><svg class="w-4 h-4 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Offline field intelligence</li>
+                  <li class="flex items-start gap-2"><svg class="w-4 h-4 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Edge resilience and low-connectivity operation</li>
+                  <li class="flex items-start gap-2"><svg class="w-4 h-4 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Local safety and procedure guidance</li>
+                  <li class="flex items-start gap-2"><svg class="w-4 h-4 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Future field-workflow optimization</li>
                 </ul>
-                <div class="flex flex-wrap gap-3">
-                  <a href="https://apps.apple.com/us/app/terraguide/id6749492441" target="_blank" rel="noopener" class="px-6 py-2.5 bg-indigo-600 text-white font-bold rounded-lg hover:bg-indigo-700 transition text-sm inline-block">Download on App Store</a>
-                  <a href="#terraguide-gallery" class="px-6 py-2.5 border border-indigo-600 text-indigo-600 rounded-lg hover:bg-indigo-600 hover:text-white transition text-sm font-medium inline-block">Learn More</a>
+                <div class="flex flex-wrap gap-2.5">
+                  <a href="https://apps.apple.com/us/app/terraguide/id6749492441" target="_blank" rel="noopener" class="px-5 py-2 bg-indigo-600 text-white font-bold rounded-lg hover:bg-indigo-700 transition text-sm">Explore TerraGuide</a>
+                  <a href="https://apps.apple.com/us/app/terraguide/id6749492441" target="_blank" rel="noopener" class="px-5 py-2 border border-indigo-600 text-indigo-600 rounded-lg hover:bg-indigo-600 hover:text-white transition text-sm font-medium">Learn More</a>
                 </div>
               </div>
             </div>
-            </div>
           </div>
-
+        </div>
       </div>
     </section>
 
@@ -232,415 +239,152 @@
       }
     </script>
 
-    <!-- Apply Features Showcase -->
-    <section id="offlyn-apply-features" class="py-20 bg-gray-50">
-      <div class="container mx-auto px-6">
-        <div class="text-center mb-14">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">How Apply Works</h2>
-          <p class="text-lg text-gray-600 max-w-2xl mx-auto">Five powerful features that keep your job search private and efficient.</p>
-        </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          <!-- Feature 1: Smart Auto-Fill -->
-          <div class="group rounded-2xl border border-gray-100 bg-white overflow-hidden hover:shadow-lg transition-shadow duration-300">
-            <div class="aspect-video overflow-hidden">
-              <img src="assets/offlyn-apply/screenshot-1-autofill.png" alt="Apply smart auto-fill detecting a job application form" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
-            </div>
-            <div class="p-6">
-              <h3 class="text-lg font-bold text-gray-800 mb-2">Smart Auto-Fill</h3>
-              <p class="text-gray-600 text-sm leading-relaxed">Detects job application forms and fills them instantly from your profile.</p>
-            </div>
-          </div>
-
-          <!-- Feature 2: Application Dashboard -->
-          <div class="group rounded-2xl border border-gray-100 bg-white overflow-hidden hover:shadow-lg transition-shadow duration-300">
-            <div class="aspect-video overflow-hidden">
-              <img src="assets/offlyn-apply/screenshot-2-dashboard.png" alt="Apply Kanban application tracking dashboard" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
-            </div>
-            <div class="p-6">
-              <h3 class="text-lg font-bold text-gray-800 mb-2">Application Dashboard</h3>
-              <p class="text-gray-600 text-sm leading-relaxed">Track all applications in a visual Kanban board with status columns.</p>
-            </div>
-          </div>
-
-          <!-- Feature 3: AI Cover Letters -->
-          <div class="group rounded-2xl border border-gray-100 bg-white overflow-hidden hover:shadow-lg transition-shadow duration-300">
-            <div class="aspect-video overflow-hidden">
-              <img src="assets/offlyn-apply/screenshot-3-cover-letter.png" alt="Apply AI-generated cover letter using local Ollama" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
-            </div>
-            <div class="p-6">
-              <h3 class="text-lg font-bold text-gray-800 mb-2">AI Cover Letters</h3>
-              <p class="text-gray-600 text-sm leading-relaxed">Generate tailored cover letters using local AI — no cloud, no API keys.</p>
-            </div>
-          </div>
-
-          <!-- Feature 4: ATS Compatibility -->
-          <div class="group rounded-2xl border border-gray-100 bg-white overflow-hidden hover:shadow-lg transition-shadow duration-300">
-            <div class="aspect-video overflow-hidden">
-              <img src="assets/offlyn-apply/screenshot-4-compatibility.png" alt="Apply ATS compatibility checker for Workday, Greenhouse, and Lever" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
-            </div>
-            <div class="p-6">
-              <h3 class="text-lg font-bold text-gray-800 mb-2">ATS Compatibility</h3>
-              <p class="text-gray-600 text-sm leading-relaxed">Works with 50+ ATS systems including Workday, Greenhouse, and Lever.</p>
-            </div>
-          </div>
-
-          <!-- Feature 5: Privacy First -->
-          <div class="group rounded-2xl border border-gray-100 bg-white overflow-hidden hover:shadow-lg transition-shadow duration-300">
-            <div class="aspect-video overflow-hidden">
-              <img src="assets/offlyn-apply/screenshot-5-privacy.png" alt="Apply privacy architecture — all data stored locally" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
-            </div>
-            <div class="p-6">
-              <h3 class="text-lg font-bold text-gray-800 mb-2">Privacy First</h3>
-              <p class="text-gray-600 text-sm leading-relaxed">All data stored in browser.storage.local — zero tracking, zero uploads.</p>
-            </div>
-          </div>
-
-          <!-- Browser Compatibility -->
-          <div class="rounded-2xl border-2 border-dashed border-gray-300 bg-gray-100 flex flex-col items-center justify-center p-8 text-center">
-            <div class="flex gap-4 mb-5">
-              <div class="flex items-center gap-2 text-sm font-medium text-gray-800 bg-white px-3 py-1.5 rounded-full shadow-sm">
-                <svg class="w-5 h-5 text-indigo-600" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Chrome 88+
-              </div>
-              <div class="flex items-center gap-2 text-sm font-medium text-gray-800 bg-white px-3 py-1.5 rounded-full shadow-sm">
-                <svg class="w-5 h-5 text-indigo-600" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Firefox 109+
-              </div>
-            </div>
-            <h3 class="text-lg font-bold text-gray-800 mb-2">Free &amp; Open Source</h3>
-            <p class="text-gray-600 text-sm mb-5">MIT licensed. Inspect every line of code yourself.</p>
-            <a href="https://github.com/joelnishanth/offlyn-apply" target="_blank" rel="noopener" class="px-6 py-2.5 bg-indigo-600 text-white font-bold rounded-lg hover:bg-indigo-700 transition text-sm">Get Apply</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Competitor Comparison -->
-    <section id="comparison" class="py-20 bg-white">
-      <div class="container mx-auto px-6">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">How Apply Compares</h2>
-          <p class="text-lg text-gray-600 max-w-2xl mx-auto">The only job application assistant that keeps your data 100% on your device.</p>
-        </div>
-
-        <div class="max-w-5xl mx-auto overflow-x-auto">
-          <table class="w-full text-left border-collapse">
-            <thead>
-              <tr>
-                <th class="py-4 px-5 text-sm font-semibold text-gray-500 uppercase tracking-wider border-b-2 border-gray-100 w-1/4">Feature</th>
-                <th class="py-4 px-5 text-sm font-bold text-white uppercase tracking-wider border-b-2 border-indigo-600 bg-indigo-600 rounded-tl-lg rounded-tr-lg text-center">Apply</th>
-                <th class="py-4 px-5 text-sm font-semibold text-gray-500 uppercase tracking-wider border-b-2 border-gray-100 text-center">Simplify</th>
-                <th class="py-4 px-5 text-sm font-semibold text-gray-500 uppercase tracking-wider border-b-2 border-gray-100 text-center">JobFill</th>
-                <th class="py-4 px-5 text-sm font-semibold text-gray-500 uppercase tracking-wider border-b-2 border-gray-100 text-center">LazyApply</th>
-              </tr>
-            </thead>
-            <tbody class="text-sm">
-              <tr class="bg-gray-50">
-                <td class="py-4 px-5 font-medium text-gray-800">100% Local / Offline</td>
-                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-green-100 text-green-600"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span></td>
-                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-red-100 text-red-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></span></td>
-                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-red-100 text-red-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></span></td>
-                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-red-100 text-red-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></span></td>
-              </tr>
-              <tr>
-                <td class="py-4 px-5 font-medium text-gray-800">Zero Data Uploaded</td>
-                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-green-100 text-green-600"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span></td>
-                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-red-100 text-red-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></span></td>
-                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-red-100 text-red-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></span></td>
-                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-red-100 text-red-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></span></td>
-              </tr>
-              <tr class="bg-gray-50">
-                <td class="py-4 px-5 font-medium text-gray-800">Auto-Fill Applications</td>
-                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-green-100 text-green-600"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span></td>
-                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-green-100 text-green-600"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span></td>
-                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-green-100 text-green-600"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span></td>
-                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-green-100 text-green-600"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span></td>
-              </tr>
-              <tr>
-                <td class="py-4 px-5 font-medium text-gray-800">AI Cover Letters</td>
-                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-green-100 text-green-600"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span></td>
-                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-green-100 text-green-600"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span></td>
-                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-red-100 text-red-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></span></td>
-                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-green-100 text-green-600"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span></td>
-              </tr>
-              <tr class="bg-gray-50">
-                <td class="py-4 px-5 font-medium text-gray-800">No API Key Required</td>
-                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-green-100 text-green-600"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span></td>
-                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-red-100 text-red-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></span></td>
-                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-red-100 text-red-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></span></td>
-                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-red-100 text-red-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></span></td>
-              </tr>
-              <tr>
-                <td class="py-4 px-5 font-medium text-gray-800">Application Tracker</td>
-                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-green-100 text-green-600"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span></td>
-                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-green-100 text-green-600"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span></td>
-                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-red-100 text-red-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></span></td>
-                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-red-100 text-red-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></span></td>
-              </tr>
-              <tr class="bg-gray-50">
-                <td class="py-4 px-5 font-medium text-gray-800">ATS Compatibility Check</td>
-                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-green-100 text-green-600"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span></td>
-                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-red-100 text-red-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></span></td>
-                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-red-100 text-red-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></span></td>
-                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-red-100 text-red-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></span></td>
-              </tr>
-              <tr>
-                <td class="py-4 px-5 font-medium text-gray-800">Open Source</td>
-                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-green-100 text-green-600"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span></td>
-                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-red-100 text-red-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></span></td>
-                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-red-100 text-red-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></span></td>
-                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-red-100 text-red-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></span></td>
-              </tr>
-              <tr class="bg-gray-50">
-                <td class="py-4 px-5 font-medium text-gray-800">Free</td>
-                <td class="py-4 px-5 text-center"><span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-green-100 text-green-600"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span></td>
-                <td class="py-4 px-5 text-center text-gray-500 text-xs font-medium">Freemium</td>
-                <td class="py-4 px-5 text-center text-gray-500 text-xs font-medium">Paid</td>
-                <td class="py-4 px-5 text-center text-gray-500 text-xs font-medium">Paid</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="text-center mt-10">
-          <a href="https://github.com/joelnishanth/offlyn-apply" target="_blank" rel="noopener" class="px-8 py-3.5 bg-indigo-600 text-white font-bold rounded-lg hover:bg-indigo-700 transition">Get Apply — Free & Private</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="terraguide-gallery" class="py-16 bg-gray-50">
-      <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-semibold text-center mb-8">TerraGuide Product Showcase</h2>
-        <p class="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
-          Experience TerraGuide's powerful offline AI capabilities through our comprehensive mobile interface. 
-          From emergency coordination to offline mapping, see how our app keeps teams connected when networks fail.
-        </p>
-        
-        <!-- Auto-scrolling Gallery -->
-        <div class="flex justify-center">
-          <div class="relative bg-white rounded-2xl shadow-2xl overflow-hidden w-80">
-            <div id="terraguide-carousel" class="flex transition-transform duration-500 ease-in-out">
-              <!-- Images will be dynamically inserted here -->
-              </div>
-              
-            <!-- Navigation Dots -->
-            <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-              <div class="w-2 h-2 bg-white rounded-full opacity-50 cursor-pointer dot active" data-index="0"></div>
-              <div class="w-2 h-2 bg-white rounded-full opacity-50 cursor-pointer dot" data-index="1"></div>
-              <div class="w-2 h-2 bg-white rounded-full opacity-50 cursor-pointer dot" data-index="2"></div>
-              <div class="w-2 h-2 bg-white rounded-full opacity-50 cursor-pointer dot" data-index="3"></div>
-              <div class="w-2 h-2 bg-white rounded-full opacity-50 cursor-pointer dot" data-index="4"></div>
-              <div class="w-2 h-2 bg-white rounded-full opacity-50 cursor-pointer dot" data-index="5"></div>
-              </div>
-            
-            <!-- Click to view larger -->
-            <div class="absolute top-4 right-4 bg-black bg-opacity-50 text-white px-3 py-1 rounded-full text-sm">
-              Click to view larger
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section id="terraguide" class="py-16 bg-white">
-      <div class="container mx-auto px-6 text-center">
-        <h2 class="text-3xl font-semibold mb-8">TerraGuide Features</h2>
-        <p class="text-lg text-gray-600 mb-12 max-w-4xl mx-auto">
-          TerraGuide™ is a comprehensive outdoor safety and communication platform that combines on-device AI assistance, mesh networking, offline navigation, and emergency preparedness into a single, privacy-focused iOS application designed for outdoor enthusiasts and emergency situations.
-        </p>
-        
-        <div class="max-w-6xl mx-auto">
-              <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-            <div class="p-8 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl border border-blue-100">
-              <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
-                    </svg>
-                  </div>
-              <h3 class="text-2xl font-bold mb-4 text-gray-800">On-Device AI Assistant</h3>
-                  <p class="text-gray-600 leading-relaxed">
-                Meta Llama 3.2 model provides instant emergency guidance, survival tips, and medical assistance without requiring internet connectivity.
-                  </p>
-                </div>
-
-            <div class="p-8 bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl border border-green-100">
-              <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
-                    </svg>
-                  </div>
-              <h3 class="text-2xl font-bold mb-4 text-gray-800">Mesh Networking</h3>
-                  <p class="text-gray-600 leading-relaxed">
-                Dual-transport mesh networking combines Bluetooth and WiFi for reliable communication up to 10 miles without cell towers.
-                  </p>
-                </div>
-
-                <div class="p-8 bg-gradient-to-br from-yellow-50 to-amber-50 rounded-2xl border border-yellow-100">
-                  <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path>
-                    </svg>
-                  </div>
-              <h3 class="text-2xl font-bold mb-4 text-gray-800">Offline Navigation</h3>
-                  <p class="text-gray-600 leading-relaxed">
-                Full offline maps with terrain data, GPS navigation, and emergency waypoint management for complete navigation without internet.
-                  </p>
-                </div>
-
-            <div class="p-8 bg-gradient-to-br from-red-50 to-pink-50 rounded-2xl border border-red-100">
-              <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
-                    </svg>
-                  </div>
-              <h3 class="text-2xl font-bold mb-4 text-gray-800">Emergency Features</h3>
-                  <p class="text-gray-600 leading-relaxed">
-                    Emergency beacon broadcasting, SOS flashlight patterns, and automated distress signals for critical situations.
-                  </p>
-                </div>
-
-                <div class="p-8 bg-gradient-to-br from-purple-50 to-violet-50 rounded-2xl border border-purple-100">
-                  <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                    </svg>
-                  </div>
-              <h3 class="text-2xl font-bold mb-4 text-gray-800">FEMA Integration</h3>
-                  <p class="text-gray-600 leading-relaxed">
-                    Local access to official FEMA emergency guides, disaster-specific guidance, and emergency kit checklists.
-                  </p>
-                </div>
-
-                <div class="p-8 bg-gradient-to-br from-gray-50 to-slate-50 rounded-2xl border border-gray-100">
-                  <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <svg class="w-8 h-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
-                    </svg>
-                  </div>
-              <h3 class="text-2xl font-bold mb-4 text-gray-800">Privacy & Security</h3>
-                  <p class="text-gray-600 leading-relaxed">
-                    Zero-knowledge architecture ensures AI conversations never leave your device, with end-to-end encryption for all communications.
-                  </p>
-                </div>
-              </div>
-
-          <div class="bg-gradient-to-r from-indigo-50 to-blue-50 p-8 rounded-2xl border border-indigo-100">
-            <h3 class="text-2xl font-bold mb-6 text-gray-800">Get Support</h3>
-            <p class="text-gray-600 mb-6 max-w-2xl mx-auto">
-              Need help with TerraGuide? Our support team is here to assist you with any questions or issues.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="mailto:hi@offlyn.ai" class="inline-block bg-indigo-600 text-white px-8 py-3 rounded-lg hover:bg-indigo-700 transition-colors font-medium">
-                Email Support
-              </a>
-              <a href="#" class="inline-block bg-gray-600 text-white px-8 py-3 rounded-lg hover:bg-gray-700 transition-colors font-medium">
-                View Documentation
-              </a>
-                    </div>
-                    </div>
-                    </div>
-                  </div>
-    </section>
-
-
-    <section id="terraguide-privacy" class="py-16 bg-gray-50">
-      <div class="container mx-auto px-6 max-w-3xl">
-        <h2 class="text-3xl font-semibold text-center mb-6">TerraGuide Privacy Policy</h2>
-        <p class="mb-4">TerraGuide operates completely offline and does not collect personal data. Any information you enter remains on your device to support app functionality.</p>
-        <p class="mb-4">We do not transmit or store your data on our servers. Diagnostic logs stay local and are deleted when you remove the app.</p>
-        <p class="mb-4">We never share your information with third parties. You may request deletion of any support communications by contacting us.</p>
-        <p class="mb-4">Contact: <a href="mailto:hi@offlyn.ai" class="text-indigo-600 hover:underline">hi@offlyn.ai</a></p>
-                    </div>
-    </section>
-
-
-    <section id="clipper" class="py-20 bg-gradient-to-br from-indigo-50 to-purple-100">
+    <!-- 4. AUDIT WORKFLOW -->
+    <section class="py-12 md:py-14 bg-white">
       <div class="container mx-auto px-6">
         <div class="max-w-4xl mx-auto">
-          <!-- Header -->
-          <div class="text-center mb-16">
-            <img src="assets/clipper-logo.png" alt="Clipper logo" width="80" height="80" class="rounded-2xl shadow-md mx-auto mb-6" loading="lazy">
-            <div class="flex items-center justify-center gap-3 mb-6">
-              <h2 class="text-4xl md:text-5xl font-bold text-gray-800">Clipper</h2>
-              <span class="px-3 py-1 bg-indigo-600 text-white text-sm font-bold rounded-full">NOW LIVE</span>
+          <div class="text-center mb-8">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-3">We find where your AI budget is leaking tokens.</h2>
+            <p class="text-gray-600 text-sm max-w-3xl mx-auto">Offlyn works across Finance, Product, and Engineering to identify AI workflows driving annual spend, then redesigns them with local-first processing, compact cloud fallback, and measurement instrumentation.</p>
+          </div>
+          <div class="grid md:grid-cols-5 gap-4 max-w-5xl mx-auto mb-8">
+            <div class="text-center">
+              <div class="w-10 h-10 bg-indigo-50 border border-indigo-100 rounded-lg flex items-center justify-center mx-auto mb-3">
+                <span class="text-indigo-600 font-bold">1</span>
+              </div>
+              <h3 class="text-gray-800 font-semibold text-sm mb-1">Map spend</h3>
+              <p class="text-gray-500 text-xs leading-snug">Top AI vendor costs and COGS drivers.</p>
             </div>
-            <p class="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed mb-8">
-              The offline AI notepad for people in back-to-back meetings. Clipper takes your raw meeting notes and makes them awesome — with transcription and AI that never leaves your Mac.
-            </p>
-            <p class="text-2xl font-semibold text-indigo-600 mb-4">
-              No cloud. No meeting bots. 100% on your Mac.
-            </p>
-            <p class="text-lg text-gray-600 mb-8">
-              Free beta for macOS. Apple Silicon recommended.
-            </p>
-            <div class="flex flex-wrap justify-center gap-4">
-              <a href="https://clipper.offlyn.ai" target="_blank" rel="noopener" class="px-8 py-3.5 bg-indigo-600 text-white font-bold rounded-xl hover:bg-indigo-700 transition text-base shadow-lg hover:shadow-xl">Download for Mac</a>
-              <a href="https://clipper.offlyn.ai" target="_blank" rel="noopener" class="px-8 py-3.5 border border-indigo-600 text-indigo-600 font-bold rounded-xl hover:bg-indigo-600 hover:text-white transition text-base">Visit clipper.offlyn.ai</a>
+            <div class="text-center">
+              <div class="w-10 h-10 bg-indigo-50 border border-indigo-100 rounded-lg flex items-center justify-center mx-auto mb-3">
+                <span class="text-indigo-600 font-bold">2</span>
+              </div>
+              <h3 class="text-gray-800 font-semibold text-sm mb-1">Audit tokens</h3>
+              <p class="text-gray-500 text-xs leading-snug">Prompts, traces, transcripts, RAG chunks.</p>
+            </div>
+            <div class="text-center">
+              <div class="w-10 h-10 bg-indigo-50 border border-indigo-100 rounded-lg flex items-center justify-center mx-auto mb-3">
+                <span class="text-indigo-600 font-bold">3</span>
+              </div>
+              <h3 class="text-gray-800 font-semibold text-sm mb-1">Route intelligence</h3>
+              <p class="text-gray-500 text-xs leading-snug">Local, cached, or cloud reasoning.</p>
+            </div>
+            <div class="text-center">
+              <div class="w-10 h-10 bg-indigo-50 border border-indigo-100 rounded-lg flex items-center justify-center mx-auto mb-3">
+                <span class="text-indigo-600 font-bold">4</span>
+              </div>
+              <h3 class="text-gray-800 font-semibold text-sm mb-1">Measure quality</h3>
+              <p class="text-gray-500 text-xs leading-snug">Quality gates and fallback behavior.</p>
+            </div>
+            <div class="text-center">
+              <div class="w-10 h-10 bg-indigo-50 border border-indigo-100 rounded-lg flex items-center justify-center mx-auto mb-3">
+                <span class="text-indigo-600 font-bold">5</span>
+              </div>
+              <h3 class="text-gray-800 font-semibold text-sm mb-1">Report outcomes</h3>
+              <p class="text-gray-500 text-xs leading-snug">Annual spend, tokens, privacy, carbon.</p>
             </div>
           </div>
-
-          <!-- Features -->
-          <div class="grid md:grid-cols-2 gap-6">
-            <div class="bg-white rounded-2xl shadow-lg p-6">
-              <h3 class="text-lg font-bold text-gray-800 mb-2">Live transcription</h3>
-              <p class="text-gray-600 text-sm">Real-time speech-to-text with speaker labels, powered by on-device Whisper.</p>
-            </div>
-            <div class="bg-white rounded-2xl shadow-lg p-6">
-              <h3 class="text-lg font-bold text-gray-800 mb-2">No meeting bots</h3>
-              <p class="text-gray-600 text-sm">Works on Zoom, Meet, and Teams by capturing your Mac's audio directly.</p>
-            </div>
-            <div class="bg-white rounded-2xl shadow-lg p-6">
-              <h3 class="text-lg font-bold text-gray-800 mb-2">On-device AI</h3>
-              <p class="text-gray-600 text-sm">Enhance shorthand notes into structured meeting summaries — all locally.</p>
-            </div>
-            <div class="bg-white rounded-2xl shadow-lg p-6">
-              <h3 class="text-lg font-bold text-gray-800 mb-2">Hybrid search</h3>
-              <p class="text-gray-600 text-sm">Find anything across meetings, PDFs, web clips, and YouTube imports — fully offline.</p>
-            </div>
+          <div class="text-center">
+            <a href="/enterprise" class="px-8 py-3 bg-indigo-600 text-white font-bold rounded-xl hover:bg-indigo-700 transition text-sm shadow-lg hover:shadow-xl inline-flex items-center gap-2">
+              Run an Enterprise Token Savings Audit
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
           </div>
-
         </div>
       </div>
     </section>
 
-
-    <!-- Enterprise Teaser -->
-    <section id="enterprise" class="py-20 bg-gradient-to-r from-indigo-50 to-blue-50">
+    <!-- 5. AUDIT TIERS -->
+    <section class="py-12 md:py-14 bg-gray-50">
       <div class="container mx-auto px-6">
-        <div class="max-w-4xl mx-auto text-center mb-12">
-          <p class="text-indigo-600 text-sm font-semibold tracking-widest uppercase mb-4">For Enterprise</p>
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">The optimizations behind our products, available for your AI workflows.</h2>
-          <p class="text-lg text-gray-600 max-w-2xl mx-auto">Building offline AI for TerraGuide, Clipper, and Apply taught us how to deliver quality answers with constrained compute. Now we help enterprise teams reduce repeated token usage with the same local-first techniques.</p>
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-800 text-center mb-8">Choose your path to fewer tokens and lower watts.</h2>
+        <div class="grid md:grid-cols-3 gap-5 max-w-5xl mx-auto">
+          <div class="bg-white border border-gray-200 rounded-2xl p-5 flex flex-col">
+            <div class="mb-1"><span class="text-xs font-semibold text-indigo-600 uppercase tracking-widest">Tier 1</span></div>
+            <h3 class="text-gray-800 font-bold text-base mb-1.5">Self-Serve AI Resource Audit</h3>
+            <p class="text-gray-500 text-sm leading-snug mb-3">Run the open-source calculator with your own assumptions.</p>
+            <p class="text-indigo-600 text-sm font-semibold mb-4">Modeled annual AI spend reduced</p>
+            <div class="mt-auto">
+              <a href="https://github.com/offlyn-ai/offlyn-token-savings-audit" target="_blank" rel="noopener" class="block w-full px-5 py-2.5 bg-indigo-600 text-white font-bold rounded-lg hover:bg-indigo-700 transition text-sm text-center shadow-lg">Open GitHub Repo</a>
+            </div>
+          </div>
+          <div class="bg-white border-2 border-indigo-200 rounded-2xl p-5 flex flex-col">
+            <div class="mb-1"><span class="text-xs font-semibold text-indigo-600 uppercase tracking-widest">Tier 2</span></div>
+            <h3 class="text-gray-800 font-bold text-base mb-1.5">Forward-Deployed GreenOps Audit</h3>
+            <p class="text-gray-500 text-sm leading-snug mb-3">Offlyn engineers instrument real workflows and measure annualized savings.</p>
+            <p class="text-indigo-600 text-sm font-semibold mb-4">Measured annualized AI spend reduced</p>
+            <div class="mt-auto">
+              <a href="/enterprise" class="block w-full px-5 py-2.5 bg-indigo-600 text-white font-bold rounded-lg hover:bg-indigo-700 transition text-sm text-center shadow-lg">Request Audit</a>
+            </div>
+          </div>
+          <div class="bg-white border border-gray-200 rounded-2xl p-5 flex flex-col">
+            <div class="mb-1"><span class="text-xs font-semibold text-indigo-600 uppercase tracking-widest">Tier 3</span></div>
+            <h3 class="text-gray-800 font-bold text-base mb-1.5">Offline AI Roadmap + Assurance Packet</h3>
+            <p class="text-gray-500 text-sm leading-snug mb-3">Design hybrid AI routing across meetings, documents, field workflows, and edge devices.</p>
+            <p class="text-indigo-600 text-sm font-semibold mb-4">Projected portfolio-level AI spend reduced</p>
+            <div class="mt-auto">
+              <a href="/enterprise" class="block w-full px-5 py-2.5 bg-indigo-600 text-white font-bold rounded-lg hover:bg-indigo-700 transition text-sm text-center shadow-lg">Plan Roadmap</a>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-10">
-          <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm">
-            <div class="w-10 h-10 bg-indigo-50 rounded-lg flex items-center justify-center mb-4">
-              <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
-            </div>
-            <h3 class="text-gray-800 font-semibold mb-2">Token Savings Audit</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">Identify repeated context waste in one workflow.</p>
+    <!-- 6. OPEN-SOURCE AUDIT CTA -->
+    <section class="py-10 bg-white">
+      <div class="container mx-auto px-6 max-w-3xl text-center">
+        <h2 class="text-2xl font-bold text-gray-800 mb-3">Start with the open-source audit.</h2>
+        <p class="text-gray-600 text-sm mb-5">Estimate token savings, cost reduction, and operational carbon intensity with configurable assumptions, JSON/CSV exports, and claims-safe disclosure language.</p>
+        <a href="https://github.com/offlyn-ai/offlyn-token-savings-audit" target="_blank" rel="noopener" class="px-8 py-3 bg-indigo-600 text-white font-bold rounded-xl hover:bg-indigo-700 transition text-sm shadow-lg hover:shadow-xl">View GitHub Repo</a>
+      </div>
+    </section>
+
+    <!-- 7. RESEARCH CHIPS -->
+    <section class="py-10 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center mb-5">
+          <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-2">Future research: useful intelligence per token, per dollar, per watt.</h2>
+          <p class="text-gray-600 text-sm max-w-3xl mx-auto">Products and audits create a feedback loop for local models, hybrid routers, edge inference, and SCI-AI-aligned measurement.</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-2 max-w-3xl mx-auto mb-3">
+          <span class="px-3 py-1.5 bg-white border border-gray-200 rounded-full text-xs text-gray-700">Hybrid routing</span>
+          <span class="px-3 py-1.5 bg-white border border-gray-200 rounded-full text-xs text-gray-700">Local model optimization</span>
+          <span class="px-3 py-1.5 bg-white border border-gray-200 rounded-full text-xs text-gray-700">Context compression</span>
+          <span class="px-3 py-1.5 bg-white border border-gray-200 rounded-full text-xs text-gray-700">Quality gates</span>
+          <span class="px-3 py-1.5 bg-white border border-gray-200 rounded-full text-xs text-gray-700">Offline memory</span>
+          <span class="px-3 py-1.5 bg-white border border-gray-200 rounded-full text-xs text-gray-700">Edge resilience</span>
+          <span class="px-3 py-1.5 bg-white border border-gray-200 rounded-full text-xs text-gray-700">SCI-AI-aligned reporting</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. ENTERPRISE CAPABILITIES -->
+    <section id="enterprise" class="py-12 md:py-14 bg-gradient-to-r from-indigo-50 to-blue-50">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center mb-8">
+          <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Enterprise AI efficiency, built from product proof points.</h2>
+          <p class="text-gray-600 text-sm max-w-2xl mx-auto">Offlyn packages local-first techniques into Token Savings Audits, hybrid routing designs, context optimizers, and offline AI roadmaps for enterprise teams.</p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto mb-8">
+          <div class="bg-white border border-gray-100 rounded-xl p-5 shadow-sm">
+            <h3 class="text-gray-800 font-semibold text-sm mb-1.5">Token Savings Audit</h3>
+            <p class="text-gray-500 text-xs leading-snug">Estimate annual AI spend reduced across cloud-first, offline-first, and hybrid workflows.</p>
           </div>
-          <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm">
-            <div class="w-10 h-10 bg-indigo-50 rounded-lg flex items-center justify-center mb-4">
-              <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
-            </div>
-            <h3 class="text-gray-800 font-semibold mb-2">Context Optimizer</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">Compile raw documents into source-grounded evidence packs.</p>
+          <div class="bg-white border border-gray-100 rounded-xl p-5 shadow-sm">
+            <h3 class="text-gray-800 font-semibold text-sm mb-1.5">Context Optimizer</h3>
+            <p class="text-gray-500 text-xs leading-snug">Compile transcripts, documents, logs, and RAG chunks into compact evidence packs.</p>
           </div>
-          <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm">
-            <div class="w-10 h-10 bg-indigo-50 rounded-lg flex items-center justify-center mb-4">
-              <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-            </div>
-            <h3 class="text-gray-800 font-semibold mb-2">MLX Optimization</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">Apple Silicon optimization for local transcription and inference.</p>
+          <div class="bg-white border border-gray-100 rounded-xl p-5 shadow-sm">
+            <h3 class="text-gray-800 font-semibold text-sm mb-1.5">Hybrid Router</h3>
+            <p class="text-gray-500 text-xs leading-snug">Route tasks across local, small, cloud, and human-review layers by quality, risk, cost, and privacy.</p>
+          </div>
+          <div class="bg-white border border-gray-100 rounded-xl p-5 shadow-sm">
+            <h3 class="text-gray-800 font-semibold text-sm mb-1.5">MLX / Local AI</h3>
+            <p class="text-gray-500 text-xs leading-snug">Optimize Apple Silicon and local inference for transcription, embeddings, and private search.</p>
           </div>
         </div>
-
         <div class="text-center">
-          <a href="/enterprise" class="px-8 py-3.5 bg-indigo-600 text-white font-bold rounded-xl hover:bg-indigo-700 transition text-base shadow-lg hover:shadow-xl inline-flex items-center gap-2">
+          <a href="/enterprise" class="px-8 py-3 bg-indigo-600 text-white font-bold rounded-xl hover:bg-indigo-700 transition text-sm shadow-lg hover:shadow-xl inline-flex items-center gap-2">
             Explore Offlyn for Enterprise
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
           </a>
@@ -648,243 +392,69 @@
       </div>
     </section>
 
-    
+    <!-- 9. CLAIMS-SAFE DISCLAIMER -->
+    <section class="py-8 bg-white border-t border-gray-100">
+      <div class="container mx-auto px-6">
+        <div class="max-w-3xl mx-auto text-center">
+          <p class="text-gray-400 text-xs leading-relaxed">Audit outputs may be modeled or measured depending on engagement tier. Offlyn does not claim guaranteed savings, certified token reductions, verified emissions reductions, carbon neutrality, or water-free AI. SCI-AI-aligned metrics are ISO/IEC 21031:2024-informed operational proxy estimates unless and until a public certificate is issued for the relevant disclosure.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TerraGuide Privacy Policy -->
+    <section id="terraguide-privacy" class="py-10 bg-gray-50">
+      <div class="container mx-auto px-6 max-w-3xl">
+        <h2 class="text-xl font-semibold text-center mb-4">TerraGuide Privacy Policy</h2>
+        <p class="text-xs text-gray-600 mb-2">TerraGuide operates completely offline and does not collect personal data. Any information you enter remains on your device to support app functionality.</p>
+        <p class="text-xs text-gray-600 mb-2">We do not transmit or store your data on our servers. Diagnostic logs stay local and are deleted when you remove the app.</p>
+        <p class="text-xs text-gray-600 mb-2">We never share your information with third parties. You may request deletion of any support communications by contacting us.</p>
+        <p class="text-xs text-gray-600">Contact: <a href="mailto:hi@offlyn.ai" class="text-indigo-600 hover:underline">hi@offlyn.ai</a></p>
+      </div>
+    </section>
+
   </main>
 
   <footer class="bg-offlyn-navy text-gray-400 py-12">
     <div class="container mx-auto px-6">
       <div class="grid md:grid-cols-3 gap-8 mb-8">
         <div>
-          <a href="#product-suite" class="flex items-center mb-4">
+          <a href="/" class="flex items-center mb-4">
             <img src="assets/offlyn-logo-3d.png" alt="offlyn.ai logo" class="h-10 w-auto">
             <span class="ml-2 text-lg font-bold text-white">offlyn.ai</span>
           </a>
-          <p class="text-sm leading-relaxed">On-device AI solutions for industries on the edge. Privacy-first, offline-capable, always reliable.</p>
+          <p class="text-sm leading-relaxed">Useful intelligence with fewer tokens and lower watts. Offlyn builds local-first products and enterprise AI efficiency tools for privacy, resilience, and cost-aware AI.</p>
         </div>
         <div>
           <h4 class="text-white font-semibold mb-4">Products</h4>
           <ul class="space-y-2 text-sm">
-            <li><a href="#clipper" class="hover:text-offlyn-green transition">Clipper</a></li>
-            <li><a href="#offlyn-apply" class="hover:text-offlyn-green transition">Apply</a></li>
-            <li><a href="#terraguide-gallery" class="hover:text-offlyn-green transition">TerraGuide</a></li>
-            <li><a href="/enterprise" class="hover:text-offlyn-green transition">Enterprise</a></li>
+            <li><a href="https://clipper.offlyn.ai" target="_blank" rel="noopener" class="hover:text-offlyn-green transition">Clipper</a></li>
+            <li><a href="https://apply.offlyn.ai" target="_blank" rel="noopener" class="hover:text-offlyn-green transition">Apply</a></li>
+            <li><a href="https://apps.apple.com/us/app/terraguide/id6749492441" target="_blank" rel="noopener" class="hover:text-offlyn-green transition">TerraGuide</a></li>
+            <li><a href="/enterprise" class="hover:text-offlyn-green transition">Enterprise Audit</a></li>
           </ul>
         </div>
         <div>
           <h4 class="text-white font-semibold mb-4">Resources</h4>
           <ul class="space-y-2 text-sm">
+            <li><a href="https://github.com/offlyn-ai/offlyn-token-savings-audit" target="_blank" rel="noopener" class="hover:text-offlyn-green transition">Token Savings Audit</a></li>
             <li><a href="#terraguide-privacy" class="hover:text-offlyn-green transition">Privacy Policy</a></li>
             <li><a href="mailto:hi@offlyn.ai" class="hover:text-offlyn-green transition">Contact Us</a></li>
-            <li><a href="https://github.com/joelnishanth/offlyn-apply" target="_blank" rel="noopener" class="hover:text-offlyn-green transition">GitHub</a></li>
+            <li><a href="https://github.com/joelnishanth" target="_blank" rel="noopener" class="hover:text-offlyn-green transition">GitHub</a></li>
           </ul>
         </div>
       </div>
       <div class="border-t border-gray-700 pt-6 flex flex-col md:flex-row items-center justify-between text-sm">
-            <p>&copy; 2026 offlyn.ai. All rights reserved.</p>
-      <div class="space-x-6 mt-4 md:mt-0">
-        <a href="#offlyn-apply" class="hover:text-offlyn-green transition">Apply</a>
-        <a href="#terraguide-privacy" class="hover:text-offlyn-green transition">Privacy</a>
-        <a href="mailto:hi@offlyn.ai" class="hover:text-offlyn-green transition">Contact</a>
-      </div>
+        <p>&copy; 2026 offlyn.ai. All rights reserved.</p>
+        <div class="space-x-6 mt-4 md:mt-0">
+          <a href="/" class="hover:text-offlyn-green transition">Home</a>
+          <a href="/enterprise" class="hover:text-offlyn-green transition">Enterprise</a>
+          <a href="#terraguide-privacy" class="hover:text-offlyn-green transition">Privacy</a>
+          <a href="mailto:hi@offlyn.ai" class="hover:text-offlyn-green transition">Contact</a>
+        </div>
       </div>
     </div>
   </footer>
 
-  <script>
-
-    // Industry Tabs Functionality
-    const tabButtons = document.querySelectorAll('.tab-button');
-    const tabPanes = document.querySelectorAll('.tab-pane');
-
-    tabButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        const targetTab = button.getAttribute('data-tab');
-
-        // Remove active class from all buttons and panes
-        tabButtons.forEach(btn => {
-          btn.classList.remove('bg-indigo-600', 'text-white', 'shadow-lg');
-          btn.classList.add('bg-gray-200', 'text-gray-700', 'hover:bg-gray-300');
-        });
-
-        tabPanes.forEach(pane => {
-          pane.classList.add('hidden');
-          pane.classList.remove('active');
-        });
-
-        // Add active class to clicked button
-        button.classList.remove('bg-gray-200', 'text-gray-700', 'hover:bg-gray-300');
-        button.classList.add('bg-indigo-600', 'text-white', 'shadow-lg');
-
-        // Show the target tab pane
-        const targetPane = document.getElementById(targetTab);
-        if (targetPane) {
-          targetPane.classList.remove('hidden');
-          targetPane.classList.add('active');
-        }
-      });
-    });
-
-    // TerraGuide Auto-scrolling Carousel
-    const allScreenshots = [
-      "terraguide-product-images/Simulator Screenshot - iPhone 16 Pro Max - 2025-09-04 at 08.49.35.png",
-      "terraguide-product-images/Simulator Screenshot - iPhone 16 Pro Max - 2025-09-04 at 08.52.42.png",
-      "terraguide-product-images/Simulator Screenshot - iPhone 16 Pro Max - 2025-09-04 at 08.53.08.png",
-      "terraguide-product-images/Simulator Screenshot - iPhone 16 Pro Max - 2025-09-04 at 08.53.15.png",
-      "terraguide-product-images/Simulator Screenshot - iPhone 16 Pro Max - 2025-09-04 at 08.53.19.png",
-      "terraguide-product-images/Simulator Screenshot - iPhone 16 Pro Max - 2025-09-04 at 08.58.49.png",
-      "terraguide-product-images/Simulator Screenshot - iPhone 16 Pro Max - 2025-09-04 at 08.59.07.png",
-      "terraguide-product-images/Simulator Screenshot - iPhone 16 Pro Max - 2025-09-04 at 09.00.52.png",
-      "terraguide-product-images/Simulator Screenshot - iPhone 16 Pro Max - 2025-09-04 at 09.01.27.png",
-      "terraguide-product-images/Simulator Screenshot - iPhone 16 Pro Max - 2025-09-04 at 09.01.32.png",
-      "terraguide-product-images/Simulator Screenshot - iPhone 16 Pro Max - 2025-09-04 at 09.03.01.png",
-      "terraguide-product-images/Simulator Screenshot - iPhone 16 Pro Max - 2025-09-04 at 09.03.12.png",
-      "terraguide-product-images/Simulator Screenshot - iPhone 16 Pro Max - 2025-09-04 at 09.15.06.png",
-      "terraguide-product-images/Simulator Screenshot - iPhone 16 Pro Max - 2025-09-04 at 09.15.45.png",
-      "terraguide-product-images/Simulator Screenshot - iPhone 16 Pro Max - 2025-09-04 at 09.21.18.png",
-      "terraguide-product-images/Simulator Screenshot - iPhone 16 Pro Max - 2025-09-04 at 09.43.10.png",
-      "terraguide-product-images/Simulator Screenshot - iPhone 16 Pro Max - 2025-09-04 at 09.44.14.png",
-      "terraguide-product-images/Simulator Screenshot - iPhone 16 Pro Max - 2025-09-04 at 10.57.28.png"
-    ];
-
-    let currentImageIndex = 0;
-    let isModalOpen = false;
-    let autoScrollInterval;
-
-    // Initialize carousel
-    function initCarousel() {
-      const carousel = document.getElementById('terraguide-carousel');
-      const dots = document.querySelectorAll('.dot');
-      
-      // Create carousel items
-      allScreenshots.forEach((src, index) => {
-        const carouselItem = document.createElement('div');
-        carouselItem.className = 'w-full flex-shrink-0 cursor-pointer';
-        carouselItem.innerHTML = `
-          <div class="aspect-[9/19] bg-white rounded-2xl shadow-lg overflow-hidden mx-auto max-w-xs">
-            <img src="${src}" alt="TerraGuide App Screenshot" class="w-full h-full object-cover">
-          </div>
-        `;
-        carouselItem.addEventListener('click', () => {
-          currentImageIndex = index;
-          showModal();
-        });
-        carousel.appendChild(carouselItem);
-      });
-
-      // Update dots
-      function updateDots() {
-        dots.forEach((dot, index) => {
-          dot.classList.toggle('active', index === currentImageIndex);
-          dot.classList.toggle('opacity-50', index !== currentImageIndex);
-        });
-      }
-
-      // Update carousel position
-      function updateCarousel() {
-        carousel.style.transform = `translateX(-${currentImageIndex * 100}%)`;
-        updateDots();
-      }
-
-      // Auto-scroll functionality
-      function startAutoScroll() {
-        autoScrollInterval = setInterval(() => {
-          currentImageIndex = (currentImageIndex + 1) % allScreenshots.length;
-          updateCarousel();
-        }, 3000); // Change image every 3 seconds
-      }
-
-      function stopAutoScroll() {
-        clearInterval(autoScrollInterval);
-      }
-
-      // Dot click handlers
-      dots.forEach((dot, index) => {
-        dot.addEventListener('click', () => {
-          currentImageIndex = index;
-          updateCarousel();
-          stopAutoScroll();
-          startAutoScroll(); // Restart auto-scroll
-        });
-      });
-
-      // Pause auto-scroll on hover
-      carousel.addEventListener('mouseenter', stopAutoScroll);
-      carousel.addEventListener('mouseleave', startAutoScroll);
-
-      // Initialize
-      updateCarousel();
-      startAutoScroll();
-    }
-
-    // Create modal
-    const modal = document.createElement('div');
-    modal.id = 'image-modal';
-    modal.className = 'fixed inset-0 bg-black bg-opacity-75 z-50 hidden flex items-center justify-center p-8';
-    modal.innerHTML = `
-      <div class="relative">
-        <button id="close-modal" class="absolute -top-12 right-0 text-white text-3xl hover:text-gray-300 z-10 bg-black bg-opacity-50 rounded-full w-10 h-10 flex items-center justify-center">&times;</button>
-        <button id="prev-image" class="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-12 text-white text-3xl hover:text-gray-300 z-10 bg-black bg-opacity-50 rounded-full w-10 h-10 flex items-center justify-center">‹</button>
-        <button id="next-image" class="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-12 text-white text-3xl hover:text-gray-300 z-10 bg-black bg-opacity-50 rounded-full w-10 h-10 flex items-center justify-center">›</button>
-        <img id="modal-image" src="" alt="TerraGuide Screenshot" class="w-80 h-auto object-contain rounded-2xl shadow-2xl">
-        <div class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-white text-sm bg-black bg-opacity-50 px-3 py-1 rounded-full">
-          <span id="image-counter">1 / ${allScreenshots.length}</span>
-        </div>
-      </div>
-    `;
-    document.body.appendChild(modal);
-
-    function showModal() {
-      isModalOpen = true;
-      modal.classList.remove('hidden');
-      updateModalImage();
-      document.body.style.overflow = 'hidden';
-    }
-
-    function hideModal() {
-      isModalOpen = false;
-      modal.classList.add('hidden');
-      document.body.style.overflow = 'auto';
-    }
-
-    function updateModalImage() {
-      const modalImage = document.getElementById('modal-image');
-      const imageCounter = document.getElementById('image-counter');
-      modalImage.src = allScreenshots[currentImageIndex];
-      imageCounter.textContent = `${currentImageIndex + 1} / ${allScreenshots.length}`;
-    }
-
-    // Modal controls
-    document.getElementById('close-modal').addEventListener('click', hideModal);
-    document.getElementById('prev-image').addEventListener('click', () => {
-      currentImageIndex = (currentImageIndex - 1 + allScreenshots.length) % allScreenshots.length;
-      updateModalImage();
-    });
-    document.getElementById('next-image').addEventListener('click', () => {
-      currentImageIndex = (currentImageIndex + 1) % allScreenshots.length;
-      updateModalImage();
-    });
-
-    // Close modal on background click
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) hideModal();
-    });
-
-    // Keyboard navigation
-    document.addEventListener('keydown', (e) => {
-      if (!isModalOpen) return;
-      if (e.key === 'Escape') hideModal();
-      if (e.key === 'ArrowLeft') {
-        currentImageIndex = (currentImageIndex - 1 + allScreenshots.length) % allScreenshots.length;
-        updateModalImage();
-      }
-      if (e.key === 'ArrowRight') {
-        currentImageIndex = (currentImageIndex + 1) % allScreenshots.length;
-        updateModalImage();
-      }
-    });
-
-    // Initialize carousel when page loads
-    document.addEventListener('DOMContentLoaded', initCarousel);
-  </script>
+  <script>/* Mobile menu toggle is handled inline on the button */</script>
 </body>
 </html>
